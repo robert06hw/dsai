@@ -1,0 +1,32 @@
+{
+  "id": "N15_meaningful_09",
+  "parent": "N15",
+  "representation": "meaningful",
+  "sample": 9,
+  "seed": 20302409,
+  "block": 81,
+  "request": {
+    "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+    "system": "You are a Python programmer. Return only the modified score function.",
+    "prompt": "Modify this bin-scoring function to reduce the number of bins used in online bin packing. Keep the interface score(item, bins), and output only Python code.\nitem is a positive float; bins is a nonempty 1D numpy float64 array of feasible remaining capacities, each >= item. Capacity is 100. The evaluator preallocates one empty bin per item, scores all feasible bins, chooses the highest score, and breaks ties by the earliest bin index. Item order is fixed.\nReturn a finite numpy float64 array with exactly the same shape as bins. Use one pure deterministic function with straight-line local assignments and a return. numpy is already available as np. You may import numpy as np. Use numpy vector operations; do not use loops, helper functions, randomness, I/O, external state, or modify bins. No reflections or explanation.\nParent function:\ndef score(item, bins):\n    residual = (bins - item)\n    target_distance_2 = (residual - 18.0)\n    product_3 = (target_distance_2 * target_distance_2)\n    negative_penalty_4 = -(product_3)\n    adjustment_5 = (bins + 1.0)\n    normalized_penalty_6 = (negative_penalty_4 / adjustment_5)\n    return normalized_penalty_6\n",
+    "stream": false,
+    "keep_alive": "30m",
+    "options": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 40,
+      "num_predict": 512,
+      "num_ctx": 2048,
+      "seed": 20302409
+    }
+  },
+  "started_unix": 1791080847.6277115,
+  "generation_error": "HTTP Error 500: Internal Server Error",
+  "generation_seconds": 1.0314122000709176,
+  "evaluation": {
+    "valid": false,
+    "error_type": "GenerationFailure",
+    "error": "HTTP Error 500: Internal Server Error"
+  },
+  "finalized": true
+}

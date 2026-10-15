@@ -1,0 +1,8 @@
+def score(item, bins):
+    feasible_mask_1 = bins >= item
+    residual = bins - item
+    where_value_3 = np.where(feasible_mask_1, residual, 0.0)
+    product_4 = (where_value_3 * where_value_3)
+    negative_penalty_5 = -(product_4)
+    bin_scores = (negative_penalty_5 + (100 - bins) ** 2) / 100
+    return bin_scores

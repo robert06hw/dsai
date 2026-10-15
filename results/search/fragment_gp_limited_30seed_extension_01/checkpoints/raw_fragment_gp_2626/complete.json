@@ -1,0 +1,2390 @@
+{
+  "seed": 2626,
+  "method": "raw_fragment_gp",
+  "nominal_attempts": 128,
+  "new_child_attempts": 112,
+  "initial_best": {
+    "id": "init_2626_05",
+    "source": "basic_random",
+    "tree": {
+      "_ast": "UnaryOp",
+      "op": {
+        "_ast": "USub"
+      },
+      "operand": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      }
+    },
+    "expression": "-bins",
+    "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+    "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+    "internal_nodes": 2,
+    "internal_depth": 2,
+    "nodes": 2,
+    "depth": 2,
+    "type": "V",
+    "historical_tree_class": "not_matched_supported_historical_tree",
+    "historical_tree_program_ids": [],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2067,
+        "runtime": 0.07271009997930378,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+        "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2043,
+        "runtime": 0.0692570999963209,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+        "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+        "new_bins": 2043
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.06850149994716048,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+        "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2068,
+        "runtime": 0.08979130000807345,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+        "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+        "new_bins": 2068
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2063,
+        "runtime": 0.07349340000655502,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+        "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+        "new_bins": 2063
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 776
+    },
+    "warnings": [],
+    "mean_bins": 2066.4,
+    "trace_path": "traces/pilot_dev_init_2626_05.npz",
+    "worker_wall_seconds": 0.42365539993625134,
+    "evaluation_wall_seconds": 1.0583465000381693,
+    "evaluation_started_at": "2026-10-05T16:15:43.578524+08:00",
+    "evaluation_completed_at": "2026-10-05T16:15:44.645661+08:00"
+  },
+  "best": {
+    "id": "init_2626_05",
+    "source": "basic_random",
+    "tree": {
+      "_ast": "UnaryOp",
+      "op": {
+        "_ast": "USub"
+      },
+      "operand": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      }
+    },
+    "expression": "-bins",
+    "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+    "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+    "internal_nodes": 2,
+    "internal_depth": 2,
+    "nodes": 2,
+    "depth": 2,
+    "type": "V",
+    "historical_tree_class": "not_matched_supported_historical_tree",
+    "historical_tree_program_ids": [],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2067,
+        "runtime": 0.07271009997930378,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+        "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2043,
+        "runtime": 0.0692570999963209,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+        "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+        "new_bins": 2043
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.06850149994716048,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+        "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2068,
+        "runtime": 0.08979130000807345,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+        "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+        "new_bins": 2068
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2063,
+        "runtime": 0.07349340000655502,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+        "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+        "new_bins": 2063
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 776
+    },
+    "warnings": [],
+    "mean_bins": 2066.4,
+    "trace_path": "traces/pilot_dev_init_2626_05.npz",
+    "worker_wall_seconds": 0.42365539993625134,
+    "evaluation_wall_seconds": 1.0583465000381693,
+    "evaluation_started_at": "2026-10-05T16:15:43.578524+08:00",
+    "evaluation_completed_at": "2026-10-05T16:15:44.645661+08:00"
+  },
+  "population": [
+    {
+      "id": "init_2626_05",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07271009997930378,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.0692570999963209,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06850149994716048,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.08979130000807345,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.07349340000655502,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 776
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2626_05.npz",
+      "worker_wall_seconds": 0.42365539993625134,
+      "evaluation_wall_seconds": 1.0583465000381693,
+      "evaluation_started_at": "2026-10-05T16:15:43.578524+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:44.645661+08:00"
+    },
+    {
+      "id": "raw_fragment_gp_2626_024",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 24,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 20,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins - 20)",
+      "internal_key": "091ac1ee3bc7a2e90d8720f082c21a100806672c127aaf83da60232eabfec6d7",
+      "execution_key": "091ac1ee3bc7a2e90d8720f082c21a100806672c127aaf83da60232eabfec6d7",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "init_2626_01",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": "historical_fragment",
+      "fragment_key": "fff1988a1403f98e7d5ffcdcd24f992c82a7937282c71e1887bc0558f72a9c16",
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06467230000998825,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06470400001853704,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.0602462999522686,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06141500000376254,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.0609931000508368,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 640
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_024.npz",
+      "worker_wall_seconds": 0.35342910001054406,
+      "evaluation_wall_seconds": 0.9257601000135764,
+      "evaluation_started_at": "2026-10-05T16:20:09.217306+08:00",
+      "evaluation_completed_at": "2026-10-05T16:20:10.201137+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "init_2626_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07696289999876171,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.07172280002851039,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.0742605000268668,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.07526660000439733,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.07370829989667982,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 700
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2626_01.npz",
+      "worker_wall_seconds": 0.4150865999981761,
+      "evaluation_wall_seconds": 1.0723022000165656,
+      "evaluation_started_at": "2026-10-05T16:15:42.488535+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:43.570788+08:00"
+    },
+    {
+      "id": "raw_fragment_gp_2626_038",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 38,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 1.0,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins - 1.0)",
+      "internal_key": "372debfea3d6fd86fde5ebac907c8f373c606197093bd58c4cd75a89bb463866",
+      "execution_key": "372debfea3d6fd86fde5ebac907c8f373c606197093bd58c4cd75a89bb463866",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "init_2626_01",
+      "second_parent_id": "raw_fragment_gp_2626_014",
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          1
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06225960003212094,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.05635730002541095,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.05729649995919317,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.05894080002326518,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.05952330003492534,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 752
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_038.npz",
+      "worker_wall_seconds": 0.32723599998280406,
+      "evaluation_wall_seconds": 0.8675086000002921,
+      "evaluation_started_at": "2026-10-05T16:20:21.615138+08:00",
+      "evaluation_completed_at": "2026-10-05T16:20:22.484934+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_099",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 99,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Constant",
+          "value": 1.0,
+          "kind": null
+        }
+      },
+      "expression": "-bins + 1.0",
+      "internal_key": "716c822662ea2a39f76a72c4dd403f844a0e867bbd6cda5d9ac3bef9b29f2836",
+      "execution_key": "716c822662ea2a39f76a72c4dd403f844a0e867bbd6cda5d9ac3bef9b29f2836",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "init_2626_03",
+      "second_parent_id": "raw_fragment_gp_2626_038",
+      "target_path": [
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.058268000022508204,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.05658259999472648,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.05703290004748851,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.058134800055995584,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.05801629996858537,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 572
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_099.npz",
+      "worker_wall_seconds": 0.322011899901554,
+      "evaluation_wall_seconds": 0.8898159000091255,
+      "evaluation_started_at": "2026-10-05T16:21:17.227501+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:18.122016+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_112",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 112,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Add"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 1.0,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins + 1.0)",
+      "internal_key": "ce289502ab37d6fd84839474b794b2848af638f2c076b78e0132c0ae8a5da225",
+      "execution_key": "ce289502ab37d6fd84839474b794b2848af638f2c076b78e0132c0ae8a5da225",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "init_2626_01",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": "historical_fragment",
+      "fragment_key": "bbb8bee829da4baf71f5dbca4bb5a6a46a9138a97e61da92954838f382286ac4",
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.060433999984525144,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.05782460002228618,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06272849999368191,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06877710006665438,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.0662998000625521,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 776
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_112.npz",
+      "worker_wall_seconds": 0.3497167000314221,
+      "evaluation_wall_seconds": 0.9019936999538913,
+      "evaluation_started_at": "2026-10-05T16:21:28.941067+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:29.870332+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_106",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 106,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 16.675774887875164,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins - 16.675774887875164)",
+      "internal_key": "fa0cb8add22f4bed109dcac3740c21cc3ccd734a551605346083d822a5b046a3",
+      "execution_key": "fa0cb8add22f4bed109dcac3740c21cc3ccd734a551605346083d822a5b046a3",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2626_094",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 22.530866339159346,
+      "constant_after": 16.675774887875164,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06009890011046082,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.058847100008279085,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07152999995741993,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06707710004411638,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06135219999123365,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 740
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_106.npz",
+      "worker_wall_seconds": 0.35137839999515563,
+      "evaluation_wall_seconds": 0.8827926999656484,
+      "evaluation_started_at": "2026-10-05T16:21:23.142916+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:24.035949+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_094",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 94,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 22.530866339159346,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins - 22.530866339159346)",
+      "internal_key": "fced2b9bfbe233e1cf8f40013f81eea0edeba21b4c6b81efaf3f8e06b0a31a05",
+      "execution_key": "fced2b9bfbe233e1cf8f40013f81eea0edeba21b4c6b81efaf3f8e06b0a31a05",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2626_024",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 20,
+      "constant_after": 22.530866339159346,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.058906199992634356,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.05770750006195158,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.0568477000342682,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.0603397999657318,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.0580391000257805,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 748
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_094.npz",
+      "worker_wall_seconds": 0.32530420005787164,
+      "evaluation_wall_seconds": 0.8661402999423444,
+      "evaluation_started_at": "2026-10-05T16:21:12.260848+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:13.143332+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_111",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 111,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": -4.847585875435623,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(bins - -4.847585875435623)",
+      "internal_key": "ba209f27c97228fdf1b88d3eb903a4cb9366b5c176fb66732d089c4cf9f9efe5",
+      "execution_key": "509b01d5c87088429461307a931400b4582edfc1bc8e327b7c92888c32066855",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 5,
+      "depth": 4,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2626_038",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 1.0,
+      "constant_after": -4.847585875435623,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06256640003994107,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06371909996960312,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.068035600008443,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06362140004057437,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06590230006258935,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 164
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_111.npz",
+      "worker_wall_seconds": 0.36070169997401536,
+      "evaluation_wall_seconds": 0.9199704999336973,
+      "evaluation_started_at": "2026-10-05T16:21:27.961548+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:28.889704+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "init_2626_03",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Constant",
+          "value": -20.0,
+          "kind": null
+        }
+      },
+      "expression": "-bins + -20.0",
+      "internal_key": "d7bb0c92bb558d4745c7469ccd659d516bf3c06121ed24ae37e8b20ac554317b",
+      "execution_key": "f9096b31fc228e55e1bf1426183fefe923ca2ba565741741a61992bf2907b95c",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 5,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07316620007622987,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.0770006999373436,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07294699992053211,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.07964420004282147,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.07120590005069971,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 168
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2626_03.npz",
+      "worker_wall_seconds": 0.41185989999212325,
+      "evaluation_wall_seconds": 1.0526533999945968,
+      "evaluation_started_at": "2026-10-05T16:15:42.630632+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:43.692166+08:00"
+    },
+    {
+      "id": "init_2626_06",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "minimum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-bins * np.minimum(np.ones_like(bins), 1.0)",
+      "internal_key": "032463716071892c6de3327cd27c25ede27c6719cbc2cbbeb8c3c41dc74dc686",
+      "execution_key": "032463716071892c6de3327cd27c25ede27c6719cbc2cbbeb8c3c41dc74dc686",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 7,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.08683549996931106,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.08864030009135604,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.09884130000136793,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.1449558000313118,
+          "cpu_seconds": 0.125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.12047510000411421,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 704
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2626_06.npz",
+      "worker_wall_seconds": 0.5830886999610811,
+      "evaluation_wall_seconds": 1.2006182000041008,
+      "evaluation_started_at": "2026-10-05T16:15:43.700541+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:44.912448+08:00"
+    },
+    {
+      "id": "raw_fragment_gp_2626_080",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 80,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "minimum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 5.129232237822006,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-bins * np.minimum(np.ones_like(bins), 5.129232237822006)",
+      "internal_key": "0dbcd74f95bf04db9920f68d2d2a913457ae29beb52c07c2bc6a2cb88cca79ae",
+      "execution_key": "0dbcd74f95bf04db9920f68d2d2a913457ae29beb52c07c2bc6a2cb88cca79ae",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 7,
+      "depth": 4,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "init_2626_06",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          1
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 1.0,
+      "constant_after": 5.129232237822006,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06835650000721216,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.07134979998227209,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06766599998809397,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06944729993119836,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06759589991997927,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 664
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_080.npz",
+      "worker_wall_seconds": 0.37797620007768273,
+      "evaluation_wall_seconds": 0.9336806000210345,
+      "evaluation_started_at": "2026-10-05T16:20:58.863881+08:00",
+      "evaluation_completed_at": "2026-10-05T16:20:59.809898+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_095",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 95,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "minimum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 2.797147740188373,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-bins * np.minimum(np.ones_like(bins), 2.797147740188373)",
+      "internal_key": "7e426eec907e0ace00679d22902574ce9fe7a8ccf1da77c7cd0b0e7d21534730",
+      "execution_key": "7e426eec907e0ace00679d22902574ce9fe7a8ccf1da77c7cd0b0e7d21534730",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 7,
+      "depth": 4,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2626_080",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          1
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 5.129232237822006,
+      "constant_after": 2.797147740188373,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06871879997197539,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06771390000358224,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06452220003120601,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06630679999943823,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06443450006190687,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 696
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_095.npz",
+      "worker_wall_seconds": 0.367496500024572,
+      "evaluation_wall_seconds": 0.9199098999379203,
+      "evaluation_started_at": "2026-10-05T16:21:13.220510+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:14.147527+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_108",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 108,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "abs",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "minimum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "op": {
+                    "_ast": "Sub"
+                  },
+                  "right": {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-np.abs(np.minimum(bins, bins - item))",
+      "internal_key": "dc6c3c5c8990309a1a4960cdab4b8178bcb32287b5bf1631ef8f519fb5ea3020",
+      "execution_key": "dc6c3c5c8990309a1a4960cdab4b8178bcb32287b5bf1631ef8f519fb5ea3020",
+      "internal_nodes": 7,
+      "internal_depth": 5,
+      "nodes": 7,
+      "depth": 5,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2626_100",
+      "second_parent_id": "raw_fragment_gp_2626_041",
+      "target_path": [
+        [
+          "operand",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "left",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06120659993030131,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.062463700072839856,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.061836999957449734,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06214850000105798,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.061979099991731346,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 540
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_108.npz",
+      "worker_wall_seconds": 0.34618859994225204,
+      "evaluation_wall_seconds": 0.8920332998968661,
+      "evaluation_started_at": "2026-10-05T16:21:25.044170+08:00",
+      "evaluation_completed_at": "2026-10-05T16:21:25.944640+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_048",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 48,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "BinOp",
+                "left": {
+                  "_ast": "Constant",
+                  "value": 0.75,
+                  "kind": null
+                },
+                "op": {
+                  "_ast": "Mult"
+                },
+                "right": {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-np.maximum(bins - 0.75 * item, 0)",
+      "internal_key": "65c114b0c7d410de086d967a4ac1df90efa1f21dc33a55aa6c5da52c9a553e9a",
+      "execution_key": "65c114b0c7d410de086d967a4ac1df90efa1f21dc33a55aa6c5da52c9a553e9a",
+      "internal_nodes": 8,
+      "internal_depth": 5,
+      "nodes": 8,
+      "depth": 5,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "raw_fragment_gp_2626_001",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": "historical_fragment",
+      "fragment_key": "c950eb882cb5acfe2e35ca00723a0a5d9e42410bc29133fa53bec0440f637aa3",
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06536989996675402,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06318160006776452,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06181590002961457,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06185850000474602,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06281290005426854,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 408
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_048.npz",
+      "worker_wall_seconds": 0.34973070002160966,
+      "evaluation_wall_seconds": 0.8964105999330059,
+      "evaluation_started_at": "2026-10-05T16:20:28.013943+08:00",
+      "evaluation_completed_at": "2026-10-05T16:20:28.920651+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2626_041",
+      "seed": 2626,
+      "method": "raw_fragment_gp",
+      "attempt": 41,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "abs",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "minimum",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  {
+                    "_ast": "BinOp",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "op": {
+                      "_ast": "Sub"
+                    },
+                    "right": {
+                      "_ast": "Name",
+                      "id": "item",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    }
+                  }
+                ],
+                "keywords": []
+              }
+            ],
+            "keywords": []
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 1.0,
+            "kind": null
+          }
+        }
+      },
+      "expression": "-(np.abs(np.minimum(bins, bins - item)) - 1.0)",
+      "internal_key": "61e7fbedab00d4a0738aad009b2865daaffc400952c60541bf73e70495a517f2",
+      "execution_key": "61e7fbedab00d4a0738aad009b2865daaffc400952c60541bf73e70495a517f2",
+      "internal_nodes": 9,
+      "internal_depth": 6,
+      "nodes": 9,
+      "depth": 6,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2626_034",
+      "second_parent_id": "raw_fragment_gp_2626_014",
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "left",
+          null
+        ],
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          1
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.06443310005124658,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.09305649995803833,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.0704730999423191,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.09005880006588995,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.08398969995323569,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 664
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2626_041.npz",
+      "worker_wall_seconds": 0.4388261999702081,
+      "evaluation_wall_seconds": 0.9695310000097379,
+      "evaluation_started_at": "2026-10-05T16:20:23.506639+08:00",
+      "evaluation_completed_at": "2026-10-05T16:20:24.486764+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    }
+  ],
+  "completed_at": "2026-10-05T16:21:30.289827+08:00",
+  "LLM_requests": 0,
+  "actual_run_cumulative_seconds": 101.14622450002935,
+  "timing_scope": "full run, includes construction, selection, candidate evaluation, checkpoint I/O; shared initialization separately counted"
+}

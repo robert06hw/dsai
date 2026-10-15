@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "Four methods and 30 paired search seeds",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": {
+    "automated_contract_tests": {"passed": 7, "failed": 0},
+    "saved_data_recreated": {"pilot_dev": 5, "pilot_val": 5, "B": 30, "ordered_items_match": true},
+    "historical_expression_extraction": {"source_programs": 1242, "converted": 1166, "excluded": 76, "raw_keys": 1947, "clean_keys": 1947, "keys_match": true},
+    "matched_bank_rebuilt": {"entries": 1240, "all_entries_exactly_match": true},
+    "full_score_and_packing_conversion_check": {"programs_checked": 5, "all_passed": true, "full_corpus_rechecked_during_packaging": false},
+    "archived_search_replay": {"runs": 120, "child_attempts": 13440, "construction_and_population_transitions_match": true},
+    "B_reevaluation": {"programs": 123, "instance_rows": 3690, "bins_and_both_decision_hashes_match": true},
+    "original_GP_subprocess_worker": {"pilot_dev_instances": 5, "mean_bins": 2066.4, "decisions_match": true}
+  },
+  "new_searches_during_packaging": 0,
+  "new_LLM_calls_during_packaging": 0,
+  "note": "Fresh verification timings are not substituted for the archived experiment timings. The complete source conversion audit remains archived and can be rerun with verify-conversion."
+}

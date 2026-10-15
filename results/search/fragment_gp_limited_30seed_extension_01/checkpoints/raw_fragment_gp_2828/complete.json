@@ -1,0 +1,4456 @@
+{
+  "seed": 2828,
+  "method": "raw_fragment_gp",
+  "nominal_attempts": 128,
+  "new_child_attempts": 112,
+  "initial_best": {
+    "id": "init_2828_01",
+    "source": "Best-fit",
+    "tree": {
+      "_ast": "UnaryOp",
+      "op": {
+        "_ast": "USub"
+      },
+      "operand": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      }
+    },
+    "expression": "-(bins - item)",
+    "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+    "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+    "internal_nodes": 4,
+    "internal_depth": 3,
+    "nodes": 4,
+    "depth": 3,
+    "type": "V",
+    "historical_tree_class": "exact_existing_strategy",
+    "historical_tree_program_ids": [
+      "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+      "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+      "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+      "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+      "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+      "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+    ],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2067,
+        "runtime": 0.0864818999543786,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+        "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2043,
+        "runtime": 0.08785479993093759,
+        "cpu_seconds": 0.09375,
+        "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+        "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+        "new_bins": 2043
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.127337200101465,
+        "cpu_seconds": 0.125,
+        "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+        "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2068,
+        "runtime": 0.10018159996252507,
+        "cpu_seconds": 0.109375,
+        "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+        "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+        "new_bins": 2068
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2063,
+        "runtime": 0.08131629996933043,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+        "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+        "new_bins": 2063
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 724
+    },
+    "warnings": [],
+    "mean_bins": 2066.4,
+    "trace_path": "traces/pilot_dev_init_2828_01.npz",
+    "worker_wall_seconds": 0.5226176999276504,
+    "evaluation_wall_seconds": 1.2351808999665082,
+    "evaluation_started_at": "2026-10-05T16:15:51.581806+08:00",
+    "evaluation_completed_at": "2026-10-05T16:15:52.824745+08:00"
+  },
+  "best": {
+    "id": "raw_fragment_gp_2828_111",
+    "seed": 2828,
+    "method": "raw_fragment_gp",
+    "attempt": 111,
+    "tree": {
+      "_ast": "Call",
+      "func": {
+        "_ast": "Attribute",
+        "value": {
+          "_ast": "Name",
+          "id": "np",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "attr": "where",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "args": [
+        {
+          "_ast": "Compare",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "ops": [
+            {
+              "_ast": "Gt"
+            }
+          ],
+          "comparators": [
+            {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ]
+        },
+        {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Div"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "abs",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "BinOp",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "op": {
+                      "_ast": "Add"
+                    },
+                    "right": {
+                      "_ast": "Constant",
+                      "value": 50.0,
+                      "kind": null
+                    }
+                  }
+                ],
+                "keywords": []
+              },
+              {
+                "_ast": "Constant",
+                "value": 1.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        },
+        {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 20.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      ],
+      "keywords": []
+    },
+    "expression": "np.where(bins > item, bins / np.maximum(np.abs(bins + 50.0), 1.0), np.maximum(item, 20.0))",
+    "internal_key": "3415cccd88eeccdf8c0616ed60a72dd190f12a1fd800079b293a0c23825cb515",
+    "execution_key": "3415cccd88eeccdf8c0616ed60a72dd190f12a1fd800079b293a0c23825cb515",
+    "internal_nodes": 15,
+    "internal_depth": 6,
+    "nodes": 15,
+    "depth": 6,
+    "type": "V",
+    "operator": "subtree_replace",
+    "parent_id": "raw_fragment_gp_2828_059",
+    "second_parent_id": null,
+    "target_path": [
+      [
+        "args",
+        0
+      ]
+    ],
+    "target_type": "BV",
+    "replacement_source": "basic_operators",
+    "fragment_key": null,
+    "construction_error": "",
+    "historical_tree_class": "not_matched_supported_historical_tree",
+    "historical_tree_program_ids": [],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2060,
+        "runtime": 0.0774972999934107,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+        "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+        "new_bins": 2060
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2040,
+        "runtime": 0.07693990005645901,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+        "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+        "new_bins": 2040
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.07651370007079095,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+        "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2067,
+        "runtime": 0.07634390005841851,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+        "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2064,
+        "runtime": 0.07831019989680499,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+        "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+        "new_bins": 2064
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 700
+    },
+    "warnings": [],
+    "mean_bins": 2064.4,
+    "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_111.npz",
+    "worker_wall_seconds": 0.4186467999825254,
+    "evaluation_wall_seconds": 0.9803701000055298,
+    "evaluation_started_at": "2026-10-05T16:24:32.503619+08:00",
+    "evaluation_completed_at": "2026-10-05T16:24:33.493684+08:00",
+    "historical_tree_rediscovered": false,
+    "observed_historical_behavior_signature": null,
+    "observed_historical_behavior_program_count": 0,
+    "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+  },
+  "population": [
+    {
+      "id": "raw_fragment_gp_2828_111",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 111,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Compare",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "ops": [
+              {
+                "_ast": "Gt"
+              }
+            ],
+            "comparators": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ]
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "Name",
+                        "id": "bins",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(bins > item, bins / np.maximum(np.abs(bins + 50.0), 1.0), np.maximum(item, 20.0))",
+      "internal_key": "3415cccd88eeccdf8c0616ed60a72dd190f12a1fd800079b293a0c23825cb515",
+      "execution_key": "3415cccd88eeccdf8c0616ed60a72dd190f12a1fd800079b293a0c23825cb515",
+      "internal_nodes": 15,
+      "internal_depth": 6,
+      "nodes": 15,
+      "depth": 6,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "raw_fragment_gp_2828_059",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "args",
+          0
+        ]
+      ],
+      "target_type": "BV",
+      "replacement_source": "basic_operators",
+      "fragment_key": null,
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.0774972999934107,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.07693990005645901,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07651370007079095,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.07634390005841851,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.07831019989680499,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 700
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_111.npz",
+      "worker_wall_seconds": 0.4186467999825254,
+      "evaluation_wall_seconds": 0.9803701000055298,
+      "evaluation_started_at": "2026-10-05T16:24:32.503619+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:33.493684+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_063",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 63,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "Name",
+                        "id": "bins",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(bins + 50.0), 1.0), item)",
+      "internal_key": "0a3105595b7ddebd74379b0964cb17c31096374f47517a45140a011cf8e73530",
+      "execution_key": "0a3105595b7ddebd74379b0964cb17c31096374f47517a45140a011cf8e73530",
+      "internal_nodes": 17,
+      "internal_depth": 6,
+      "nodes": 17,
+      "depth": 6,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_059",
+      "second_parent_id": "raw_fragment_gp_2828_027",
+      "target_path": [
+        [
+          "args",
+          2
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "args",
+          1
+        ],
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "left",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.08054489991627634,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.08690379990730435,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07994929992128164,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.08062350004911423,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.08188680000603199,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 636
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_063.npz",
+      "worker_wall_seconds": 0.44982679991517216,
+      "evaluation_wall_seconds": 0.9816412000218406,
+      "evaluation_started_at": "2026-10-05T16:23:48.343134+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:49.332378+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_059",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 59,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "Name",
+                        "id": "bins",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(bins + 50.0), 1.0), np.maximum(item, 20.0))",
+      "internal_key": "a3e2b7a54d85fa426f20e9b3fcff2525814de2af94ca5e0eca6fc07a17b7535c",
+      "execution_key": "a3e2b7a54d85fa426f20e9b3fcff2525814de2af94ca5e0eca6fc07a17b7535c",
+      "internal_nodes": 19,
+      "internal_depth": 6,
+      "nodes": 19,
+      "depth": 6,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_027",
+      "second_parent_id": "raw_fragment_gp_2828_044",
+      "target_path": [
+        [
+          "args",
+          1
+        ],
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "left",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "operand",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.08094139990862459,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.07991029997356236,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.08109230000991374,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.08350659999996424,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.08480089996010065,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 396
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_059.npz",
+      "worker_wall_seconds": 0.48798430000897497,
+      "evaluation_wall_seconds": 1.1023859000997618,
+      "evaluation_started_at": "2026-10-05T16:23:44.103113+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:45.215165+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_027",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 27,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "BinOp",
+                        "left": {
+                          "_ast": "Name",
+                          "id": "bins",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "op": {
+                          "_ast": "Sub"
+                        },
+                        "right": {
+                          "_ast": "Name",
+                          "id": "item",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(bins - item + 50.0), 1.0), np.maximum(item, 20.0))",
+      "internal_key": "8e6a3fefb9caf2279de541888003ca674a01cae18f2a01ab8b9ba3b9e56d7cde",
+      "execution_key": "8e6a3fefb9caf2279de541888003ca674a01cae18f2a01ab8b9ba3b9e56d7cde",
+      "internal_nodes": 21,
+      "internal_depth": 7,
+      "nodes": 21,
+      "depth": 7,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "init_2828_13",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "args",
+          1
+        ],
+        [
+          "right",
+          null
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "args",
+          0
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": "basic_operators",
+      "fragment_key": null,
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.08808259991928935,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.08773909998126328,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.08476849994622171,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.08390119997784495,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.08574820007197559,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 744
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_027.npz",
+      "worker_wall_seconds": 0.46310409996658564,
+      "evaluation_wall_seconds": 0.9934332999400795,
+      "evaluation_started_at": "2026-10-05T16:23:15.271492+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:16.270357+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_075",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 75,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "BinOp",
+                        "left": {
+                          "_ast": "Name",
+                          "id": "bins",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "op": {
+                          "_ast": "Sub"
+                        },
+                        "right": {
+                          "_ast": "Name",
+                          "id": "item",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Constant",
+                "value": 10.0,
+                "kind": null
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(bins - item + 50.0), 1.0), np.maximum(10.0, 20.0))",
+      "internal_key": "cc01175d17ff6c9e224e950cede79ac23b9ec3f1a7f246b8d43b8f17508fa91b",
+      "execution_key": "cc01175d17ff6c9e224e950cede79ac23b9ec3f1a7f246b8d43b8f17508fa91b",
+      "internal_nodes": 21,
+      "internal_depth": 7,
+      "nodes": 21,
+      "depth": 7,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "raw_fragment_gp_2828_027",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "args",
+          2
+        ],
+        [
+          "args",
+          0
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": "historical_fragment",
+      "fragment_key": "28d2586e9ed257f47938bbf8b3246eafe1ec91507efaaa7e8103443a3d2ce60c",
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.08830569998826832,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.08622059994377196,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.08818670001346618,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.10981499997433275,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.0852418999420479,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 364
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_075.npz",
+      "worker_wall_seconds": 0.4960174000589177,
+      "evaluation_wall_seconds": 0.9972901999717578,
+      "evaluation_started_at": "2026-10-05T16:23:59.700497+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:00.705091+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_057",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 57,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "BinOp",
+                        "left": {
+                          "_ast": "Name",
+                          "id": "bins",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "op": {
+                          "_ast": "Sub"
+                        },
+                        "right": {
+                          "_ast": "Name",
+                          "id": "item",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 26.225629623487492,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(bins - item + 50.0), 1.0), np.maximum(item, 26.225629623487492))",
+      "internal_key": "f97e7d96b2ce246e9e305191732903c9a1031a69bd43d8b715de010a198ab8f2",
+      "execution_key": "f97e7d96b2ce246e9e305191732903c9a1031a69bd43d8b715de010a198ab8f2",
+      "internal_nodes": 21,
+      "internal_depth": 7,
+      "nodes": 21,
+      "depth": 7,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2828_027",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "args",
+          2
+        ],
+        [
+          "args",
+          1
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 20.0,
+      "constant_after": 26.225629623487492,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.08564229996409267,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.08454680000431836,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.08494169998448342,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.08348330005537719,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.12283220002427697,
+          "cpu_seconds": 0.125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 356
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_057.npz",
+      "worker_wall_seconds": 0.4987741999793798,
+      "evaluation_wall_seconds": 1.0393577999202535,
+      "evaluation_started_at": "2026-10-05T16:23:41.825013+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:42.875286+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_106",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 106,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "BinOp",
+                        "left": {
+                          "_ast": "Name",
+                          "id": "bins",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "op": {
+                          "_ast": "Sub"
+                        },
+                        "right": {
+                          "_ast": "Name",
+                          "id": "item",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 26.225629623487492,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), (bins - item) / np.maximum(np.abs(bins - item + 50.0), 1.0), np.maximum(item, 26.225629623487492))",
+      "internal_key": "6a9d87df1358ef97acb23b0e3fb01dfb4b331ba9db7df99712fe0bd3632becca",
+      "execution_key": "6a9d87df1358ef97acb23b0e3fb01dfb4b331ba9db7df99712fe0bd3632becca",
+      "internal_nodes": 23,
+      "internal_depth": 7,
+      "nodes": 23,
+      "depth": 7,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_057",
+      "second_parent_id": "raw_fragment_gp_2828_072",
+      "target_path": [
+        [
+          "args",
+          1
+        ],
+        [
+          "left",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "right",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.11394890001975,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.09404879994690418,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.09030539996456355,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.09162270009983331,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.08801379997748882,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 176
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_106.npz",
+      "worker_wall_seconds": 0.512438700068742,
+      "evaluation_wall_seconds": 1.0493726000422612,
+      "evaluation_started_at": "2026-10-05T16:24:28.045351+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:29.106423+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_052",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 52,
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "BinOp",
+                "left": {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "op": {
+                    "_ast": "Sub"
+                  },
+                  "right": {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                },
+                "op": {
+                  "_ast": "Div"
+                },
+                "right": {
+                  "_ast": "Constant",
+                  "value": 20.0,
+                  "kind": null
+                }
+              },
+              "op": {
+                "_ast": "Mult"
+              },
+              "right": {
+                "_ast": "BinOp",
+                "left": {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "op": {
+                    "_ast": "Sub"
+                  },
+                  "right": {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                },
+                "op": {
+                  "_ast": "Div"
+                },
+                "right": {
+                  "_ast": "Constant",
+                  "value": 20.0,
+                  "kind": null
+                }
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "BinOp",
+                      "left": {
+                        "_ast": "BinOp",
+                        "left": {
+                          "_ast": "Name",
+                          "id": "bins",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "op": {
+                          "_ast": "Sub"
+                        },
+                        "right": {
+                          "_ast": "Name",
+                          "id": "item",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        }
+                      },
+                      "op": {
+                        "_ast": "Add"
+                      },
+                      "right": {
+                        "_ast": "Constant",
+                        "value": 50.0,
+                        "kind": null
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), (bins - item) / 20.0 * ((bins - item) / 20.0) / np.maximum(np.abs(bins - item + 50.0), 1.0), np.maximum(item, 20.0))",
+      "internal_key": "69683a5d55bd9eb1f29de2c44d3d33b892720df0f416a783bde463259f7be9b1",
+      "execution_key": "69683a5d55bd9eb1f29de2c44d3d33b892720df0f416a783bde463259f7be9b1",
+      "internal_nodes": 31,
+      "internal_depth": 7,
+      "nodes": 31,
+      "depth": 7,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "raw_fragment_gp_2828_027",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "args",
+          1
+        ],
+        [
+          "left",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": "historical_fragment",
+      "fragment_key": "cea172860cc2929ef0a672d508cda32a8fd5560c86171f58d52a1abad8a70895",
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2060,
+          "runtime": 0.10403980000410229,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+          "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+          "new_bins": 2060
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2040,
+          "runtime": 0.10303090000525117,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+          "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+          "new_bins": 2040
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.1030187999131158,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+          "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2067,
+          "runtime": 0.10376169998198748,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+          "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2064,
+          "runtime": 0.10299199994187802,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+          "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+          "new_bins": 2064
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 720
+      },
+      "warnings": [],
+      "mean_bins": 2064.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_052.npz",
+      "worker_wall_seconds": 0.5556952999904752,
+      "evaluation_wall_seconds": 1.1007657999871299,
+      "evaluation_started_at": "2026-10-05T16:23:36.483125+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:37.588355+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "init_2828_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.0864818999543786,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.08785479993093759,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.127337200101465,
+          "cpu_seconds": 0.125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.10018159996252507,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.08131629996933043,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 724
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2828_01.npz",
+      "worker_wall_seconds": 0.5226176999276504,
+      "evaluation_wall_seconds": 1.2351808999665082,
+      "evaluation_started_at": "2026-10-05T16:15:51.581806+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:52.824745+08:00"
+    },
+    {
+      "id": "raw_fragment_gp_2828_044",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 44,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "ones_like",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.ones_like(bins) * -bins",
+      "internal_key": "9091615ef2334631d7cf842c769142f6721c0a233f17a27e8f34974af2def1f8",
+      "execution_key": "9091615ef2334631d7cf842c769142f6721c0a233f17a27e8f34974af2def1f8",
+      "internal_nodes": 5,
+      "internal_depth": 3,
+      "nodes": 5,
+      "depth": 3,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "init_2828_07",
+      "second_parent_id": null,
+      "target_path": [],
+      "target_type": "V",
+      "replacement_source": "basic_operators",
+      "fragment_key": null,
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.0656147999688983,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06557050009723753,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.062063499935902655,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.06641030008904636,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06404930003918707,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 748
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_044.npz",
+      "worker_wall_seconds": 0.3578290999867022,
+      "evaluation_wall_seconds": 0.8895605999277905,
+      "evaluation_started_at": "2026-10-05T16:23:29.190334+08:00",
+      "evaluation_completed_at": "2026-10-05T16:23:30.085311+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_097",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 97,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "square",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "minimum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "UnaryOp",
+                  "op": {
+                    "_ast": "USub"
+                  },
+                  "operand": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 25.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-np.maximum(np.square(bins), np.minimum(-bins, 25.0))",
+      "internal_key": "1c5f161a373a0fac9f58f4afcfd33f5799b2cc5816da3fe0c361d60380559ba7",
+      "execution_key": "1c5f161a373a0fac9f58f4afcfd33f5799b2cc5816da3fe0c361d60380559ba7",
+      "internal_nodes": 8,
+      "internal_depth": 5,
+      "nodes": 8,
+      "depth": 5,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_088",
+      "second_parent_id": "raw_fragment_gp_2828_072",
+      "target_path": [
+        [
+          "operand",
+          null
+        ],
+        [
+          "args",
+          0
+        ],
+        [
+          "args",
+          0
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "left",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.08690560003742576,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.08349140000063926,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06693069997709244,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.07060229999478906,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06860519992187619,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 616
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_097.npz",
+      "worker_wall_seconds": 0.414301999961026,
+      "evaluation_wall_seconds": 0.9669458999997005,
+      "evaluation_started_at": "2026-10-05T16:24:18.777071+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:19.750100+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_088",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 88,
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "square",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "op": {
+                    "_ast": "Sub"
+                  },
+                  "right": {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "minimum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "UnaryOp",
+                  "op": {
+                    "_ast": "USub"
+                  },
+                  "operand": {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 25.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "-np.maximum(np.square(bins - item), np.minimum(-bins, 25.0))",
+      "internal_key": "fb993e2cff5747d3b646329390eb3ae922de099634c02181029598c9097704f8",
+      "execution_key": "fb993e2cff5747d3b646329390eb3ae922de099634c02181029598c9097704f8",
+      "internal_nodes": 10,
+      "internal_depth": 5,
+      "nodes": 10,
+      "depth": 5,
+      "type": "V",
+      "operator": "subtree_replace",
+      "parent_id": "init_2828_01",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "operand",
+          null
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": "basic_operators",
+      "fragment_key": null,
+      "construction_error": "",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07829049997963011,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.06772610009647906,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.06580290000420064,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.0663541000103578,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.06620640004985034,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 348
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_088.npz",
+      "worker_wall_seconds": 0.3795869000023231,
+      "evaluation_wall_seconds": 0.9844700999092311,
+      "evaluation_started_at": "2026-10-05T16:24:11.754029+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:12.747901+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_099",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 99,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "Invert"
+              },
+              "operand": {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "logical_and",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "keywords": []
+              }
+            },
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 5.654065814652995,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(~np.logical_and(bins > item, bins > item), bins, 5.654065814652995) - (bins - item)",
+      "internal_key": "2b8029cfd8644610ad513eab76d8b7addd5362ca4f2fcc4c13db9174e68835b3",
+      "execution_key": "2b8029cfd8644610ad513eab76d8b7addd5362ca4f2fcc4c13db9174e68835b3",
+      "internal_nodes": 15,
+      "internal_depth": 6,
+      "nodes": 15,
+      "depth": 6,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_079",
+      "second_parent_id": "raw_fragment_gp_2828_093",
+      "target_path": [
+        [
+          "left",
+          null
+        ],
+        [
+          "args",
+          2
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "right",
+          null
+        ],
+        [
+          "left",
+          null
+        ],
+        [
+          "left",
+          null
+        ],
+        [
+          "left",
+          null
+        ],
+        [
+          "right",
+          null
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.12193919997662306,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "a40dba809ad0677fb25b446b0b963a792a73101334d97e1860b1041c56fcb8f9",
+          "chosen_capacity_hash": "377fd251c33d0bed9151979adb0b60de55131525ce11fff2d5677c8158c0e9ab",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.09650460002012551,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "2f7ecd1c131439ad14936a36d7ad6256d2f94d3d70541cf298320363aea10af4",
+          "chosen_capacity_hash": "ae60a5d52a0f4c7eb8750e0101a243ae10d82e624f409ad4a7da962b361212f9",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.08214589999988675,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "4fc629aacaa606298dcf0d8662beb34f19e41e4ea1edcb0fd3f20e78f8fc4dfc",
+          "chosen_capacity_hash": "d8d465a41a73558a94b425397fd7be6ab10a165587ac850a0f2a9abedcfa0e0a",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.07562129991129041,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "b2c9be5baf1191aabcd645266a57e6659a8aca7fbe703aa322286ed520cc0c00",
+          "chosen_capacity_hash": "9689fc8e4e2ecfcc9f07197118a9faf8f082225565ca77eda76b30e4485a2124",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.07686439994722605,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "a055277fb9f1b67507629255e85078945d01e87848345343f1d53f48a48dd4c4",
+          "chosen_capacity_hash": "5aeee808cd80fa398702943a0471797f1fe2e1ae53085c383bd38e8b3d8dde60",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 360
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_099.npz",
+      "worker_wall_seconds": 0.49564269999973476,
+      "evaluation_wall_seconds": 1.063170999987051,
+      "evaluation_started_at": "2026-10-05T16:24:20.919959+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:21.990724+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": null,
+      "observed_historical_behavior_program_count": 0,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_079",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 79,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "Invert"
+              },
+              "operand": {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "logical_and",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "keywords": []
+              }
+            },
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 2.4216722649364604,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(~np.logical_and(bins > item, bins > item), bins, 2.4216722649364604) - (bins - item)",
+      "internal_key": "30be53e4277ea0a441fbe2247c94c00d3937388594befed61ac54932917b7fdf",
+      "execution_key": "30be53e4277ea0a441fbe2247c94c00d3937388594befed61ac54932917b7fdf",
+      "internal_nodes": 15,
+      "internal_depth": 6,
+      "nodes": 15,
+      "depth": 6,
+      "type": "V",
+      "operator": "crossover",
+      "parent_id": "raw_fragment_gp_2828_014",
+      "second_parent_id": "raw_fragment_gp_2828_065",
+      "target_path": [
+        [
+          "left",
+          null
+        ],
+        [
+          "args",
+          2
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "donor_path": [
+        [
+          "args",
+          1
+        ]
+      ],
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07490150001831353,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "a86000cbd1441b06e54fb798179f248032131ddf9ddfc4740f213dcc3c5f9172",
+          "chosen_capacity_hash": "8dd566cdc9da01973a6556f33b77ffec9e996d075db60a9ad53e3ef3f11a56e6",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.09090039995498955,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "a23231d4d91df5045f2ef95185cbb2f20f9729bfeb1c0360080818ad4bd25aea",
+          "chosen_capacity_hash": "cead9e5a98f84193540409d083015315c3b39ae50d445d4870f7170f091badbb",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07808669994119555,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.08226319996174425,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.07576780009549111,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "ff7235928ea0638360b9d16f4f6699c956889ebf0bab296c77851d7e88d0f423",
+          "chosen_capacity_hash": "0fb825cb63ed74814511318c4fa701641042f5943da871ed5b91df53e0db5ad8",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 588
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_079.npz",
+      "worker_wall_seconds": 0.4343898999504745,
+      "evaluation_wall_seconds": 0.9898729000706226,
+      "evaluation_started_at": "2026-10-05T16:24:02.920280+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:03.920127+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "877fdced8bd59c0784c435de521ca34dbc45adf5f10aa6a4f6953fc1105a1494",
+      "observed_historical_behavior_program_count": 4,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_102",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 102,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "Invert"
+              },
+              "operand": {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "logical_and",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "keywords": []
+              }
+            },
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 0.17907534684212045,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(~np.logical_and(bins > item, bins > item), bins, 0.17907534684212045) - (bins - item)",
+      "internal_key": "e97332024bb5cfcbacaf3e45652fb7dca741c5beaa323131bddcde3b04de7e99",
+      "execution_key": "e97332024bb5cfcbacaf3e45652fb7dca741c5beaa323131bddcde3b04de7e99",
+      "internal_nodes": 15,
+      "internal_depth": 6,
+      "nodes": 15,
+      "depth": 6,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2828_014",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "left",
+          null
+        ],
+        [
+          "args",
+          2
+        ]
+      ],
+      "target_type": "S",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": -5.0,
+      "constant_after": 0.17907534684212045,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.07946719997562468,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.09854150004684925,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.10809059999883175,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.07472689996939152,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.0805701999925077,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 688
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_102.npz",
+      "worker_wall_seconds": 0.47857629996724427,
+      "evaluation_wall_seconds": 1.1172466999851167,
+      "evaluation_started_at": "2026-10-05T16:24:24.314339+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:25.443417+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    },
+    {
+      "id": "raw_fragment_gp_2828_101",
+      "seed": 2828,
+      "method": "raw_fragment_gp",
+      "attempt": 101,
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "Invert"
+              },
+              "operand": {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "logical_and",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_ast": "Compare",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "ops": [
+                      {
+                        "_ast": "Gt"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_ast": "Name",
+                        "id": "item",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "keywords": []
+              }
+            },
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.8009203090537733,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(~np.logical_and(bins > item, bins > item), bins, 1.8009203090537733) - (bins - item)",
+      "internal_key": "ee7aa65525ff11b415cbb98ab7f0febdf8e84f30a8886ba1f8d86ce1f77d4ee0",
+      "execution_key": "ee7aa65525ff11b415cbb98ab7f0febdf8e84f30a8886ba1f8d86ce1f77d4ee0",
+      "internal_nodes": 15,
+      "internal_depth": 6,
+      "nodes": 15,
+      "depth": 6,
+      "type": "V",
+      "operator": "constant_mutation",
+      "parent_id": "raw_fragment_gp_2828_099",
+      "second_parent_id": null,
+      "target_path": [
+        [
+          "left",
+          null
+        ],
+        [
+          "args",
+          2
+        ]
+      ],
+      "target_type": "V",
+      "replacement_source": null,
+      "fragment_key": null,
+      "construction_error": "",
+      "constant_before": 5.654065814652995,
+      "constant_after": 1.8009203090537733,
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.08849540003575385,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.08364309999160469,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.07991349999792874,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.0935200999956578,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.0741044000023976,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 768
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_raw_fragment_gp_2828_101.npz",
+      "worker_wall_seconds": 0.45526560000143945,
+      "evaluation_wall_seconds": 1.0375826000235975,
+      "evaluation_started_at": "2026-10-05T16:24:23.173229+08:00",
+      "evaluation_completed_at": "2026-10-05T16:24:24.220449+08:00",
+      "historical_tree_rediscovered": false,
+      "observed_historical_behavior_signature": "47e61907464874b41e25759546fecec37e8b97982e82ca0ba420aa7f76287bc2",
+      "observed_historical_behavior_program_count": 244,
+      "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+    }
+  ],
+  "completed_at": "2026-10-05T16:24:34.615125+08:00",
+  "LLM_requests": 0,
+  "actual_run_cumulative_seconds": 98.98280159989372,
+  "timing_scope": "full run, includes construction, selection, candidate evaluation, checkpoint I/O; shared initialization separately counted"
+}

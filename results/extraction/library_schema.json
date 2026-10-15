@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "frozen": true,
+  "source_programs": 1242,
+  "inputs": {
+    "item": "numeric scalar",
+    "bins": "read-only 1D feasible-bin remaining capacities"
+  },
+  "types": {
+    "S": "numeric scalar (including NumPy 0D)",
+    "V": "numeric vector with len(bins)",
+    "BS": "boolean scalar",
+    "BV": "boolean vector with len(bins)"
+  },
+  "np_dependency": "import numpy as np; builtin callable dependencies explicitly supported by typed_tree.infer",
+  "key": "sha256(ast.dump(expression, include_attributes=False)); normalized negative literals must canonicalize after parse before key computation",
+  "source_line": "original source AST line for this expanded subtree root; local expansion may duplicate source nodes",
+  "serialized_expression_line": "line when catalog reparsed single expression; not an original source line",
+  "expanded_path": "ordered (AST field, list index or null) components from complete score root",
+  "raw_storage": "one record per exact structural key; every source occurrence and origin multiplicity retained",
+  "clean_storage": "type-checked normalization and certain structural key merge only",
+  "normalization": "local dependencies inlined to item/bins; numeric unary plus, literal unary sign, double negation only",
+  "no_deletion_on": "quality, Worst-fit, constant/order-invariant, finite-probe behavior, future GP size limits",
+  "frozen_libraries": "Search may sample only these libraries; never append based on search outputs."
+}

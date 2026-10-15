@@ -1,0 +1,1360 @@
+{
+  "id": "P4_temporary_06",
+  "parent": "P4",
+  "representation": "temporary",
+  "sample": 6,
+  "seed": 20261309,
+  "request": {
+    "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+    "system": "You are a Python programmer. Return only the modified score function.",
+    "prompt": "Modify this bin-scoring function to reduce the number of bins used in online bin packing. Keep the interface score(item, bins), and output only Python code.\nitem is a positive float; bins is a nonempty 1D numpy float64 array of feasible remaining capacities, each >= item. Capacity is 100. The evaluator preallocates one empty bin per item, scores all feasible bins, chooses the highest score, and breaks ties by the earliest bin index. Item order is fixed.\nReturn a finite numpy float64 array with exactly the same shape as bins. Use one pure deterministic function with straight-line local assignments and a return. numpy is already available as np. You may import numpy as np. Use numpy vector operations; do not use loops, helper functions, randomness, I/O, external state, or modify bins. No reflections or explanation.\nParent function:\ndef score(item, bins):\n    v1 = (bins - item)\n    v2 = (v1 * v1)\n    v3 = (bins + 1.0)\n    v4 = (v2 / v3)\n    v5 = -(v4)\n    v6 = (0.2 * v1)\n    v7 = (v5 + v6)\n    return v7\n",
+    "stream": false,
+    "keep_alive": "30m",
+    "options": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 40,
+      "num_predict": 512,
+      "num_ctx": 2048,
+      "seed": 20261309
+    }
+  },
+  "started_unix": 1791033283.6690106,
+  "response": {
+    "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+    "created_at": "2026-10-03T13:14:44.7507613Z",
+    "response": "```\ndef score(item, bins):\n    v1 = bins - item\n    v2 = v1 * v1\n    v3 = bins + 1.0\n    v4 = v2 / v3\n    v5 = -v4\n    v6 = 0.2 * v1\n    v7 = v5 + v6\n    return v7\n```",
+    "done": true,
+    "done_reason": "stop",
+    "context": [
+      151644,
+      8948,
+      198,
+      2610,
+      525,
+      264,
+      13027,
+      47788,
+      13,
+      3411,
+      1172,
+      279,
+      10807,
+      5456,
+      729,
+      13,
+      151645,
+      198,
+      151644,
+      872,
+      198,
+      44427,
+      419,
+      9544,
+      30319,
+      5503,
+      729,
+      311,
+      7949,
+      279,
+      1372,
+      315,
+      28518,
+      1483,
+      304,
+      2860,
+      9544,
+      35713,
+      13,
+      13655,
+      279,
+      3749,
+      5456,
+      5393,
+      11,
+      28518,
+      701,
+      323,
+      2550,
+      1172,
+      13027,
+      2038,
+      624,
+      1203,
+      374,
+      264,
+      6785,
+      2224,
+      26,
+      28518,
+      374,
+      264,
+      2477,
+      3194,
+      220,
+      16,
+      35,
+      8591,
+      2224,
+      21,
+      19,
+      1334,
+      315,
+      42203,
+      9664,
+      58439,
+      11,
+      1817,
+      2604,
+      1509,
+      13,
+      40110,
+      374,
+      220,
+      16,
+      15,
+      15,
+      13,
+      576,
+      69810,
+      855,
+      4742,
+      973,
+      825,
+      4287,
+      9544,
+      817,
+      1509,
+      11,
+      12205,
+      678,
+      42203,
+      28518,
+      11,
+      39911,
+      279,
+      8426,
+      5456,
+      11,
+      323,
+      18303,
+      19818,
+      553,
+      279,
+      29658,
+      9544,
+      1922,
+      13,
+      5739,
+      1973,
+      374,
+      8356,
+      624,
+      5598,
+      264,
+      34226,
+      8591,
+      2224,
+      21,
+      19,
+      1334,
+      448,
+      6896,
+      279,
+      1852,
+      6083,
+      438,
+      28518,
+      13,
+      5443,
+      825,
+      10526,
+      72349,
+      729,
+      448,
+      7678,
+      8447,
+      2205,
+      31172,
+      323,
+      264,
+      470,
+      13,
+      8591,
+      374,
+      2669,
+      2500,
+      438,
+      2595,
+      13,
+      1446,
+      1231,
+      1159,
+      8591,
+      438,
+      2595,
+      13,
+      5443,
+      8591,
+      4621,
+      7525,
+      26,
+      653,
+      537,
+      990,
+      29753,
+      11,
+      13137,
+      5746,
+      11,
+      86690,
+      11,
+      358,
+      17532,
+      11,
+      9250,
+      1584,
+      11,
+      476,
+      5602,
+      28518,
+      13,
+      2308,
+      62751,
+      476,
+      16148,
+      624,
+      8387,
+      729,
+      510,
+      750,
+      5456,
+      5393,
+      11,
+      28518,
+      982,
+      262,
+      348,
+      16,
+      284,
+      320,
+      39330,
+      481,
+      1509,
+      340,
+      262,
+      348,
+      17,
+      284,
+      320,
+      85,
+      16,
+      353,
+      348,
+      16,
+      340,
+      262,
+      348,
+      18,
+      284,
+      320,
+      39330,
+      488,
+      220,
+      16,
+      13,
+      15,
+      340,
+      262,
+      348,
+      19,
+      284,
+      320,
+      85,
+      17,
+      608,
+      348,
+      18,
+      340,
+      262,
+      348,
+      20,
+      284,
+      28406,
+      85,
+      19,
+      340,
+      262,
+      348,
+      21,
+      284,
+      320,
+      15,
+      13,
+      17,
+      353,
+      348,
+      16,
+      340,
+      262,
+      348,
+      22,
+      284,
+      320,
+      85,
+      20,
+      488,
+      348,
+      21,
+      340,
+      262,
+      470,
+      348,
+      22,
+      198,
+      151645,
+      198,
+      151644,
+      77091,
+      198,
+      13874,
+      3989,
+      750,
+      5456,
+      5393,
+      11,
+      28518,
+      982,
+      262,
+      348,
+      16,
+      284,
+      28518,
+      481,
+      1509,
+      198,
+      262,
+      348,
+      17,
+      284,
+      348,
+      16,
+      353,
+      348,
+      16,
+      198,
+      262,
+      348,
+      18,
+      284,
+      28518,
+      488,
+      220,
+      16,
+      13,
+      15,
+      198,
+      262,
+      348,
+      19,
+      284,
+      348,
+      17,
+      608,
+      348,
+      18,
+      198,
+      262,
+      348,
+      20,
+      284,
+      481,
+      85,
+      19,
+      198,
+      262,
+      348,
+      21,
+      284,
+      220,
+      15,
+      13,
+      17,
+      353,
+      348,
+      16,
+      198,
+      262,
+      348,
+      22,
+      284,
+      348,
+      20,
+      488,
+      348,
+      21,
+      198,
+      262,
+      470,
+      348,
+      22,
+      198,
+      73594
+    ],
+    "total_duration": 1080252300,
+    "load_duration": 10002000,
+    "prompt_eval_count": 290,
+    "prompt_eval_cached_count": 207,
+    "prompt_eval_duration": 36391000,
+    "eval_count": 84,
+    "eval_duration": 1025259000
+  },
+  "generation_seconds": 1.0851554999826476,
+  "evaluation": {
+    "valid": true,
+    "metrics": {
+      "explore": {
+        "mean_bins": 127.15625,
+        "mean_excess_lb": 0.08636662358165781,
+        "instances": [
+          {
+            "bins": 130,
+            "trace_hash": "84c8bac78b84a91ad11158c072858fa9570da72715c91ee52dbdd21a1175682b",
+            "score_hash": null,
+            "id": "explore_uniform_00",
+            "lb": 122
+          },
+          {
+            "bins": 144,
+            "trace_hash": "bfa3e60b938f3804b6a21ae7cad3d3bbaf30963020104eb068779f2b09f8b185",
+            "score_hash": null,
+            "id": "explore_uniform_01",
+            "lb": 130
+          },
+          {
+            "bins": 127,
+            "trace_hash": "73b706e64c091e2a1de53d7c2d676bcdd365d49f43167797aa03ebfeaf3242b5",
+            "score_hash": null,
+            "id": "explore_uniform_02",
+            "lb": 120
+          },
+          {
+            "bins": 141,
+            "trace_hash": "1196b8e36b79b770471a9cafe67ced262a975e962f906194767c6ac136aff019",
+            "score_hash": null,
+            "id": "explore_uniform_03",
+            "lb": 132
+          },
+          {
+            "bins": 130,
+            "trace_hash": "dcd25de559e3041cddb977eeb66ac0d92545b99fd157553d4ff550ef7b11424d",
+            "score_hash": null,
+            "id": "explore_uniform_04",
+            "lb": 123
+          },
+          {
+            "bins": 135,
+            "trace_hash": "5f1eab587793aa21db6e3fd83b8ce72b8fe884e223fff91ec3f9fa0aea74e365",
+            "score_hash": null,
+            "id": "explore_uniform_05",
+            "lb": 126
+          },
+          {
+            "bins": 132,
+            "trace_hash": "021406590151e823a9b5dcfefd5631d9b49c797a5535ed8c41c23c10b02fe064",
+            "score_hash": null,
+            "id": "explore_uniform_06",
+            "lb": 124
+          },
+          {
+            "bins": 137,
+            "trace_hash": "c335b0fc44cae3f770e39ed2870822778430b12306d18ed2c6978764c3b08b41",
+            "score_hash": null,
+            "id": "explore_uniform_07",
+            "lb": 130
+          },
+          {
+            "bins": 112,
+            "trace_hash": "97f378004d1c75c5ae202902aadc0050f63f4ba10d0166f5ba6aa39b91cc6270",
+            "score_hash": null,
+            "id": "explore_weibull_00",
+            "lb": 106
+          },
+          {
+            "bins": 107,
+            "trace_hash": "798dd449210c92dfacc54f1777edd3742549dc8e5b81ca6eb453b54a311e9825",
+            "score_hash": null,
+            "id": "explore_weibull_01",
+            "lb": 100
+          },
+          {
+            "bins": 113,
+            "trace_hash": "055dddc75d56e8c22bf7dc5a628cd5b9787e51c443563ce10a8b022ef7a21b60",
+            "score_hash": null,
+            "id": "explore_weibull_02",
+            "lb": 105
+          },
+          {
+            "bins": 116,
+            "trace_hash": "173d18ba02eb07f719b644d3f2b998987ad8272a6be93a76a06367440020eba0",
+            "score_hash": null,
+            "id": "explore_weibull_03",
+            "lb": 107
+          },
+          {
+            "bins": 112,
+            "trace_hash": "e0ea4d1200a65c873c90926e45cae16ff0b5af20b3bf93765d1d011446b9a959",
+            "score_hash": null,
+            "id": "explore_weibull_04",
+            "lb": 105
+          },
+          {
+            "bins": 113,
+            "trace_hash": "9bd6c2c7efbaeb2828fd8a0e4b7781d5620994876d5c9e49c40eb4e53783be2c",
+            "score_hash": null,
+            "id": "explore_weibull_05",
+            "lb": 106
+          },
+          {
+            "bins": 111,
+            "trace_hash": "ba9a77c254f44fd7428df0edc3fd35ee93b13372d485d16d0709fa5ddb088d67",
+            "score_hash": null,
+            "id": "explore_weibull_06",
+            "lb": 105
+          },
+          {
+            "bins": 111,
+            "trace_hash": "e130f7ba8abdc5bd9528dd6a1392601912b90364cbd00be564587abd47e9efca",
+            "score_hash": null,
+            "id": "explore_weibull_07",
+            "lb": 105
+          },
+          {
+            "bins": 141,
+            "trace_hash": "dcec22632be8b86bfd86b8dac8b68671ea55ce81f395c5e8cc42acf3ffa8bd78",
+            "score_hash": null,
+            "id": "explore_bimodal_00",
+            "lb": 116
+          },
+          {
+            "bins": 140,
+            "trace_hash": "685908a08dd48a11ba6ed54fd315200f0f493279cfc288054dc7538930e4d8b9",
+            "score_hash": null,
+            "id": "explore_bimodal_01",
+            "lb": 117
+          },
+          {
+            "bins": 128,
+            "trace_hash": "8d382337b1d8b42258854ed35df9f39545e5da1d6fe98cfca6874bd7d0fdba5a",
+            "score_hash": null,
+            "id": "explore_bimodal_02",
+            "lb": 109
+          },
+          {
+            "bins": 121,
+            "trace_hash": "7e44b4cef4c973757063ed66c79f102e9762eac17c47adcb16092343635680f0",
+            "score_hash": null,
+            "id": "explore_bimodal_03",
+            "lb": 105
+          },
+          {
+            "bins": 131,
+            "trace_hash": "aa0221034b1d815d1a78ba93a194a3c87d9041b0e456e00ceb69b463356e6c81",
+            "score_hash": null,
+            "id": "explore_bimodal_04",
+            "lb": 112
+          },
+          {
+            "bins": 130,
+            "trace_hash": "f6a3d1a5882665b695a97f6f57af9c5805bff747833b3dbec33854d72a4ab5e3",
+            "score_hash": null,
+            "id": "explore_bimodal_05",
+            "lb": 110
+          },
+          {
+            "bins": 123,
+            "trace_hash": "826771a97e88c038534fafbbfcebd13e9f795e95dc2016501a6ef4c9cabe3654",
+            "score_hash": null,
+            "id": "explore_bimodal_06",
+            "lb": 106
+          },
+          {
+            "bins": 129,
+            "trace_hash": "c71914bcc18944076d0607cde4a8a3f2fbb63d19374bd6cfcfb4e891672a03da",
+            "score_hash": null,
+            "id": "explore_bimodal_07",
+            "lb": 109
+          },
+          {
+            "bins": 128,
+            "trace_hash": "a3ccc20b215230c8f3c4b015251c4b68359bdeec289658a30de017c2388a4e78",
+            "score_hash": null,
+            "id": "explore_discrete_00",
+            "lb": 125
+          },
+          {
+            "bins": 128,
+            "trace_hash": "363c79eac063f0bc547853a8a1e11b6c34db8a1673cfcb6dd4920f43c6449b6d",
+            "score_hash": null,
+            "id": "explore_discrete_01",
+            "lb": 126
+          },
+          {
+            "bins": 132,
+            "trace_hash": "06d4d9e29656e37c0eaefa0a78d8c05e54f93251e5483f29bf5f947f28833dc4",
+            "score_hash": null,
+            "id": "explore_discrete_02",
+            "lb": 129
+          },
+          {
+            "bins": 135,
+            "trace_hash": "417b014d0d61d58c382a5348f1bf8fb3c706f7c23ede51f34beb34973c53d170",
+            "score_hash": null,
+            "id": "explore_discrete_03",
+            "lb": 130
+          },
+          {
+            "bins": 127,
+            "trace_hash": "a7a859be9d487c10da725372b562ace3dd9b9bf283b8e6594086fbcbdb3d64a3",
+            "score_hash": null,
+            "id": "explore_discrete_04",
+            "lb": 124
+          },
+          {
+            "bins": 137,
+            "trace_hash": "a82cd01e96b4291901095276c0efec48f9cbcdb4accbd2946024a7718b0ce6b8",
+            "score_hash": null,
+            "id": "explore_discrete_05",
+            "lb": 132
+          },
+          {
+            "bins": 135,
+            "trace_hash": "fb2e5e03bf793d923d68658ff4c53fb1781ffcaf74aee68713f42c04896b9ed3",
+            "score_hash": null,
+            "id": "explore_discrete_06",
+            "lb": 129
+          },
+          {
+            "bins": 133,
+            "trace_hash": "9f848cc62b6e269a5d467b1dddb2fc325991b08c8406fa3ea71866b76df77879",
+            "score_hash": null,
+            "id": "explore_discrete_07",
+            "lb": 128
+          }
+        ],
+        "delta_bins": 0.0,
+        "improved": false,
+        "different_decision_instances": 0
+      },
+      "check": {
+        "mean_bins": 128.3125,
+        "mean_excess_lb": 0.09101141957002035,
+        "instances": [
+          {
+            "bins": 137,
+            "trace_hash": "d2a0178ad282359686d62284c5372fd4febadaab0c0a00549f7ee2f276652446",
+            "score_hash": null,
+            "id": "check_uniform_00",
+            "lb": 129
+          },
+          {
+            "bins": 144,
+            "trace_hash": "32b7ee673bacc6ea6d581c0c099875c9f92bf29b93e670f005a89eb9069ea4a4",
+            "score_hash": null,
+            "id": "check_uniform_01",
+            "lb": 135
+          },
+          {
+            "bins": 145,
+            "trace_hash": "a5912c6d4546cb8843b1f2ee755e735635e2b9af27ee1bfa23f2a558c246efe7",
+            "score_hash": null,
+            "id": "check_uniform_02",
+            "lb": 134
+          },
+          {
+            "bins": 136,
+            "trace_hash": "bd551d3abbe02a583825360f5ad5edb63655e7b711765e85a0dfe92c98b1999a",
+            "score_hash": null,
+            "id": "check_uniform_03",
+            "lb": 127
+          },
+          {
+            "bins": 133,
+            "trace_hash": "19a36b682ec4fee4ef3e5f80d6905690fa499bf777806d09d7c315c58e233e49",
+            "score_hash": null,
+            "id": "check_uniform_04",
+            "lb": 126
+          },
+          {
+            "bins": 138,
+            "trace_hash": "c43b66d21ad307c60a9c614c90edc0a0bd210111562f31dd8b8c55bb526b7522",
+            "score_hash": null,
+            "id": "check_uniform_05",
+            "lb": 130
+          },
+          {
+            "bins": 137,
+            "trace_hash": "efc5e8616c865971d5c9d5f077adcc53a7e384cde65cb6a40f5c6b63fd0fdf3b",
+            "score_hash": null,
+            "id": "check_uniform_06",
+            "lb": 127
+          },
+          {
+            "bins": 138,
+            "trace_hash": "a3acf92ae4aea26b363213d69086a19452ae669d0ef0962142695ad1af71316d",
+            "score_hash": null,
+            "id": "check_uniform_07",
+            "lb": 129
+          },
+          {
+            "bins": 111,
+            "trace_hash": "6cc7fe7fc94593bd4a57cc4b938dddab7c92a7c9115acc82f6571ff431140a6c",
+            "score_hash": null,
+            "id": "check_weibull_00",
+            "lb": 102
+          },
+          {
+            "bins": 108,
+            "trace_hash": "59aae09de878a8746ea707d4d4fd6ebd9fa88ffbc158f100004a64a5eaffe546",
+            "score_hash": null,
+            "id": "check_weibull_01",
+            "lb": 101
+          },
+          {
+            "bins": 109,
+            "trace_hash": "94d5e1ba9fcdbd8adec6aaf724bf2d6b38a2e2bd6b39becb007124ccaa81a1d3",
+            "score_hash": null,
+            "id": "check_weibull_02",
+            "lb": 102
+          },
+          {
+            "bins": 112,
+            "trace_hash": "583d1b77205b6ce81fa2f9a2510a92fa4bc9e7fa1c7aeabddc6aa71d9ee1e719",
+            "score_hash": null,
+            "id": "check_weibull_03",
+            "lb": 106
+          },
+          {
+            "bins": 110,
+            "trace_hash": "4284665dfd469ca1a3401383374f5a7b36376079bfac844d1acd15d4386e3417",
+            "score_hash": null,
+            "id": "check_weibull_04",
+            "lb": 104
+          },
+          {
+            "bins": 108,
+            "trace_hash": "6d9bdb9e0ac3a7ebd8a12e4830a06b4b582d6dce9ecca0c5276009183c22a104",
+            "score_hash": null,
+            "id": "check_weibull_05",
+            "lb": 102
+          },
+          {
+            "bins": 111,
+            "trace_hash": "36849e2d5ea92b7d106856137cd603d72c5af605bc48f495a035f65a882e19b2",
+            "score_hash": null,
+            "id": "check_weibull_06",
+            "lb": 105
+          },
+          {
+            "bins": 112,
+            "trace_hash": "fa031e0653d20a28ffe30833a256a8ac4988c4e8737d2337235fdc1b4bd1b11d",
+            "score_hash": null,
+            "id": "check_weibull_07",
+            "lb": 105
+          },
+          {
+            "bins": 119,
+            "trace_hash": "5de15af590f5d27344246ef3bb89f7b19ae60ac4ecbf2f68ec496af3549f966b",
+            "score_hash": null,
+            "id": "check_bimodal_00",
+            "lb": 102
+          },
+          {
+            "bins": 121,
+            "trace_hash": "ee95a21f74ef5b49ca55bf8bbe077f1fd9b543e7a7d618cb385aaa3a57856092",
+            "score_hash": null,
+            "id": "check_bimodal_01",
+            "lb": 106
+          },
+          {
+            "bins": 141,
+            "trace_hash": "af6e1d0235ca16b935d2f716361ad37dc470f1c51c307fec90a68bb152a2177b",
+            "score_hash": null,
+            "id": "check_bimodal_02",
+            "lb": 118
+          },
+          {
+            "bins": 120,
+            "trace_hash": "cbad56058d5d386164f782e397542d44225f94a1d2fc3f3b962756f2ef97f6cd",
+            "score_hash": null,
+            "id": "check_bimodal_03",
+            "lb": 105
+          },
+          {
+            "bins": 143,
+            "trace_hash": "a7d06d00d5bc0c5bfb0f7cb6b26131c3a945ec1b7e3947ae4d9c3fe291855aa7",
+            "score_hash": null,
+            "id": "check_bimodal_04",
+            "lb": 117
+          },
+          {
+            "bins": 128,
+            "trace_hash": "fc2ae1406ba8a6ccd15d9ca25982067097b584526aa40d65757879a6c071b7af",
+            "score_hash": null,
+            "id": "check_bimodal_05",
+            "lb": 110
+          },
+          {
+            "bins": 121,
+            "trace_hash": "7dadfda3d919913696e4fd170b97b66dae501c41f1388e2d903784dba94b6f10",
+            "score_hash": null,
+            "id": "check_bimodal_06",
+            "lb": 103
+          },
+          {
+            "bins": 129,
+            "trace_hash": "c0f3750cc41b2561ca0183df8a1f1627b4b112639210c5792ef0873141807de5",
+            "score_hash": null,
+            "id": "check_bimodal_07",
+            "lb": 108
+          },
+          {
+            "bins": 137,
+            "trace_hash": "1a0c56f12b0cea54e390baa23bd79465b1d5374d2d5cc36196317e340de0437e",
+            "score_hash": null,
+            "id": "check_discrete_00",
+            "lb": 131
+          },
+          {
+            "bins": 135,
+            "trace_hash": "250e3c512437e9fc8f2bfe85fd2ea36a790e86a06a10573e74dfc2712aa65aaf",
+            "score_hash": null,
+            "id": "check_discrete_01",
+            "lb": 130
+          },
+          {
+            "bins": 136,
+            "trace_hash": "d5968a6fc94fd2ca788113105d27ff25ceb3ea3e2f5fd73c00c4a7a0c31303ad",
+            "score_hash": null,
+            "id": "check_discrete_02",
+            "lb": 129
+          },
+          {
+            "bins": 128,
+            "trace_hash": "67e40497e9a0c4050d109613a0081e72fa407285f769ae37aac0dc7a4d1a60ba",
+            "score_hash": null,
+            "id": "check_discrete_03",
+            "lb": 126
+          },
+          {
+            "bins": 137,
+            "trace_hash": "aeeea96413152e0e2d35e63505833b9b873597a4d6b53c6671e8791aad1e43e9",
+            "score_hash": null,
+            "id": "check_discrete_04",
+            "lb": 129
+          },
+          {
+            "bins": 157,
+            "trace_hash": "cf6ba3ffd23a383e1d524bee60e7ea5cb2433030d11dfc3a192eef3eeece586e",
+            "score_hash": null,
+            "id": "check_discrete_05",
+            "lb": 140
+          },
+          {
+            "bins": 131,
+            "trace_hash": "d6f4da783dab2ffe5fc639fd18e65e1cb0ee7a30875b12fc4248f7d12b074243",
+            "score_hash": null,
+            "id": "check_discrete_06",
+            "lb": 126
+          },
+          {
+            "bins": 134,
+            "trace_hash": "6fdba32f2f5c83a42011ba23894989bb6f01502b5ed2609cbf7b3820549d9140",
+            "score_hash": null,
+            "id": "check_discrete_07",
+            "lb": 126
+          }
+        ],
+        "delta_bins": 0.0,
+        "improved": false,
+        "different_decision_instances": 0
+      }
+    },
+    "evaluation_seconds": 0.3423638000385836
+  },
+  "candidate_sha256": "02b614200c6534112fe24a175b5e22f239b5997b559b73de1905244f39cd7df6",
+  "finalized": true,
+  "initial_evaluation": {
+    "valid": true,
+    "metrics": {
+      "explore": {
+        "mean_bins": 127.15625,
+        "mean_excess_lb": 0.08636662358165781,
+        "instances": [
+          {
+            "bins": 130,
+            "trace_hash": "84c8bac78b84a91ad11158c072858fa9570da72715c91ee52dbdd21a1175682b",
+            "score_hash": null,
+            "id": "explore_uniform_00",
+            "lb": 122
+          },
+          {
+            "bins": 144,
+            "trace_hash": "bfa3e60b938f3804b6a21ae7cad3d3bbaf30963020104eb068779f2b09f8b185",
+            "score_hash": null,
+            "id": "explore_uniform_01",
+            "lb": 130
+          },
+          {
+            "bins": 127,
+            "trace_hash": "73b706e64c091e2a1de53d7c2d676bcdd365d49f43167797aa03ebfeaf3242b5",
+            "score_hash": null,
+            "id": "explore_uniform_02",
+            "lb": 120
+          },
+          {
+            "bins": 141,
+            "trace_hash": "1196b8e36b79b770471a9cafe67ced262a975e962f906194767c6ac136aff019",
+            "score_hash": null,
+            "id": "explore_uniform_03",
+            "lb": 132
+          },
+          {
+            "bins": 130,
+            "trace_hash": "dcd25de559e3041cddb977eeb66ac0d92545b99fd157553d4ff550ef7b11424d",
+            "score_hash": null,
+            "id": "explore_uniform_04",
+            "lb": 123
+          },
+          {
+            "bins": 135,
+            "trace_hash": "5f1eab587793aa21db6e3fd83b8ce72b8fe884e223fff91ec3f9fa0aea74e365",
+            "score_hash": null,
+            "id": "explore_uniform_05",
+            "lb": 126
+          },
+          {
+            "bins": 132,
+            "trace_hash": "021406590151e823a9b5dcfefd5631d9b49c797a5535ed8c41c23c10b02fe064",
+            "score_hash": null,
+            "id": "explore_uniform_06",
+            "lb": 124
+          },
+          {
+            "bins": 137,
+            "trace_hash": "c335b0fc44cae3f770e39ed2870822778430b12306d18ed2c6978764c3b08b41",
+            "score_hash": null,
+            "id": "explore_uniform_07",
+            "lb": 130
+          },
+          {
+            "bins": 112,
+            "trace_hash": "97f378004d1c75c5ae202902aadc0050f63f4ba10d0166f5ba6aa39b91cc6270",
+            "score_hash": null,
+            "id": "explore_weibull_00",
+            "lb": 106
+          },
+          {
+            "bins": 107,
+            "trace_hash": "798dd449210c92dfacc54f1777edd3742549dc8e5b81ca6eb453b54a311e9825",
+            "score_hash": null,
+            "id": "explore_weibull_01",
+            "lb": 100
+          },
+          {
+            "bins": 113,
+            "trace_hash": "055dddc75d56e8c22bf7dc5a628cd5b9787e51c443563ce10a8b022ef7a21b60",
+            "score_hash": null,
+            "id": "explore_weibull_02",
+            "lb": 105
+          },
+          {
+            "bins": 116,
+            "trace_hash": "173d18ba02eb07f719b644d3f2b998987ad8272a6be93a76a06367440020eba0",
+            "score_hash": null,
+            "id": "explore_weibull_03",
+            "lb": 107
+          },
+          {
+            "bins": 112,
+            "trace_hash": "e0ea4d1200a65c873c90926e45cae16ff0b5af20b3bf93765d1d011446b9a959",
+            "score_hash": null,
+            "id": "explore_weibull_04",
+            "lb": 105
+          },
+          {
+            "bins": 113,
+            "trace_hash": "9bd6c2c7efbaeb2828fd8a0e4b7781d5620994876d5c9e49c40eb4e53783be2c",
+            "score_hash": null,
+            "id": "explore_weibull_05",
+            "lb": 106
+          },
+          {
+            "bins": 111,
+            "trace_hash": "ba9a77c254f44fd7428df0edc3fd35ee93b13372d485d16d0709fa5ddb088d67",
+            "score_hash": null,
+            "id": "explore_weibull_06",
+            "lb": 105
+          },
+          {
+            "bins": 111,
+            "trace_hash": "e130f7ba8abdc5bd9528dd6a1392601912b90364cbd00be564587abd47e9efca",
+            "score_hash": null,
+            "id": "explore_weibull_07",
+            "lb": 105
+          },
+          {
+            "bins": 141,
+            "trace_hash": "dcec22632be8b86bfd86b8dac8b68671ea55ce81f395c5e8cc42acf3ffa8bd78",
+            "score_hash": null,
+            "id": "explore_bimodal_00",
+            "lb": 116
+          },
+          {
+            "bins": 140,
+            "trace_hash": "685908a08dd48a11ba6ed54fd315200f0f493279cfc288054dc7538930e4d8b9",
+            "score_hash": null,
+            "id": "explore_bimodal_01",
+            "lb": 117
+          },
+          {
+            "bins": 128,
+            "trace_hash": "8d382337b1d8b42258854ed35df9f39545e5da1d6fe98cfca6874bd7d0fdba5a",
+            "score_hash": null,
+            "id": "explore_bimodal_02",
+            "lb": 109
+          },
+          {
+            "bins": 121,
+            "trace_hash": "7e44b4cef4c973757063ed66c79f102e9762eac17c47adcb16092343635680f0",
+            "score_hash": null,
+            "id": "explore_bimodal_03",
+            "lb": 105
+          },
+          {
+            "bins": 131,
+            "trace_hash": "aa0221034b1d815d1a78ba93a194a3c87d9041b0e456e00ceb69b463356e6c81",
+            "score_hash": null,
+            "id": "explore_bimodal_04",
+            "lb": 112
+          },
+          {
+            "bins": 130,
+            "trace_hash": "f6a3d1a5882665b695a97f6f57af9c5805bff747833b3dbec33854d72a4ab5e3",
+            "score_hash": null,
+            "id": "explore_bimodal_05",
+            "lb": 110
+          },
+          {
+            "bins": 123,
+            "trace_hash": "826771a97e88c038534fafbbfcebd13e9f795e95dc2016501a6ef4c9cabe3654",
+            "score_hash": null,
+            "id": "explore_bimodal_06",
+            "lb": 106
+          },
+          {
+            "bins": 129,
+            "trace_hash": "c71914bcc18944076d0607cde4a8a3f2fbb63d19374bd6cfcfb4e891672a03da",
+            "score_hash": null,
+            "id": "explore_bimodal_07",
+            "lb": 109
+          },
+          {
+            "bins": 128,
+            "trace_hash": "a3ccc20b215230c8f3c4b015251c4b68359bdeec289658a30de017c2388a4e78",
+            "score_hash": null,
+            "id": "explore_discrete_00",
+            "lb": 125
+          },
+          {
+            "bins": 128,
+            "trace_hash": "363c79eac063f0bc547853a8a1e11b6c34db8a1673cfcb6dd4920f43c6449b6d",
+            "score_hash": null,
+            "id": "explore_discrete_01",
+            "lb": 126
+          },
+          {
+            "bins": 132,
+            "trace_hash": "06d4d9e29656e37c0eaefa0a78d8c05e54f93251e5483f29bf5f947f28833dc4",
+            "score_hash": null,
+            "id": "explore_discrete_02",
+            "lb": 129
+          },
+          {
+            "bins": 135,
+            "trace_hash": "417b014d0d61d58c382a5348f1bf8fb3c706f7c23ede51f34beb34973c53d170",
+            "score_hash": null,
+            "id": "explore_discrete_03",
+            "lb": 130
+          },
+          {
+            "bins": 127,
+            "trace_hash": "a7a859be9d487c10da725372b562ace3dd9b9bf283b8e6594086fbcbdb3d64a3",
+            "score_hash": null,
+            "id": "explore_discrete_04",
+            "lb": 124
+          },
+          {
+            "bins": 137,
+            "trace_hash": "a82cd01e96b4291901095276c0efec48f9cbcdb4accbd2946024a7718b0ce6b8",
+            "score_hash": null,
+            "id": "explore_discrete_05",
+            "lb": 132
+          },
+          {
+            "bins": 135,
+            "trace_hash": "fb2e5e03bf793d923d68658ff4c53fb1781ffcaf74aee68713f42c04896b9ed3",
+            "score_hash": null,
+            "id": "explore_discrete_06",
+            "lb": 129
+          },
+          {
+            "bins": 133,
+            "trace_hash": "9f848cc62b6e269a5d467b1dddb2fc325991b08c8406fa3ea71866b76df77879",
+            "score_hash": null,
+            "id": "explore_discrete_07",
+            "lb": 128
+          }
+        ],
+        "delta_bins": 0.0,
+        "improved": false,
+        "different_decision_instances": 0
+      },
+      "check": {
+        "mean_bins": 128.3125,
+        "mean_excess_lb": 0.09101141957002035,
+        "instances": [
+          {
+            "bins": 137,
+            "trace_hash": "d2a0178ad282359686d62284c5372fd4febadaab0c0a00549f7ee2f276652446",
+            "score_hash": null,
+            "id": "check_uniform_00",
+            "lb": 129
+          },
+          {
+            "bins": 144,
+            "trace_hash": "32b7ee673bacc6ea6d581c0c099875c9f92bf29b93e670f005a89eb9069ea4a4",
+            "score_hash": null,
+            "id": "check_uniform_01",
+            "lb": 135
+          },
+          {
+            "bins": 145,
+            "trace_hash": "a5912c6d4546cb8843b1f2ee755e735635e2b9af27ee1bfa23f2a558c246efe7",
+            "score_hash": null,
+            "id": "check_uniform_02",
+            "lb": 134
+          },
+          {
+            "bins": 136,
+            "trace_hash": "bd551d3abbe02a583825360f5ad5edb63655e7b711765e85a0dfe92c98b1999a",
+            "score_hash": null,
+            "id": "check_uniform_03",
+            "lb": 127
+          },
+          {
+            "bins": 133,
+            "trace_hash": "19a36b682ec4fee4ef3e5f80d6905690fa499bf777806d09d7c315c58e233e49",
+            "score_hash": null,
+            "id": "check_uniform_04",
+            "lb": 126
+          },
+          {
+            "bins": 138,
+            "trace_hash": "c43b66d21ad307c60a9c614c90edc0a0bd210111562f31dd8b8c55bb526b7522",
+            "score_hash": null,
+            "id": "check_uniform_05",
+            "lb": 130
+          },
+          {
+            "bins": 137,
+            "trace_hash": "efc5e8616c865971d5c9d5f077adcc53a7e384cde65cb6a40f5c6b63fd0fdf3b",
+            "score_hash": null,
+            "id": "check_uniform_06",
+            "lb": 127
+          },
+          {
+            "bins": 138,
+            "trace_hash": "a3acf92ae4aea26b363213d69086a19452ae669d0ef0962142695ad1af71316d",
+            "score_hash": null,
+            "id": "check_uniform_07",
+            "lb": 129
+          },
+          {
+            "bins": 111,
+            "trace_hash": "6cc7fe7fc94593bd4a57cc4b938dddab7c92a7c9115acc82f6571ff431140a6c",
+            "score_hash": null,
+            "id": "check_weibull_00",
+            "lb": 102
+          },
+          {
+            "bins": 108,
+            "trace_hash": "59aae09de878a8746ea707d4d4fd6ebd9fa88ffbc158f100004a64a5eaffe546",
+            "score_hash": null,
+            "id": "check_weibull_01",
+            "lb": 101
+          },
+          {
+            "bins": 109,
+            "trace_hash": "94d5e1ba9fcdbd8adec6aaf724bf2d6b38a2e2bd6b39becb007124ccaa81a1d3",
+            "score_hash": null,
+            "id": "check_weibull_02",
+            "lb": 102
+          },
+          {
+            "bins": 112,
+            "trace_hash": "583d1b77205b6ce81fa2f9a2510a92fa4bc9e7fa1c7aeabddc6aa71d9ee1e719",
+            "score_hash": null,
+            "id": "check_weibull_03",
+            "lb": 106
+          },
+          {
+            "bins": 110,
+            "trace_hash": "4284665dfd469ca1a3401383374f5a7b36376079bfac844d1acd15d4386e3417",
+            "score_hash": null,
+            "id": "check_weibull_04",
+            "lb": 104
+          },
+          {
+            "bins": 108,
+            "trace_hash": "6d9bdb9e0ac3a7ebd8a12e4830a06b4b582d6dce9ecca0c5276009183c22a104",
+            "score_hash": null,
+            "id": "check_weibull_05",
+            "lb": 102
+          },
+          {
+            "bins": 111,
+            "trace_hash": "36849e2d5ea92b7d106856137cd603d72c5af605bc48f495a035f65a882e19b2",
+            "score_hash": null,
+            "id": "check_weibull_06",
+            "lb": 105
+          },
+          {
+            "bins": 112,
+            "trace_hash": "fa031e0653d20a28ffe30833a256a8ac4988c4e8737d2337235fdc1b4bd1b11d",
+            "score_hash": null,
+            "id": "check_weibull_07",
+            "lb": 105
+          },
+          {
+            "bins": 119,
+            "trace_hash": "5de15af590f5d27344246ef3bb89f7b19ae60ac4ecbf2f68ec496af3549f966b",
+            "score_hash": null,
+            "id": "check_bimodal_00",
+            "lb": 102
+          },
+          {
+            "bins": 121,
+            "trace_hash": "ee95a21f74ef5b49ca55bf8bbe077f1fd9b543e7a7d618cb385aaa3a57856092",
+            "score_hash": null,
+            "id": "check_bimodal_01",
+            "lb": 106
+          },
+          {
+            "bins": 141,
+            "trace_hash": "af6e1d0235ca16b935d2f716361ad37dc470f1c51c307fec90a68bb152a2177b",
+            "score_hash": null,
+            "id": "check_bimodal_02",
+            "lb": 118
+          },
+          {
+            "bins": 120,
+            "trace_hash": "cbad56058d5d386164f782e397542d44225f94a1d2fc3f3b962756f2ef97f6cd",
+            "score_hash": null,
+            "id": "check_bimodal_03",
+            "lb": 105
+          },
+          {
+            "bins": 143,
+            "trace_hash": "a7d06d00d5bc0c5bfb0f7cb6b26131c3a945ec1b7e3947ae4d9c3fe291855aa7",
+            "score_hash": null,
+            "id": "check_bimodal_04",
+            "lb": 117
+          },
+          {
+            "bins": 128,
+            "trace_hash": "fc2ae1406ba8a6ccd15d9ca25982067097b584526aa40d65757879a6c071b7af",
+            "score_hash": null,
+            "id": "check_bimodal_05",
+            "lb": 110
+          },
+          {
+            "bins": 121,
+            "trace_hash": "7dadfda3d919913696e4fd170b97b66dae501c41f1388e2d903784dba94b6f10",
+            "score_hash": null,
+            "id": "check_bimodal_06",
+            "lb": 103
+          },
+          {
+            "bins": 129,
+            "trace_hash": "c0f3750cc41b2561ca0183df8a1f1627b4b112639210c5792ef0873141807de5",
+            "score_hash": null,
+            "id": "check_bimodal_07",
+            "lb": 108
+          },
+          {
+            "bins": 137,
+            "trace_hash": "1a0c56f12b0cea54e390baa23bd79465b1d5374d2d5cc36196317e340de0437e",
+            "score_hash": null,
+            "id": "check_discrete_00",
+            "lb": 131
+          },
+          {
+            "bins": 135,
+            "trace_hash": "250e3c512437e9fc8f2bfe85fd2ea36a790e86a06a10573e74dfc2712aa65aaf",
+            "score_hash": null,
+            "id": "check_discrete_01",
+            "lb": 130
+          },
+          {
+            "bins": 136,
+            "trace_hash": "d5968a6fc94fd2ca788113105d27ff25ceb3ea3e2f5fd73c00c4a7a0c31303ad",
+            "score_hash": null,
+            "id": "check_discrete_02",
+            "lb": 129
+          },
+          {
+            "bins": 128,
+            "trace_hash": "67e40497e9a0c4050d109613a0081e72fa407285f769ae37aac0dc7a4d1a60ba",
+            "score_hash": null,
+            "id": "check_discrete_03",
+            "lb": 126
+          },
+          {
+            "bins": 137,
+            "trace_hash": "aeeea96413152e0e2d35e63505833b9b873597a4d6b53c6671e8791aad1e43e9",
+            "score_hash": null,
+            "id": "check_discrete_04",
+            "lb": 129
+          },
+          {
+            "bins": 157,
+            "trace_hash": "cf6ba3ffd23a383e1d524bee60e7ea5cb2433030d11dfc3a192eef3eeece586e",
+            "score_hash": null,
+            "id": "check_discrete_05",
+            "lb": 140
+          },
+          {
+            "bins": 131,
+            "trace_hash": "d6f4da783dab2ffe5fc639fd18e65e1cb0ee7a30875b12fc4248f7d12b074243",
+            "score_hash": null,
+            "id": "check_discrete_06",
+            "lb": 126
+          },
+          {
+            "bins": 134,
+            "trace_hash": "6fdba32f2f5c83a42011ba23894989bb6f01502b5ed2609cbf7b3820549d9140",
+            "score_hash": null,
+            "id": "check_discrete_07",
+            "lb": 126
+          }
+        ],
+        "delta_bins": 0.0,
+        "improved": false,
+        "different_decision_instances": 0
+      }
+    },
+    "evaluation_seconds": 0.3770087999291718
+  },
+  "evaluation_revision": "pure_numpy_whitelist_fix"
+}

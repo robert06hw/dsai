@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsai6707-fragment-gp"
+version = "1.0.0"
+description = "Historical fragment priors for CPU genetic programming in online bin packing"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.3.5"]
+
+[project.scripts]
+dsai = "dsai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

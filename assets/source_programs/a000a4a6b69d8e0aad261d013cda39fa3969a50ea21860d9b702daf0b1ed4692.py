@@ -1,0 +1,2 @@
+def score(item, bins):
+    return np.maximum(-((bins - item) * (bins - item)) + 25.0, 0)

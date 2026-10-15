@@ -1,0 +1,4699 @@
+{
+  "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "top_k": 40,
+  "num_predict": 512,
+  "num_ctx": 2048,
+  "generation_timeout_seconds": 300,
+  "evaluation_timeout_seconds": 30,
+  "system": "You are a Python programmer. Return only the modified score function.",
+  "prompt_template": "Modify this bin-scoring function to reduce the number of bins used in online bin packing. Keep the interface score(item, bins), and output only Python code.\nitem is a positive float; bins is a nonempty 1D numpy float64 array of feasible remaining capacities, each >= item. Capacity is 100. The evaluator preallocates one empty bin per item, scores all feasible bins, chooses the highest score, and breaks ties by the earliest bin index. Item order is fixed.\nReturn a finite numpy float64 array with exactly the same shape as bins. Use one pure deterministic function with straight-line local assignments and a return. numpy is already available as np. You may import numpy as np. Use numpy vector operations; do not use loops, helper functions, randomness, I/O, external state, or modify bins. No reflections or explanation.\nParent function:\n{code}",
+  "capacity": 100,
+  "no_feedback": true,
+  "locked_at": "2026-10-04T12:22:26.694338+08:00",
+  "experiment": "Four-policy three-seed EC exploration",
+  "methods": [
+    "fixed_temporary",
+    "fixed_meaningful",
+    "random",
+    "adaptive"
+  ],
+  "population_size": 8,
+  "tournament_size": 2,
+  "budget_per_method_seed": 96,
+  "total_generations": 1152,
+  "pilot_generations": 384,
+  "original_fixed_best_representation": "temporary",
+  "fixed_meaningful_added": true,
+  "fixed_meaningful_reason": "Requested additional comparator after highest aggregate improvement in prior confirmation; does not replace original temporary baseline",
+  "master_seeds": [
+    20501001,
+    20502001,
+    20503001
+  ],
+  "core_schedule": [
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 1,
+      "tournament_indices": [
+        4,
+        3
+      ],
+      "generation_seed": 20510001,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 2,
+      "tournament_indices": [
+        7,
+        0
+      ],
+      "generation_seed": 20510002,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 3,
+      "tournament_indices": [
+        5,
+        5
+      ],
+      "generation_seed": 20510003,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 4,
+      "tournament_indices": [
+        1,
+        4
+      ],
+      "generation_seed": 20510004,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 5,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20510005,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 6,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20510006,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 7,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20510007,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 8,
+      "tournament_indices": [
+        7,
+        2
+      ],
+      "generation_seed": 20510008,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 9,
+      "tournament_indices": [
+        6,
+        7
+      ],
+      "generation_seed": 20510009,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 10,
+      "tournament_indices": [
+        0,
+        3
+      ],
+      "generation_seed": 20510010,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 11,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20510011,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 12,
+      "tournament_indices": [
+        4,
+        3
+      ],
+      "generation_seed": 20510012,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 13,
+      "tournament_indices": [
+        0,
+        4
+      ],
+      "generation_seed": 20510013,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 14,
+      "tournament_indices": [
+        3,
+        3
+      ],
+      "generation_seed": 20510014,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 15,
+      "tournament_indices": [
+        6,
+        5
+      ],
+      "generation_seed": 20510015,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 16,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20510016,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 17,
+      "tournament_indices": [
+        0,
+        2
+      ],
+      "generation_seed": 20510017,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 18,
+      "tournament_indices": [
+        1,
+        5
+      ],
+      "generation_seed": 20510018,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 19,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20510019,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 20,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20510020,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 21,
+      "tournament_indices": [
+        0,
+        2
+      ],
+      "generation_seed": 20510021,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 22,
+      "tournament_indices": [
+        1,
+        6
+      ],
+      "generation_seed": 20510022,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 23,
+      "tournament_indices": [
+        3,
+        1
+      ],
+      "generation_seed": 20510023,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 24,
+      "tournament_indices": [
+        4,
+        4
+      ],
+      "generation_seed": 20510024,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 25,
+      "tournament_indices": [
+        7,
+        3
+      ],
+      "generation_seed": 20510025,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 26,
+      "tournament_indices": [
+        2,
+        1
+      ],
+      "generation_seed": 20510026,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 27,
+      "tournament_indices": [
+        5,
+        6
+      ],
+      "generation_seed": 20510027,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 28,
+      "tournament_indices": [
+        1,
+        5
+      ],
+      "generation_seed": 20510028,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 29,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20510029,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 30,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20510030,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 31,
+      "tournament_indices": [
+        4,
+        6
+      ],
+      "generation_seed": 20510031,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 32,
+      "tournament_indices": [
+        4,
+        5
+      ],
+      "generation_seed": 20510032,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 33,
+      "tournament_indices": [
+        4,
+        2
+      ],
+      "generation_seed": 20510033,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 34,
+      "tournament_indices": [
+        5,
+        1
+      ],
+      "generation_seed": 20510034,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 35,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20510035,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 36,
+      "tournament_indices": [
+        6,
+        7
+      ],
+      "generation_seed": 20510036,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 37,
+      "tournament_indices": [
+        0,
+        7
+      ],
+      "generation_seed": 20510037,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 38,
+      "tournament_indices": [
+        1,
+        0
+      ],
+      "generation_seed": 20510038,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 39,
+      "tournament_indices": [
+        6,
+        3
+      ],
+      "generation_seed": 20510039,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 40,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20510040,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 41,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20510041,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 42,
+      "tournament_indices": [
+        5,
+        1
+      ],
+      "generation_seed": 20510042,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 43,
+      "tournament_indices": [
+        7,
+        1
+      ],
+      "generation_seed": 20510043,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 44,
+      "tournament_indices": [
+        0,
+        6
+      ],
+      "generation_seed": 20510044,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 45,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20510045,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 46,
+      "tournament_indices": [
+        4,
+        3
+      ],
+      "generation_seed": 20510046,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 47,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20510047,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 48,
+      "tournament_indices": [
+        3,
+        0
+      ],
+      "generation_seed": 20510048,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 49,
+      "tournament_indices": [
+        5,
+        1
+      ],
+      "generation_seed": 20510049,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 50,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20510050,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 51,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20510051,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 52,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20510052,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 53,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20510053,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 54,
+      "tournament_indices": [
+        3,
+        7
+      ],
+      "generation_seed": 20510054,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 55,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20510055,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 56,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20510056,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 57,
+      "tournament_indices": [
+        4,
+        4
+      ],
+      "generation_seed": 20510057,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 58,
+      "tournament_indices": [
+        6,
+        1
+      ],
+      "generation_seed": 20510058,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 59,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20510059,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 60,
+      "tournament_indices": [
+        1,
+        6
+      ],
+      "generation_seed": 20510060,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 61,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20510061,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 62,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20510062,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 63,
+      "tournament_indices": [
+        7,
+        3
+      ],
+      "generation_seed": 20510063,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 64,
+      "tournament_indices": [
+        7,
+        2
+      ],
+      "generation_seed": 20510064,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 65,
+      "tournament_indices": [
+        6,
+        5
+      ],
+      "generation_seed": 20510065,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 66,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20510066,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 67,
+      "tournament_indices": [
+        0,
+        7
+      ],
+      "generation_seed": 20510067,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 68,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20510068,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 69,
+      "tournament_indices": [
+        4,
+        6
+      ],
+      "generation_seed": 20510069,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 70,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20510070,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 71,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20510071,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 72,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20510072,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 73,
+      "tournament_indices": [
+        7,
+        0
+      ],
+      "generation_seed": 20510073,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 74,
+      "tournament_indices": [
+        5,
+        3
+      ],
+      "generation_seed": 20510074,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 75,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20510075,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 76,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20510076,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 77,
+      "tournament_indices": [
+        7,
+        2
+      ],
+      "generation_seed": 20510077,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 78,
+      "tournament_indices": [
+        1,
+        7
+      ],
+      "generation_seed": 20510078,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 79,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20510079,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 80,
+      "tournament_indices": [
+        6,
+        3
+      ],
+      "generation_seed": 20510080,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 81,
+      "tournament_indices": [
+        1,
+        4
+      ],
+      "generation_seed": 20510081,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 82,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20510082,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 83,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20510083,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 84,
+      "tournament_indices": [
+        2,
+        0
+      ],
+      "generation_seed": 20510084,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 85,
+      "tournament_indices": [
+        1,
+        3
+      ],
+      "generation_seed": 20510085,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 86,
+      "tournament_indices": [
+        2,
+        3
+      ],
+      "generation_seed": 20510086,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 87,
+      "tournament_indices": [
+        0,
+        0
+      ],
+      "generation_seed": 20510087,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 88,
+      "tournament_indices": [
+        0,
+        6
+      ],
+      "generation_seed": 20510088,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 89,
+      "tournament_indices": [
+        2,
+        2
+      ],
+      "generation_seed": 20510089,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 90,
+      "tournament_indices": [
+        1,
+        4
+      ],
+      "generation_seed": 20510090,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 91,
+      "tournament_indices": [
+        7,
+        7
+      ],
+      "generation_seed": 20510091,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 92,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20510092,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 93,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20510093,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 94,
+      "tournament_indices": [
+        2,
+        7
+      ],
+      "generation_seed": 20510094,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 95,
+      "tournament_indices": [
+        2,
+        0
+      ],
+      "generation_seed": 20510095,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 0,
+      "master_seed": 20501001,
+      "step": 96,
+      "tournament_indices": [
+        5,
+        3
+      ],
+      "generation_seed": 20510096,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 1,
+      "tournament_indices": [
+        7,
+        7
+      ],
+      "generation_seed": 20511001,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 2,
+      "tournament_indices": [
+        0,
+        7
+      ],
+      "generation_seed": 20511002,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 3,
+      "tournament_indices": [
+        0,
+        0
+      ],
+      "generation_seed": 20511003,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 4,
+      "tournament_indices": [
+        7,
+        1
+      ],
+      "generation_seed": 20511004,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 5,
+      "tournament_indices": [
+        6,
+        3
+      ],
+      "generation_seed": 20511005,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 6,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20511006,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 7,
+      "tournament_indices": [
+        6,
+        1
+      ],
+      "generation_seed": 20511007,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 8,
+      "tournament_indices": [
+        4,
+        2
+      ],
+      "generation_seed": 20511008,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 9,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20511009,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 10,
+      "tournament_indices": [
+        4,
+        3
+      ],
+      "generation_seed": 20511010,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 11,
+      "tournament_indices": [
+        0,
+        5
+      ],
+      "generation_seed": 20511011,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 12,
+      "tournament_indices": [
+        2,
+        4
+      ],
+      "generation_seed": 20511012,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 13,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20511013,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 14,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20511014,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 15,
+      "tournament_indices": [
+        3,
+        3
+      ],
+      "generation_seed": 20511015,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 16,
+      "tournament_indices": [
+        7,
+        6
+      ],
+      "generation_seed": 20511016,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 17,
+      "tournament_indices": [
+        6,
+        4
+      ],
+      "generation_seed": 20511017,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 18,
+      "tournament_indices": [
+        6,
+        1
+      ],
+      "generation_seed": 20511018,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 19,
+      "tournament_indices": [
+        7,
+        3
+      ],
+      "generation_seed": 20511019,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 20,
+      "tournament_indices": [
+        4,
+        3
+      ],
+      "generation_seed": 20511020,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 21,
+      "tournament_indices": [
+        1,
+        5
+      ],
+      "generation_seed": 20511021,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 22,
+      "tournament_indices": [
+        4,
+        1
+      ],
+      "generation_seed": 20511022,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 23,
+      "tournament_indices": [
+        3,
+        0
+      ],
+      "generation_seed": 20511023,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 24,
+      "tournament_indices": [
+        5,
+        7
+      ],
+      "generation_seed": 20511024,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 25,
+      "tournament_indices": [
+        5,
+        6
+      ],
+      "generation_seed": 20511025,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 26,
+      "tournament_indices": [
+        3,
+        1
+      ],
+      "generation_seed": 20511026,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 27,
+      "tournament_indices": [
+        2,
+        2
+      ],
+      "generation_seed": 20511027,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 28,
+      "tournament_indices": [
+        5,
+        1
+      ],
+      "generation_seed": 20511028,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 29,
+      "tournament_indices": [
+        3,
+        6
+      ],
+      "generation_seed": 20511029,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 30,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20511030,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 31,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20511031,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 32,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20511032,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 33,
+      "tournament_indices": [
+        6,
+        5
+      ],
+      "generation_seed": 20511033,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 34,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20511034,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 35,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20511035,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 36,
+      "tournament_indices": [
+        2,
+        1
+      ],
+      "generation_seed": 20511036,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 37,
+      "tournament_indices": [
+        7,
+        5
+      ],
+      "generation_seed": 20511037,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 38,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20511038,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 39,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20511039,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 40,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20511040,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 41,
+      "tournament_indices": [
+        0,
+        5
+      ],
+      "generation_seed": 20511041,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 42,
+      "tournament_indices": [
+        6,
+        7
+      ],
+      "generation_seed": 20511042,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 43,
+      "tournament_indices": [
+        2,
+        3
+      ],
+      "generation_seed": 20511043,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 44,
+      "tournament_indices": [
+        3,
+        6
+      ],
+      "generation_seed": 20511044,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 45,
+      "tournament_indices": [
+        5,
+        1
+      ],
+      "generation_seed": 20511045,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 46,
+      "tournament_indices": [
+        2,
+        0
+      ],
+      "generation_seed": 20511046,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 47,
+      "tournament_indices": [
+        1,
+        4
+      ],
+      "generation_seed": 20511047,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 48,
+      "tournament_indices": [
+        3,
+        0
+      ],
+      "generation_seed": 20511048,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 49,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20511049,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 50,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20511050,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 51,
+      "tournament_indices": [
+        2,
+        7
+      ],
+      "generation_seed": 20511051,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 52,
+      "tournament_indices": [
+        1,
+        3
+      ],
+      "generation_seed": 20511052,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 53,
+      "tournament_indices": [
+        0,
+        2
+      ],
+      "generation_seed": 20511053,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 54,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20511054,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 55,
+      "tournament_indices": [
+        7,
+        2
+      ],
+      "generation_seed": 20511055,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 56,
+      "tournament_indices": [
+        7,
+        5
+      ],
+      "generation_seed": 20511056,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 57,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20511057,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 58,
+      "tournament_indices": [
+        6,
+        7
+      ],
+      "generation_seed": 20511058,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 59,
+      "tournament_indices": [
+        1,
+        0
+      ],
+      "generation_seed": 20511059,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 60,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20511060,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 61,
+      "tournament_indices": [
+        7,
+        7
+      ],
+      "generation_seed": 20511061,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 62,
+      "tournament_indices": [
+        4,
+        2
+      ],
+      "generation_seed": 20511062,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 63,
+      "tournament_indices": [
+        2,
+        7
+      ],
+      "generation_seed": 20511063,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 64,
+      "tournament_indices": [
+        4,
+        1
+      ],
+      "generation_seed": 20511064,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 65,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20511065,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 66,
+      "tournament_indices": [
+        2,
+        4
+      ],
+      "generation_seed": 20511066,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 67,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20511067,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 68,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20511068,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 69,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20511069,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 70,
+      "tournament_indices": [
+        4,
+        0
+      ],
+      "generation_seed": 20511070,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 71,
+      "tournament_indices": [
+        0,
+        4
+      ],
+      "generation_seed": 20511071,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 72,
+      "tournament_indices": [
+        5,
+        3
+      ],
+      "generation_seed": 20511072,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 73,
+      "tournament_indices": [
+        3,
+        6
+      ],
+      "generation_seed": 20511073,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 74,
+      "tournament_indices": [
+        6,
+        1
+      ],
+      "generation_seed": 20511074,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 75,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20511075,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 76,
+      "tournament_indices": [
+        2,
+        6
+      ],
+      "generation_seed": 20511076,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 77,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20511077,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 78,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20511078,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 79,
+      "tournament_indices": [
+        2,
+        4
+      ],
+      "generation_seed": 20511079,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 80,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20511080,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 81,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20511081,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 82,
+      "tournament_indices": [
+        2,
+        4
+      ],
+      "generation_seed": 20511082,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 83,
+      "tournament_indices": [
+        0,
+        0
+      ],
+      "generation_seed": 20511083,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 84,
+      "tournament_indices": [
+        2,
+        6
+      ],
+      "generation_seed": 20511084,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 85,
+      "tournament_indices": [
+        1,
+        2
+      ],
+      "generation_seed": 20511085,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 86,
+      "tournament_indices": [
+        1,
+        0
+      ],
+      "generation_seed": 20511086,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 87,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20511087,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 88,
+      "tournament_indices": [
+        0,
+        3
+      ],
+      "generation_seed": 20511088,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 89,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20511089,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 90,
+      "tournament_indices": [
+        5,
+        5
+      ],
+      "generation_seed": 20511090,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 91,
+      "tournament_indices": [
+        0,
+        2
+      ],
+      "generation_seed": 20511091,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 92,
+      "tournament_indices": [
+        5,
+        5
+      ],
+      "generation_seed": 20511092,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 93,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20511093,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 94,
+      "tournament_indices": [
+        4,
+        5
+      ],
+      "generation_seed": 20511094,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 95,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20511095,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "master_seed": 20502001,
+      "step": 96,
+      "tournament_indices": [
+        7,
+        3
+      ],
+      "generation_seed": 20511096,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 1,
+      "tournament_indices": [
+        7,
+        6
+      ],
+      "generation_seed": 20512001,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 2,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20512002,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 3,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20512003,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 4,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20512004,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 5,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20512005,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 6,
+      "tournament_indices": [
+        4,
+        4
+      ],
+      "generation_seed": 20512006,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 7,
+      "tournament_indices": [
+        3,
+        5
+      ],
+      "generation_seed": 20512007,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 8,
+      "tournament_indices": [
+        4,
+        4
+      ],
+      "generation_seed": 20512008,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 9,
+      "tournament_indices": [
+        2,
+        1
+      ],
+      "generation_seed": 20512009,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 10,
+      "tournament_indices": [
+        6,
+        7
+      ],
+      "generation_seed": 20512010,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 11,
+      "tournament_indices": [
+        6,
+        6
+      ],
+      "generation_seed": 20512011,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 12,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20512012,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 13,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20512013,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 14,
+      "tournament_indices": [
+        3,
+        2
+      ],
+      "generation_seed": 20512014,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 15,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20512015,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 16,
+      "tournament_indices": [
+        3,
+        0
+      ],
+      "generation_seed": 20512016,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 17,
+      "tournament_indices": [
+        7,
+        1
+      ],
+      "generation_seed": 20512017,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 18,
+      "tournament_indices": [
+        2,
+        6
+      ],
+      "generation_seed": 20512018,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 19,
+      "tournament_indices": [
+        4,
+        1
+      ],
+      "generation_seed": 20512019,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 20,
+      "tournament_indices": [
+        4,
+        1
+      ],
+      "generation_seed": 20512020,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 21,
+      "tournament_indices": [
+        2,
+        3
+      ],
+      "generation_seed": 20512021,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 22,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20512022,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 23,
+      "tournament_indices": [
+        3,
+        3
+      ],
+      "generation_seed": 20512023,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 24,
+      "tournament_indices": [
+        2,
+        4
+      ],
+      "generation_seed": 20512024,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 25,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20512025,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 26,
+      "tournament_indices": [
+        4,
+        6
+      ],
+      "generation_seed": 20512026,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 27,
+      "tournament_indices": [
+        7,
+        0
+      ],
+      "generation_seed": 20512027,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 28,
+      "tournament_indices": [
+        2,
+        3
+      ],
+      "generation_seed": 20512028,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 29,
+      "tournament_indices": [
+        5,
+        3
+      ],
+      "generation_seed": 20512029,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 30,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512030,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 31,
+      "tournament_indices": [
+        1,
+        7
+      ],
+      "generation_seed": 20512031,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 32,
+      "tournament_indices": [
+        0,
+        7
+      ],
+      "generation_seed": 20512032,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 33,
+      "tournament_indices": [
+        7,
+        2
+      ],
+      "generation_seed": 20512033,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 34,
+      "tournament_indices": [
+        3,
+        1
+      ],
+      "generation_seed": 20512034,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 35,
+      "tournament_indices": [
+        5,
+        6
+      ],
+      "generation_seed": 20512035,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 36,
+      "tournament_indices": [
+        2,
+        3
+      ],
+      "generation_seed": 20512036,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 37,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20512037,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 38,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20512038,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 39,
+      "tournament_indices": [
+        6,
+        5
+      ],
+      "generation_seed": 20512039,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 40,
+      "tournament_indices": [
+        4,
+        6
+      ],
+      "generation_seed": 20512040,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 41,
+      "tournament_indices": [
+        0,
+        3
+      ],
+      "generation_seed": 20512041,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 42,
+      "tournament_indices": [
+        6,
+        6
+      ],
+      "generation_seed": 20512042,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 43,
+      "tournament_indices": [
+        2,
+        7
+      ],
+      "generation_seed": 20512043,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 44,
+      "tournament_indices": [
+        1,
+        5
+      ],
+      "generation_seed": 20512044,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 45,
+      "tournament_indices": [
+        5,
+        7
+      ],
+      "generation_seed": 20512045,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 46,
+      "tournament_indices": [
+        0,
+        6
+      ],
+      "generation_seed": 20512046,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 47,
+      "tournament_indices": [
+        4,
+        0
+      ],
+      "generation_seed": 20512047,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 48,
+      "tournament_indices": [
+        7,
+        1
+      ],
+      "generation_seed": 20512048,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 49,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20512049,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 50,
+      "tournament_indices": [
+        0,
+        4
+      ],
+      "generation_seed": 20512050,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 51,
+      "tournament_indices": [
+        6,
+        2
+      ],
+      "generation_seed": 20512051,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 52,
+      "tournament_indices": [
+        4,
+        1
+      ],
+      "generation_seed": 20512052,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 53,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20512053,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 54,
+      "tournament_indices": [
+        2,
+        5
+      ],
+      "generation_seed": 20512054,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 55,
+      "tournament_indices": [
+        0,
+        3
+      ],
+      "generation_seed": 20512055,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 56,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20512056,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 57,
+      "tournament_indices": [
+        1,
+        6
+      ],
+      "generation_seed": 20512057,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 58,
+      "tournament_indices": [
+        3,
+        0
+      ],
+      "generation_seed": 20512058,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "random",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 59,
+      "tournament_indices": [
+        5,
+        5
+      ],
+      "generation_seed": 20512059,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 60,
+      "tournament_indices": [
+        1,
+        3
+      ],
+      "generation_seed": 20512060,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 61,
+      "tournament_indices": [
+        0,
+        1
+      ],
+      "generation_seed": 20512061,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 62,
+      "tournament_indices": [
+        6,
+        4
+      ],
+      "generation_seed": 20512062,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 63,
+      "tournament_indices": [
+        0,
+        4
+      ],
+      "generation_seed": 20512063,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 64,
+      "tournament_indices": [
+        5,
+        4
+      ],
+      "generation_seed": 20512064,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 65,
+      "tournament_indices": [
+        5,
+        0
+      ],
+      "generation_seed": 20512065,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 66,
+      "tournament_indices": [
+        6,
+        6
+      ],
+      "generation_seed": 20512066,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 67,
+      "tournament_indices": [
+        1,
+        6
+      ],
+      "generation_seed": 20512067,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 68,
+      "tournament_indices": [
+        3,
+        4
+      ],
+      "generation_seed": 20512068,
+      "method_order": [
+        "adaptive",
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 69,
+      "tournament_indices": [
+        0,
+        6
+      ],
+      "generation_seed": 20512069,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 70,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512070,
+      "method_order": [
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 71,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512071,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 72,
+      "tournament_indices": [
+        5,
+        7
+      ],
+      "generation_seed": 20512072,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 73,
+      "tournament_indices": [
+        1,
+        7
+      ],
+      "generation_seed": 20512073,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 74,
+      "tournament_indices": [
+        2,
+        6
+      ],
+      "generation_seed": 20512074,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 75,
+      "tournament_indices": [
+        2,
+        7
+      ],
+      "generation_seed": 20512075,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 76,
+      "tournament_indices": [
+        4,
+        4
+      ],
+      "generation_seed": 20512076,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 77,
+      "tournament_indices": [
+        6,
+        5
+      ],
+      "generation_seed": 20512077,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 78,
+      "tournament_indices": [
+        5,
+        2
+      ],
+      "generation_seed": 20512078,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 79,
+      "tournament_indices": [
+        7,
+        6
+      ],
+      "generation_seed": 20512079,
+      "method_order": [
+        "random",
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 80,
+      "tournament_indices": [
+        1,
+        6
+      ],
+      "generation_seed": 20512080,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 81,
+      "tournament_indices": [
+        2,
+        6
+      ],
+      "generation_seed": 20512081,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 82,
+      "tournament_indices": [
+        1,
+        0
+      ],
+      "generation_seed": 20512082,
+      "method_order": [
+        "adaptive",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 83,
+      "tournament_indices": [
+        5,
+        3
+      ],
+      "generation_seed": 20512083,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "random",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 84,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512084,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_meaningful",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 85,
+      "tournament_indices": [
+        0,
+        2
+      ],
+      "generation_seed": 20512085,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "random",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 86,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512086,
+      "method_order": [
+        "fixed_meaningful",
+        "random",
+        "fixed_temporary",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 87,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20512087,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 88,
+      "tournament_indices": [
+        1,
+        4
+      ],
+      "generation_seed": 20512088,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 89,
+      "tournament_indices": [
+        6,
+        4
+      ],
+      "generation_seed": 20512089,
+      "method_order": [
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 90,
+      "tournament_indices": [
+        6,
+        0
+      ],
+      "generation_seed": 20512090,
+      "method_order": [
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 91,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20512091,
+      "method_order": [
+        "adaptive",
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 92,
+      "tournament_indices": [
+        7,
+        5
+      ],
+      "generation_seed": 20512092,
+      "method_order": [
+        "random",
+        "fixed_meaningful",
+        "adaptive",
+        "fixed_temporary"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 93,
+      "tournament_indices": [
+        1,
+        5
+      ],
+      "generation_seed": 20512093,
+      "method_order": [
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful",
+        "random"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 94,
+      "tournament_indices": [
+        4,
+        7
+      ],
+      "generation_seed": 20512094,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "adaptive",
+        "fixed_meaningful"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 95,
+      "tournament_indices": [
+        7,
+        4
+      ],
+      "generation_seed": 20512095,
+      "method_order": [
+        "random",
+        "fixed_temporary",
+        "fixed_meaningful",
+        "adaptive"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "master_seed": 20503001,
+      "step": 96,
+      "tournament_indices": [
+        1,
+        1
+      ],
+      "generation_seed": 20512096,
+      "method_order": [
+        "fixed_meaningful",
+        "fixed_temporary",
+        "adaptive",
+        "random"
+      ]
+    }
+  ],
+  "initial_parent_ids": [
+    "N07",
+    "N10",
+    "N11",
+    "N13",
+    "N16",
+    "N02",
+    "N03",
+    "N04"
+  ],
+  "initialization_llm_generations": 0,
+  "selection": "Two common uniform population indices with replacement; lower training mean bins wins; ties use earlier discovery",
+  "replacement": "After each attempt, top 8 distinct canonical ordered trees in parent population plus valid child; training bins then discovery order; elitist",
+  "canonical_identity": "Expanded ordered AST, without local names or source formatting; no algebraic/commutative simplification",
+  "candidate_contract": {
+    "pure_straight_line_numpy": true,
+    "max_expanded_nodes": 256,
+    "max_characters_each_representation": 2000,
+    "three_representations_score_and_trace_equivalence_on_train": true,
+    "mutation_out_and_overwrite_input_forbidden": true,
+    "reason": "Keep representation space closed under reproduction, bound expansion/context; same eligibility for all four methods"
+  },
+  "evaluator_changes_before_generation": "Prior scorer preserved except read-only metadata and reshape/astype receivers may be derived pure array expressions, to make normalization representation-invariant",
+  "adaptive": {
+    "priors": "Beta(1,1) per canonical parent and representation",
+    "warm_start": "First 3 reproductions of each canonical parent use each representation once, in deterministic seed/parent-specific random order",
+    "thereafter": "Independent Beta draws; choose largest draw; ties representation order",
+    "success": "Accepted valid child with strictly fewer mean train bins than selected parent; everything else failure",
+    "new_parent": "Fresh priors for a genuinely new canonical tree; exact same tree shares its own record, including return after absence; no ancestral inheritance",
+    "previous_experiment_outcomes_used_for_priors": false
+  },
+  "random_policy": "Independent uniform choice among three representations at every attempt; no forced balancing",
+  "evaluation": {
+    "train_only_during_search": true,
+    "instances_per_split": 32,
+    "items_per_instance": 256,
+    "split_seeds": {
+      "train": 2026100421,
+      "validation": 2026100422,
+      "test": 2026100423
+    },
+    "validation_selection": "After all searches end, select lowest valid mean validation bins from each final population; training bins and discovery order break ties",
+    "test_release": "Only after all 1152 attempts and all 12 validation-selected final candidates are sealed; test those candidates only",
+    "curve_replay": "After all generation, evaluate the stored prefix populations on validation for retrospective diagnostics only, never feedback; no prefix test evaluation"
+  },
+  "pilot_gate": "First seed: audit 4x96 requests, common EC, exact policy replay, Beta updates, new-parent reset, equivalent trees and train-only access; at least one valid generated child per method. Gate ignores method wins, quality ranking and learning-opportunity adequacy",
+  "continuation": "If pilot structural gate passes, run the two prespecified additional seeds with no method/parameter changes; if gate fails stop for workflow diagnosis",
+  "no_repairs_retries_replacements_of_attempts": true,
+  "primary_quality": "Per-search validation-selected final candidate test mean bins; seed is comparison unit (n=3)",
+  "cost_definition": "All 96 calls including warm trials/errors, input/output tokens, active parent/policy/transform/evaluation/update time, actual initial training evaluation and final validation selection. Test assessment and retrospective curve work reported separately",
+  "cost_comparison": "Common token/time budgets within each seed; retrospective validation best-in-prefix-population. Counterfactual stop time includes measured 8-candidate validation cost at that prefix. Earliest/latest feasible prefixes chosen by cost, not quality",
+  "success_rule": "Descriptive exploration support only if adaptive has strictly lower 3-seed mean final-test bins than all 3 controls AND lower paired-mean normalized validation-quality AUC versus all 3 at common token and complete algorithm time budgets. Mixed quality/cost results remain a tradeoff, not a win. No rule changes based on seed 1",
+  "inference_scope": "Three seeds on one fixed new train/validation/test set, one model, eight previously outcome-selected initial rules; not confirmatory significance or broad parent/task generalization",
+  "original_model_digest": "f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225"
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "behavior_stage1_01",
+  "version": "1.1",
+  "locked_at": "2026-10-04T20:32:56.808919+08:00",
+  "new_llm_requests": 0,
+  "new_searches": 0,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dataset": "WB3S45_INT_C100_N5000_v1",
+  "rounding": "floor",
+  "rng": "numpy.Generator(PCG64(instance_seed))",
+  "capacity": 100,
+  "evaluated_splits": [
+    "pilot_dev",
+    "dev",
+    "probe_audit_states_only"
+  ],
+  "unopened_splits": [
+    "pilot_val",
+    "validation",
+    "test_id",
+    "test_uniform",
+    "test_short"
+  ],
+  "pool_seeds": {
+    "dev": 7001,
+    "probe_audit": 7002
+  },
+  "pool_max_states": 1024,
+  "source_quota": 256,
+  "pool_reservoir_per_source": 1024,
+  "selection_seeds": [
+    8001,
+    8002,
+    8003,
+    8004,
+    8005
+  ],
+  "probe_sizes": [
+    32,
+    64,
+    128
+  ],
+  "anchors": 16,
+  "query_budget": 73728,
+  "snapshot_refresh_interval": 8,
+  "workers": 4,
+  "candidate_wall_timeout_seconds": 120,
+  "candidate_memory_limit_bytes": 536870912,
+  "raw_historical_generations": 2496,
+  "unique_AST_candidates": 1492,
+  "static_diagnostic_runs": 45,
+  "primary_identity": "Full parsed AST, including local names; no behavior or expanded-tree deduplication",
+  "primary_fingerprint": "Chosen pre-placement remaining capacity, exact integer; local feasible index separately",
+  "calibration_gate": "EoH or FunSearch strictly fewer mean pilot_dev bins than Best-fit",
+  "quality_subset": "Full dev mean bins <= Best-fit mean * 1.0025",
+  "global_active_budget": "Static CPU diagnostic pays all N*pool_size evaluations and reports whether above the prospective EC cap. The 73728 cap is enforced separately for each historical-population shadow replay",
+  "fixed_repetitions": "One fixed pool_seed=7001 subset per size reused five times; not five independent fixed selections",
+  "static_random": "Five independent one-time resamples, no evolution",
+  "snapshot_analysis": "Read-only grouping replay of historical populations, no changed parent choices, no H3 claim",
+  "blas_threads_per_worker": 1
+}

@@ -1,0 +1,4660 @@
+{
+  "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "top_k": 40,
+  "num_predict": 512,
+  "num_ctx": 2048,
+  "generation_timeout_seconds": 300,
+  "evaluation_timeout_seconds": 30,
+  "system": "You are a Python programmer. Return only the modified score function.",
+  "prompt_template": "Modify this bin-scoring function to reduce the number of bins used in online bin packing. Keep the interface score(item, bins), and output only Python code.\nitem is a positive float; bins is a nonempty 1D numpy float64 array of feasible remaining capacities, each >= item. Capacity is 100. The evaluator preallocates one empty bin per item, scores all feasible bins, chooses the highest score, and breaks ties by the earliest bin index. Item order is fixed.\nReturn a finite numpy float64 array with exactly the same shape as bins. Use one pure deterministic function with straight-line local assignments and a return. numpy is already available as np. You may import numpy as np. Use numpy vector operations; do not use loops, helper functions, randomness, I/O, external state, or modify bins. No reflections or explanation.\nParent function:\n{code}",
+  "capacity": 100,
+  "items_per_instance": 256,
+  "instances_per_split": 32,
+  "evaluator": "EoH-compatible feasibility/argmax/first-index ties, synthetic fixed 64 instances; not full EoH evolution",
+  "no_feedback": true,
+  "experiment": "round2 new-parent confirmation",
+  "locked_at": "2026-10-04T10:15:05.679682+08:00",
+  "parents": 16,
+  "samples_per_representation": 12,
+  "total_generations": 576,
+  "fixed_best_representation": "temporary",
+  "fixed_best_rule_changed": false,
+  "split_seeds": {
+    "explore": 2026100401,
+    "check": 2026100402
+  },
+  "schedule_seed": 2026100403,
+  "schedule": [
+    {
+      "id": "N07_meaningful_08",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301608,
+      "block": 0
+    },
+    {
+      "id": "N07_expression_08",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301608,
+      "block": 0
+    },
+    {
+      "id": "N07_temporary_08",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301608,
+      "block": 0
+    },
+    {
+      "id": "N04_temporary_11",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301311,
+      "block": 1
+    },
+    {
+      "id": "N04_meaningful_11",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301311,
+      "block": 1
+    },
+    {
+      "id": "N04_expression_11",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301311,
+      "block": 1
+    },
+    {
+      "id": "N13_temporary_01",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302201,
+      "block": 2
+    },
+    {
+      "id": "N13_expression_01",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302201,
+      "block": 2
+    },
+    {
+      "id": "N13_meaningful_01",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302201,
+      "block": 2
+    },
+    {
+      "id": "N15_meaningful_03",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302403,
+      "block": 3
+    },
+    {
+      "id": "N15_temporary_03",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302403,
+      "block": 3
+    },
+    {
+      "id": "N15_expression_03",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302403,
+      "block": 3
+    },
+    {
+      "id": "N16_temporary_00",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302500,
+      "block": 4
+    },
+    {
+      "id": "N16_meaningful_00",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302500,
+      "block": 4
+    },
+    {
+      "id": "N16_expression_00",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302500,
+      "block": 4
+    },
+    {
+      "id": "N14_temporary_07",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302307,
+      "block": 5
+    },
+    {
+      "id": "N14_expression_07",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302307,
+      "block": 5
+    },
+    {
+      "id": "N14_meaningful_07",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302307,
+      "block": 5
+    },
+    {
+      "id": "N06_expression_10",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301510,
+      "block": 6
+    },
+    {
+      "id": "N06_meaningful_10",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301510,
+      "block": 6
+    },
+    {
+      "id": "N06_temporary_10",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301510,
+      "block": 6
+    },
+    {
+      "id": "N13_temporary_06",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302206,
+      "block": 7
+    },
+    {
+      "id": "N13_expression_06",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302206,
+      "block": 7
+    },
+    {
+      "id": "N13_meaningful_06",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302206,
+      "block": 7
+    },
+    {
+      "id": "N05_temporary_00",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301400,
+      "block": 8
+    },
+    {
+      "id": "N05_meaningful_00",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301400,
+      "block": 8
+    },
+    {
+      "id": "N05_expression_00",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301400,
+      "block": 8
+    },
+    {
+      "id": "N13_temporary_04",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302204,
+      "block": 9
+    },
+    {
+      "id": "N13_expression_04",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302204,
+      "block": 9
+    },
+    {
+      "id": "N13_meaningful_04",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302204,
+      "block": 9
+    },
+    {
+      "id": "N02_temporary_11",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301111,
+      "block": 10
+    },
+    {
+      "id": "N02_meaningful_11",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301111,
+      "block": 10
+    },
+    {
+      "id": "N02_expression_11",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301111,
+      "block": 10
+    },
+    {
+      "id": "N07_meaningful_09",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301609,
+      "block": 11
+    },
+    {
+      "id": "N07_temporary_09",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301609,
+      "block": 11
+    },
+    {
+      "id": "N07_expression_09",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301609,
+      "block": 11
+    },
+    {
+      "id": "N01_temporary_08",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301008,
+      "block": 12
+    },
+    {
+      "id": "N01_expression_08",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301008,
+      "block": 12
+    },
+    {
+      "id": "N01_meaningful_08",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301008,
+      "block": 12
+    },
+    {
+      "id": "N11_meaningful_04",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302004,
+      "block": 13
+    },
+    {
+      "id": "N11_temporary_04",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302004,
+      "block": 13
+    },
+    {
+      "id": "N11_expression_04",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302004,
+      "block": 13
+    },
+    {
+      "id": "N15_temporary_02",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302402,
+      "block": 14
+    },
+    {
+      "id": "N15_meaningful_02",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302402,
+      "block": 14
+    },
+    {
+      "id": "N15_expression_02",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302402,
+      "block": 14
+    },
+    {
+      "id": "N05_temporary_08",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301408,
+      "block": 15
+    },
+    {
+      "id": "N05_meaningful_08",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301408,
+      "block": 15
+    },
+    {
+      "id": "N05_expression_08",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301408,
+      "block": 15
+    },
+    {
+      "id": "N11_expression_06",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302006,
+      "block": 16
+    },
+    {
+      "id": "N11_meaningful_06",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302006,
+      "block": 16
+    },
+    {
+      "id": "N11_temporary_06",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302006,
+      "block": 16
+    },
+    {
+      "id": "N03_meaningful_06",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301206,
+      "block": 17
+    },
+    {
+      "id": "N03_temporary_06",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301206,
+      "block": 17
+    },
+    {
+      "id": "N03_expression_06",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301206,
+      "block": 17
+    },
+    {
+      "id": "N10_temporary_10",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301910,
+      "block": 18
+    },
+    {
+      "id": "N10_expression_10",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301910,
+      "block": 18
+    },
+    {
+      "id": "N10_meaningful_10",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301910,
+      "block": 18
+    },
+    {
+      "id": "N01_temporary_07",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301007,
+      "block": 19
+    },
+    {
+      "id": "N01_expression_07",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301007,
+      "block": 19
+    },
+    {
+      "id": "N01_meaningful_07",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301007,
+      "block": 19
+    },
+    {
+      "id": "N01_meaningful_10",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301010,
+      "block": 20
+    },
+    {
+      "id": "N01_temporary_10",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301010,
+      "block": 20
+    },
+    {
+      "id": "N01_expression_10",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301010,
+      "block": 20
+    },
+    {
+      "id": "N05_meaningful_07",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301407,
+      "block": 21
+    },
+    {
+      "id": "N05_expression_07",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301407,
+      "block": 21
+    },
+    {
+      "id": "N05_temporary_07",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301407,
+      "block": 21
+    },
+    {
+      "id": "N03_expression_02",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301202,
+      "block": 22
+    },
+    {
+      "id": "N03_temporary_02",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301202,
+      "block": 22
+    },
+    {
+      "id": "N03_meaningful_02",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301202,
+      "block": 22
+    },
+    {
+      "id": "N11_expression_09",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302009,
+      "block": 23
+    },
+    {
+      "id": "N11_meaningful_09",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302009,
+      "block": 23
+    },
+    {
+      "id": "N11_temporary_09",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302009,
+      "block": 23
+    },
+    {
+      "id": "N10_temporary_11",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301911,
+      "block": 24
+    },
+    {
+      "id": "N10_meaningful_11",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301911,
+      "block": 24
+    },
+    {
+      "id": "N10_expression_11",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301911,
+      "block": 24
+    },
+    {
+      "id": "N05_expression_02",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301402,
+      "block": 25
+    },
+    {
+      "id": "N05_temporary_02",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301402,
+      "block": 25
+    },
+    {
+      "id": "N05_meaningful_02",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301402,
+      "block": 25
+    },
+    {
+      "id": "N07_temporary_10",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301610,
+      "block": 26
+    },
+    {
+      "id": "N07_expression_10",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301610,
+      "block": 26
+    },
+    {
+      "id": "N07_meaningful_10",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301610,
+      "block": 26
+    },
+    {
+      "id": "N13_expression_05",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302205,
+      "block": 27
+    },
+    {
+      "id": "N13_meaningful_05",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302205,
+      "block": 27
+    },
+    {
+      "id": "N13_temporary_05",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302205,
+      "block": 27
+    },
+    {
+      "id": "N13_temporary_08",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302208,
+      "block": 28
+    },
+    {
+      "id": "N13_meaningful_08",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302208,
+      "block": 28
+    },
+    {
+      "id": "N13_expression_08",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302208,
+      "block": 28
+    },
+    {
+      "id": "N11_expression_11",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302011,
+      "block": 29
+    },
+    {
+      "id": "N11_meaningful_11",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302011,
+      "block": 29
+    },
+    {
+      "id": "N11_temporary_11",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302011,
+      "block": 29
+    },
+    {
+      "id": "N12_temporary_09",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302109,
+      "block": 30
+    },
+    {
+      "id": "N12_expression_09",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302109,
+      "block": 30
+    },
+    {
+      "id": "N12_meaningful_09",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302109,
+      "block": 30
+    },
+    {
+      "id": "N14_meaningful_09",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302309,
+      "block": 31
+    },
+    {
+      "id": "N14_expression_09",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302309,
+      "block": 31
+    },
+    {
+      "id": "N14_temporary_09",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302309,
+      "block": 31
+    },
+    {
+      "id": "N09_meaningful_08",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301808,
+      "block": 32
+    },
+    {
+      "id": "N09_temporary_08",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301808,
+      "block": 32
+    },
+    {
+      "id": "N09_expression_08",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301808,
+      "block": 32
+    },
+    {
+      "id": "N11_expression_07",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302007,
+      "block": 33
+    },
+    {
+      "id": "N11_temporary_07",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302007,
+      "block": 33
+    },
+    {
+      "id": "N11_meaningful_07",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302007,
+      "block": 33
+    },
+    {
+      "id": "N10_temporary_05",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301905,
+      "block": 34
+    },
+    {
+      "id": "N10_expression_05",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301905,
+      "block": 34
+    },
+    {
+      "id": "N10_meaningful_05",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301905,
+      "block": 34
+    },
+    {
+      "id": "N09_meaningful_10",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301810,
+      "block": 35
+    },
+    {
+      "id": "N09_expression_10",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301810,
+      "block": 35
+    },
+    {
+      "id": "N09_temporary_10",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301810,
+      "block": 35
+    },
+    {
+      "id": "N03_temporary_00",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301200,
+      "block": 36
+    },
+    {
+      "id": "N03_meaningful_00",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301200,
+      "block": 36
+    },
+    {
+      "id": "N03_expression_00",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301200,
+      "block": 36
+    },
+    {
+      "id": "N14_expression_03",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302303,
+      "block": 37
+    },
+    {
+      "id": "N14_temporary_03",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302303,
+      "block": 37
+    },
+    {
+      "id": "N14_meaningful_03",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302303,
+      "block": 37
+    },
+    {
+      "id": "N06_expression_02",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301502,
+      "block": 38
+    },
+    {
+      "id": "N06_temporary_02",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301502,
+      "block": 38
+    },
+    {
+      "id": "N06_meaningful_02",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301502,
+      "block": 38
+    },
+    {
+      "id": "N16_meaningful_05",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302505,
+      "block": 39
+    },
+    {
+      "id": "N16_temporary_05",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302505,
+      "block": 39
+    },
+    {
+      "id": "N16_expression_05",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302505,
+      "block": 39
+    },
+    {
+      "id": "N16_expression_02",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302502,
+      "block": 40
+    },
+    {
+      "id": "N16_temporary_02",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302502,
+      "block": 40
+    },
+    {
+      "id": "N16_meaningful_02",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302502,
+      "block": 40
+    },
+    {
+      "id": "N08_expression_11",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301711,
+      "block": 41
+    },
+    {
+      "id": "N08_meaningful_11",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301711,
+      "block": 41
+    },
+    {
+      "id": "N08_temporary_11",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301711,
+      "block": 41
+    },
+    {
+      "id": "N03_meaningful_09",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301209,
+      "block": 42
+    },
+    {
+      "id": "N03_temporary_09",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301209,
+      "block": 42
+    },
+    {
+      "id": "N03_expression_09",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301209,
+      "block": 42
+    },
+    {
+      "id": "N16_temporary_03",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302503,
+      "block": 43
+    },
+    {
+      "id": "N16_expression_03",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302503,
+      "block": 43
+    },
+    {
+      "id": "N16_meaningful_03",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302503,
+      "block": 43
+    },
+    {
+      "id": "N14_temporary_05",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302305,
+      "block": 44
+    },
+    {
+      "id": "N14_expression_05",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302305,
+      "block": 44
+    },
+    {
+      "id": "N14_meaningful_05",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302305,
+      "block": 44
+    },
+    {
+      "id": "N03_meaningful_05",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301205,
+      "block": 45
+    },
+    {
+      "id": "N03_expression_05",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301205,
+      "block": 45
+    },
+    {
+      "id": "N03_temporary_05",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301205,
+      "block": 45
+    },
+    {
+      "id": "N08_meaningful_07",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301707,
+      "block": 46
+    },
+    {
+      "id": "N08_temporary_07",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301707,
+      "block": 46
+    },
+    {
+      "id": "N08_expression_07",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301707,
+      "block": 46
+    },
+    {
+      "id": "N01_temporary_05",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301005,
+      "block": 47
+    },
+    {
+      "id": "N01_expression_05",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301005,
+      "block": 47
+    },
+    {
+      "id": "N01_meaningful_05",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301005,
+      "block": 47
+    },
+    {
+      "id": "N02_meaningful_09",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301109,
+      "block": 48
+    },
+    {
+      "id": "N02_temporary_09",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301109,
+      "block": 48
+    },
+    {
+      "id": "N02_expression_09",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301109,
+      "block": 48
+    },
+    {
+      "id": "N14_meaningful_01",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302301,
+      "block": 49
+    },
+    {
+      "id": "N14_expression_01",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302301,
+      "block": 49
+    },
+    {
+      "id": "N14_temporary_01",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302301,
+      "block": 49
+    },
+    {
+      "id": "N09_expression_05",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301805,
+      "block": 50
+    },
+    {
+      "id": "N09_meaningful_05",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301805,
+      "block": 50
+    },
+    {
+      "id": "N09_temporary_05",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301805,
+      "block": 50
+    },
+    {
+      "id": "N13_temporary_11",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302211,
+      "block": 51
+    },
+    {
+      "id": "N13_expression_11",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302211,
+      "block": 51
+    },
+    {
+      "id": "N13_meaningful_11",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302211,
+      "block": 51
+    },
+    {
+      "id": "N12_temporary_04",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302104,
+      "block": 52
+    },
+    {
+      "id": "N12_meaningful_04",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302104,
+      "block": 52
+    },
+    {
+      "id": "N12_expression_04",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302104,
+      "block": 52
+    },
+    {
+      "id": "N02_meaningful_08",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301108,
+      "block": 53
+    },
+    {
+      "id": "N02_temporary_08",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301108,
+      "block": 53
+    },
+    {
+      "id": "N02_expression_08",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301108,
+      "block": 53
+    },
+    {
+      "id": "N13_expression_10",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302210,
+      "block": 54
+    },
+    {
+      "id": "N13_meaningful_10",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302210,
+      "block": 54
+    },
+    {
+      "id": "N13_temporary_10",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302210,
+      "block": 54
+    },
+    {
+      "id": "N03_temporary_03",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301203,
+      "block": 55
+    },
+    {
+      "id": "N03_expression_03",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301203,
+      "block": 55
+    },
+    {
+      "id": "N03_meaningful_03",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301203,
+      "block": 55
+    },
+    {
+      "id": "N02_meaningful_01",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301101,
+      "block": 56
+    },
+    {
+      "id": "N02_temporary_01",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301101,
+      "block": 56
+    },
+    {
+      "id": "N02_expression_01",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301101,
+      "block": 56
+    },
+    {
+      "id": "N10_temporary_09",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301909,
+      "block": 57
+    },
+    {
+      "id": "N10_meaningful_09",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301909,
+      "block": 57
+    },
+    {
+      "id": "N10_expression_09",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301909,
+      "block": 57
+    },
+    {
+      "id": "N06_meaningful_07",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301507,
+      "block": 58
+    },
+    {
+      "id": "N06_expression_07",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301507,
+      "block": 58
+    },
+    {
+      "id": "N06_temporary_07",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301507,
+      "block": 58
+    },
+    {
+      "id": "N12_expression_03",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302103,
+      "block": 59
+    },
+    {
+      "id": "N12_meaningful_03",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302103,
+      "block": 59
+    },
+    {
+      "id": "N12_temporary_03",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302103,
+      "block": 59
+    },
+    {
+      "id": "N08_meaningful_03",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301703,
+      "block": 60
+    },
+    {
+      "id": "N08_temporary_03",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301703,
+      "block": 60
+    },
+    {
+      "id": "N08_expression_03",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301703,
+      "block": 60
+    },
+    {
+      "id": "N12_expression_11",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302111,
+      "block": 61
+    },
+    {
+      "id": "N12_temporary_11",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302111,
+      "block": 61
+    },
+    {
+      "id": "N12_meaningful_11",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302111,
+      "block": 61
+    },
+    {
+      "id": "N13_expression_07",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302207,
+      "block": 62
+    },
+    {
+      "id": "N13_temporary_07",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302207,
+      "block": 62
+    },
+    {
+      "id": "N13_meaningful_07",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302207,
+      "block": 62
+    },
+    {
+      "id": "N04_meaningful_06",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301306,
+      "block": 63
+    },
+    {
+      "id": "N04_temporary_06",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301306,
+      "block": 63
+    },
+    {
+      "id": "N04_expression_06",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301306,
+      "block": 63
+    },
+    {
+      "id": "N10_expression_00",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301900,
+      "block": 64
+    },
+    {
+      "id": "N10_temporary_00",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301900,
+      "block": 64
+    },
+    {
+      "id": "N10_meaningful_00",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301900,
+      "block": 64
+    },
+    {
+      "id": "N02_meaningful_06",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301106,
+      "block": 65
+    },
+    {
+      "id": "N02_expression_06",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301106,
+      "block": 65
+    },
+    {
+      "id": "N02_temporary_06",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301106,
+      "block": 65
+    },
+    {
+      "id": "N05_expression_05",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301405,
+      "block": 66
+    },
+    {
+      "id": "N05_temporary_05",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301405,
+      "block": 66
+    },
+    {
+      "id": "N05_meaningful_05",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301405,
+      "block": 66
+    },
+    {
+      "id": "N12_expression_05",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302105,
+      "block": 67
+    },
+    {
+      "id": "N12_temporary_05",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302105,
+      "block": 67
+    },
+    {
+      "id": "N12_meaningful_05",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302105,
+      "block": 67
+    },
+    {
+      "id": "N12_temporary_08",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302108,
+      "block": 68
+    },
+    {
+      "id": "N12_expression_08",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302108,
+      "block": 68
+    },
+    {
+      "id": "N12_meaningful_08",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302108,
+      "block": 68
+    },
+    {
+      "id": "N04_temporary_10",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301310,
+      "block": 69
+    },
+    {
+      "id": "N04_meaningful_10",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301310,
+      "block": 69
+    },
+    {
+      "id": "N04_expression_10",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301310,
+      "block": 69
+    },
+    {
+      "id": "N14_meaningful_10",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302310,
+      "block": 70
+    },
+    {
+      "id": "N14_temporary_10",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302310,
+      "block": 70
+    },
+    {
+      "id": "N14_expression_10",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302310,
+      "block": 70
+    },
+    {
+      "id": "N10_expression_03",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301903,
+      "block": 71
+    },
+    {
+      "id": "N10_meaningful_03",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301903,
+      "block": 71
+    },
+    {
+      "id": "N10_temporary_03",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301903,
+      "block": 71
+    },
+    {
+      "id": "N12_temporary_07",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302107,
+      "block": 72
+    },
+    {
+      "id": "N12_expression_07",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302107,
+      "block": 72
+    },
+    {
+      "id": "N12_meaningful_07",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302107,
+      "block": 72
+    },
+    {
+      "id": "N15_temporary_10",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302410,
+      "block": 73
+    },
+    {
+      "id": "N15_expression_10",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302410,
+      "block": 73
+    },
+    {
+      "id": "N15_meaningful_10",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302410,
+      "block": 73
+    },
+    {
+      "id": "N12_meaningful_00",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302100,
+      "block": 74
+    },
+    {
+      "id": "N12_temporary_00",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302100,
+      "block": 74
+    },
+    {
+      "id": "N12_expression_00",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302100,
+      "block": 74
+    },
+    {
+      "id": "N16_temporary_04",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302504,
+      "block": 75
+    },
+    {
+      "id": "N16_meaningful_04",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302504,
+      "block": 75
+    },
+    {
+      "id": "N16_expression_04",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302504,
+      "block": 75
+    },
+    {
+      "id": "N01_expression_06",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301006,
+      "block": 76
+    },
+    {
+      "id": "N01_temporary_06",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301006,
+      "block": 76
+    },
+    {
+      "id": "N01_meaningful_06",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301006,
+      "block": 76
+    },
+    {
+      "id": "N16_expression_11",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302511,
+      "block": 77
+    },
+    {
+      "id": "N16_temporary_11",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302511,
+      "block": 77
+    },
+    {
+      "id": "N16_meaningful_11",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302511,
+      "block": 77
+    },
+    {
+      "id": "N07_temporary_04",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301604,
+      "block": 78
+    },
+    {
+      "id": "N07_expression_04",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301604,
+      "block": 78
+    },
+    {
+      "id": "N07_meaningful_04",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301604,
+      "block": 78
+    },
+    {
+      "id": "N08_meaningful_08",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301708,
+      "block": 79
+    },
+    {
+      "id": "N08_expression_08",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301708,
+      "block": 79
+    },
+    {
+      "id": "N08_temporary_08",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301708,
+      "block": 79
+    },
+    {
+      "id": "N09_expression_11",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301811,
+      "block": 80
+    },
+    {
+      "id": "N09_meaningful_11",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301811,
+      "block": 80
+    },
+    {
+      "id": "N09_temporary_11",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301811,
+      "block": 80
+    },
+    {
+      "id": "N15_expression_09",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302409,
+      "block": 81
+    },
+    {
+      "id": "N15_meaningful_09",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302409,
+      "block": 81
+    },
+    {
+      "id": "N15_temporary_09",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302409,
+      "block": 81
+    },
+    {
+      "id": "N05_meaningful_11",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301411,
+      "block": 82
+    },
+    {
+      "id": "N05_temporary_11",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301411,
+      "block": 82
+    },
+    {
+      "id": "N05_expression_11",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301411,
+      "block": 82
+    },
+    {
+      "id": "N02_meaningful_07",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301107,
+      "block": 83
+    },
+    {
+      "id": "N02_temporary_07",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301107,
+      "block": 83
+    },
+    {
+      "id": "N02_expression_07",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301107,
+      "block": 83
+    },
+    {
+      "id": "N03_meaningful_01",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301201,
+      "block": 84
+    },
+    {
+      "id": "N03_temporary_01",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301201,
+      "block": 84
+    },
+    {
+      "id": "N03_expression_01",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301201,
+      "block": 84
+    },
+    {
+      "id": "N08_temporary_00",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301700,
+      "block": 85
+    },
+    {
+      "id": "N08_meaningful_00",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301700,
+      "block": 85
+    },
+    {
+      "id": "N08_expression_00",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301700,
+      "block": 85
+    },
+    {
+      "id": "N03_meaningful_08",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301208,
+      "block": 86
+    },
+    {
+      "id": "N03_expression_08",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301208,
+      "block": 86
+    },
+    {
+      "id": "N03_temporary_08",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301208,
+      "block": 86
+    },
+    {
+      "id": "N09_temporary_07",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301807,
+      "block": 87
+    },
+    {
+      "id": "N09_meaningful_07",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301807,
+      "block": 87
+    },
+    {
+      "id": "N09_expression_07",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301807,
+      "block": 87
+    },
+    {
+      "id": "N13_meaningful_03",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302203,
+      "block": 88
+    },
+    {
+      "id": "N13_temporary_03",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302203,
+      "block": 88
+    },
+    {
+      "id": "N13_expression_03",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302203,
+      "block": 88
+    },
+    {
+      "id": "N15_meaningful_05",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302405,
+      "block": 89
+    },
+    {
+      "id": "N15_expression_05",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302405,
+      "block": 89
+    },
+    {
+      "id": "N15_temporary_05",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302405,
+      "block": 89
+    },
+    {
+      "id": "N14_meaningful_06",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302306,
+      "block": 90
+    },
+    {
+      "id": "N14_expression_06",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302306,
+      "block": 90
+    },
+    {
+      "id": "N14_temporary_06",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302306,
+      "block": 90
+    },
+    {
+      "id": "N04_temporary_02",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301302,
+      "block": 91
+    },
+    {
+      "id": "N04_expression_02",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301302,
+      "block": 91
+    },
+    {
+      "id": "N04_meaningful_02",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301302,
+      "block": 91
+    },
+    {
+      "id": "N01_meaningful_03",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301003,
+      "block": 92
+    },
+    {
+      "id": "N01_expression_03",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301003,
+      "block": 92
+    },
+    {
+      "id": "N01_temporary_03",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301003,
+      "block": 92
+    },
+    {
+      "id": "N10_expression_02",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301902,
+      "block": 93
+    },
+    {
+      "id": "N10_temporary_02",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301902,
+      "block": 93
+    },
+    {
+      "id": "N10_meaningful_02",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301902,
+      "block": 93
+    },
+    {
+      "id": "N07_temporary_02",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301602,
+      "block": 94
+    },
+    {
+      "id": "N07_meaningful_02",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301602,
+      "block": 94
+    },
+    {
+      "id": "N07_expression_02",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301602,
+      "block": 94
+    },
+    {
+      "id": "N07_meaningful_11",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301611,
+      "block": 95
+    },
+    {
+      "id": "N07_temporary_11",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301611,
+      "block": 95
+    },
+    {
+      "id": "N07_expression_11",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301611,
+      "block": 95
+    },
+    {
+      "id": "N08_expression_09",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301709,
+      "block": 96
+    },
+    {
+      "id": "N08_meaningful_09",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301709,
+      "block": 96
+    },
+    {
+      "id": "N08_temporary_09",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301709,
+      "block": 96
+    },
+    {
+      "id": "N15_meaningful_07",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302407,
+      "block": 97
+    },
+    {
+      "id": "N15_expression_07",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302407,
+      "block": 97
+    },
+    {
+      "id": "N15_temporary_07",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302407,
+      "block": 97
+    },
+    {
+      "id": "N04_meaningful_08",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301308,
+      "block": 98
+    },
+    {
+      "id": "N04_temporary_08",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301308,
+      "block": 98
+    },
+    {
+      "id": "N04_expression_08",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301308,
+      "block": 98
+    },
+    {
+      "id": "N14_temporary_11",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302311,
+      "block": 99
+    },
+    {
+      "id": "N14_expression_11",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302311,
+      "block": 99
+    },
+    {
+      "id": "N14_meaningful_11",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302311,
+      "block": 99
+    },
+    {
+      "id": "N04_temporary_00",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301300,
+      "block": 100
+    },
+    {
+      "id": "N04_meaningful_00",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301300,
+      "block": 100
+    },
+    {
+      "id": "N04_expression_00",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301300,
+      "block": 100
+    },
+    {
+      "id": "N15_meaningful_04",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302404,
+      "block": 101
+    },
+    {
+      "id": "N15_temporary_04",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302404,
+      "block": 101
+    },
+    {
+      "id": "N15_expression_04",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302404,
+      "block": 101
+    },
+    {
+      "id": "N13_expression_02",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302202,
+      "block": 102
+    },
+    {
+      "id": "N13_meaningful_02",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302202,
+      "block": 102
+    },
+    {
+      "id": "N13_temporary_02",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302202,
+      "block": 102
+    },
+    {
+      "id": "N08_temporary_05",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301705,
+      "block": 103
+    },
+    {
+      "id": "N08_expression_05",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301705,
+      "block": 103
+    },
+    {
+      "id": "N08_meaningful_05",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301705,
+      "block": 103
+    },
+    {
+      "id": "N14_meaningful_02",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302302,
+      "block": 104
+    },
+    {
+      "id": "N14_expression_02",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302302,
+      "block": 104
+    },
+    {
+      "id": "N14_temporary_02",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302302,
+      "block": 104
+    },
+    {
+      "id": "N01_meaningful_09",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301009,
+      "block": 105
+    },
+    {
+      "id": "N01_temporary_09",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301009,
+      "block": 105
+    },
+    {
+      "id": "N01_expression_09",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301009,
+      "block": 105
+    },
+    {
+      "id": "N15_temporary_00",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302400,
+      "block": 106
+    },
+    {
+      "id": "N15_expression_00",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302400,
+      "block": 106
+    },
+    {
+      "id": "N15_meaningful_00",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302400,
+      "block": 106
+    },
+    {
+      "id": "N09_temporary_02",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301802,
+      "block": 107
+    },
+    {
+      "id": "N09_expression_02",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301802,
+      "block": 107
+    },
+    {
+      "id": "N09_meaningful_02",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301802,
+      "block": 107
+    },
+    {
+      "id": "N04_meaningful_09",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301309,
+      "block": 108
+    },
+    {
+      "id": "N04_temporary_09",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301309,
+      "block": 108
+    },
+    {
+      "id": "N04_expression_09",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301309,
+      "block": 108
+    },
+    {
+      "id": "N03_expression_07",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301207,
+      "block": 109
+    },
+    {
+      "id": "N03_temporary_07",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301207,
+      "block": 109
+    },
+    {
+      "id": "N03_meaningful_07",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301207,
+      "block": 109
+    },
+    {
+      "id": "N04_expression_04",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301304,
+      "block": 110
+    },
+    {
+      "id": "N04_meaningful_04",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301304,
+      "block": 110
+    },
+    {
+      "id": "N04_temporary_04",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301304,
+      "block": 110
+    },
+    {
+      "id": "N13_expression_09",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302209,
+      "block": 111
+    },
+    {
+      "id": "N13_meaningful_09",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302209,
+      "block": 111
+    },
+    {
+      "id": "N13_temporary_09",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302209,
+      "block": 111
+    },
+    {
+      "id": "N04_meaningful_01",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301301,
+      "block": 112
+    },
+    {
+      "id": "N04_temporary_01",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301301,
+      "block": 112
+    },
+    {
+      "id": "N04_expression_01",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301301,
+      "block": 112
+    },
+    {
+      "id": "N01_meaningful_02",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301002,
+      "block": 113
+    },
+    {
+      "id": "N01_expression_02",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301002,
+      "block": 113
+    },
+    {
+      "id": "N01_temporary_02",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301002,
+      "block": 113
+    },
+    {
+      "id": "N04_meaningful_05",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301305,
+      "block": 114
+    },
+    {
+      "id": "N04_expression_05",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301305,
+      "block": 114
+    },
+    {
+      "id": "N04_temporary_05",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301305,
+      "block": 114
+    },
+    {
+      "id": "N10_expression_04",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301904,
+      "block": 115
+    },
+    {
+      "id": "N10_meaningful_04",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301904,
+      "block": 115
+    },
+    {
+      "id": "N10_temporary_04",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301904,
+      "block": 115
+    },
+    {
+      "id": "N08_expression_06",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301706,
+      "block": 116
+    },
+    {
+      "id": "N08_temporary_06",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301706,
+      "block": 116
+    },
+    {
+      "id": "N08_meaningful_06",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301706,
+      "block": 116
+    },
+    {
+      "id": "N09_temporary_01",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301801,
+      "block": 117
+    },
+    {
+      "id": "N09_expression_01",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301801,
+      "block": 117
+    },
+    {
+      "id": "N09_meaningful_01",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301801,
+      "block": 117
+    },
+    {
+      "id": "N07_meaningful_00",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301600,
+      "block": 118
+    },
+    {
+      "id": "N07_expression_00",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301600,
+      "block": 118
+    },
+    {
+      "id": "N07_temporary_00",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301600,
+      "block": 118
+    },
+    {
+      "id": "N07_expression_07",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301607,
+      "block": 119
+    },
+    {
+      "id": "N07_meaningful_07",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301607,
+      "block": 119
+    },
+    {
+      "id": "N07_temporary_07",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301607,
+      "block": 119
+    },
+    {
+      "id": "N02_temporary_05",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301105,
+      "block": 120
+    },
+    {
+      "id": "N02_expression_05",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301105,
+      "block": 120
+    },
+    {
+      "id": "N02_meaningful_05",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301105,
+      "block": 120
+    },
+    {
+      "id": "N01_meaningful_01",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301001,
+      "block": 121
+    },
+    {
+      "id": "N01_expression_01",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301001,
+      "block": 121
+    },
+    {
+      "id": "N01_temporary_01",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301001,
+      "block": 121
+    },
+    {
+      "id": "N03_meaningful_04",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301204,
+      "block": 122
+    },
+    {
+      "id": "N03_temporary_04",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301204,
+      "block": 122
+    },
+    {
+      "id": "N03_expression_04",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301204,
+      "block": 122
+    },
+    {
+      "id": "N01_meaningful_11",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301011,
+      "block": 123
+    },
+    {
+      "id": "N01_temporary_11",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301011,
+      "block": 123
+    },
+    {
+      "id": "N01_expression_11",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301011,
+      "block": 123
+    },
+    {
+      "id": "N16_meaningful_07",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20302507,
+      "block": 124
+    },
+    {
+      "id": "N16_temporary_07",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20302507,
+      "block": 124
+    },
+    {
+      "id": "N16_expression_07",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20302507,
+      "block": 124
+    },
+    {
+      "id": "N16_temporary_10",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302510,
+      "block": 125
+    },
+    {
+      "id": "N16_expression_10",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302510,
+      "block": 125
+    },
+    {
+      "id": "N16_meaningful_10",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302510,
+      "block": 125
+    },
+    {
+      "id": "N15_meaningful_06",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302406,
+      "block": 126
+    },
+    {
+      "id": "N15_temporary_06",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302406,
+      "block": 126
+    },
+    {
+      "id": "N15_expression_06",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302406,
+      "block": 126
+    },
+    {
+      "id": "N02_temporary_02",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301102,
+      "block": 127
+    },
+    {
+      "id": "N02_meaningful_02",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301102,
+      "block": 127
+    },
+    {
+      "id": "N02_expression_02",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301102,
+      "block": 127
+    },
+    {
+      "id": "N07_meaningful_03",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301603,
+      "block": 128
+    },
+    {
+      "id": "N07_expression_03",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301603,
+      "block": 128
+    },
+    {
+      "id": "N07_temporary_03",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301603,
+      "block": 128
+    },
+    {
+      "id": "N15_meaningful_08",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302408,
+      "block": 129
+    },
+    {
+      "id": "N15_temporary_08",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302408,
+      "block": 129
+    },
+    {
+      "id": "N15_expression_08",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302408,
+      "block": 129
+    },
+    {
+      "id": "N08_meaningful_01",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301701,
+      "block": 130
+    },
+    {
+      "id": "N08_temporary_01",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301701,
+      "block": 130
+    },
+    {
+      "id": "N08_expression_01",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301701,
+      "block": 130
+    },
+    {
+      "id": "N07_temporary_06",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301606,
+      "block": 131
+    },
+    {
+      "id": "N07_meaningful_06",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301606,
+      "block": 131
+    },
+    {
+      "id": "N07_expression_06",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301606,
+      "block": 131
+    },
+    {
+      "id": "N11_meaningful_10",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302010,
+      "block": 132
+    },
+    {
+      "id": "N11_expression_10",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302010,
+      "block": 132
+    },
+    {
+      "id": "N11_temporary_10",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302010,
+      "block": 132
+    },
+    {
+      "id": "N12_meaningful_02",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302102,
+      "block": 133
+    },
+    {
+      "id": "N12_expression_02",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302102,
+      "block": 133
+    },
+    {
+      "id": "N12_temporary_02",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302102,
+      "block": 133
+    },
+    {
+      "id": "N06_expression_04",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301504,
+      "block": 134
+    },
+    {
+      "id": "N06_meaningful_04",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301504,
+      "block": 134
+    },
+    {
+      "id": "N06_temporary_04",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301504,
+      "block": 134
+    },
+    {
+      "id": "N06_meaningful_09",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301509,
+      "block": 135
+    },
+    {
+      "id": "N06_temporary_09",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301509,
+      "block": 135
+    },
+    {
+      "id": "N06_expression_09",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301509,
+      "block": 135
+    },
+    {
+      "id": "N15_temporary_01",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302401,
+      "block": 136
+    },
+    {
+      "id": "N15_expression_01",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302401,
+      "block": 136
+    },
+    {
+      "id": "N15_meaningful_01",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302401,
+      "block": 136
+    },
+    {
+      "id": "N06_meaningful_06",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301506,
+      "block": 137
+    },
+    {
+      "id": "N06_expression_06",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301506,
+      "block": 137
+    },
+    {
+      "id": "N06_temporary_06",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301506,
+      "block": 137
+    },
+    {
+      "id": "N11_meaningful_00",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302000,
+      "block": 138
+    },
+    {
+      "id": "N11_expression_00",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302000,
+      "block": 138
+    },
+    {
+      "id": "N11_temporary_00",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302000,
+      "block": 138
+    },
+    {
+      "id": "N06_meaningful_11",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301511,
+      "block": 139
+    },
+    {
+      "id": "N06_expression_11",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301511,
+      "block": 139
+    },
+    {
+      "id": "N06_temporary_11",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301511,
+      "block": 139
+    },
+    {
+      "id": "N07_expression_05",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301605,
+      "block": 140
+    },
+    {
+      "id": "N07_meaningful_05",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301605,
+      "block": 140
+    },
+    {
+      "id": "N07_temporary_05",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301605,
+      "block": 140
+    },
+    {
+      "id": "N01_expression_00",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301000,
+      "block": 141
+    },
+    {
+      "id": "N01_temporary_00",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301000,
+      "block": 141
+    },
+    {
+      "id": "N01_meaningful_00",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301000,
+      "block": 141
+    },
+    {
+      "id": "N03_expression_10",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301210,
+      "block": 142
+    },
+    {
+      "id": "N03_meaningful_10",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301210,
+      "block": 142
+    },
+    {
+      "id": "N03_temporary_10",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301210,
+      "block": 142
+    },
+    {
+      "id": "N06_meaningful_08",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301508,
+      "block": 143
+    },
+    {
+      "id": "N06_temporary_08",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301508,
+      "block": 143
+    },
+    {
+      "id": "N06_expression_08",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301508,
+      "block": 143
+    },
+    {
+      "id": "N05_expression_10",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301410,
+      "block": 144
+    },
+    {
+      "id": "N05_meaningful_10",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301410,
+      "block": 144
+    },
+    {
+      "id": "N05_temporary_10",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301410,
+      "block": 144
+    },
+    {
+      "id": "N09_expression_09",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301809,
+      "block": 145
+    },
+    {
+      "id": "N09_meaningful_09",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301809,
+      "block": 145
+    },
+    {
+      "id": "N09_temporary_09",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301809,
+      "block": 145
+    },
+    {
+      "id": "N15_expression_11",
+      "parent": "N15",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20302411,
+      "block": 146
+    },
+    {
+      "id": "N15_meaningful_11",
+      "parent": "N15",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20302411,
+      "block": 146
+    },
+    {
+      "id": "N15_temporary_11",
+      "parent": "N15",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20302411,
+      "block": 146
+    },
+    {
+      "id": "N09_meaningful_06",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301806,
+      "block": 147
+    },
+    {
+      "id": "N09_temporary_06",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301806,
+      "block": 147
+    },
+    {
+      "id": "N09_expression_06",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301806,
+      "block": 147
+    },
+    {
+      "id": "N16_expression_06",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302506,
+      "block": 148
+    },
+    {
+      "id": "N16_temporary_06",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302506,
+      "block": 148
+    },
+    {
+      "id": "N16_meaningful_06",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302506,
+      "block": 148
+    },
+    {
+      "id": "N14_temporary_04",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20302304,
+      "block": 149
+    },
+    {
+      "id": "N14_meaningful_04",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20302304,
+      "block": 149
+    },
+    {
+      "id": "N14_expression_04",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20302304,
+      "block": 149
+    },
+    {
+      "id": "N10_temporary_06",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301906,
+      "block": 150
+    },
+    {
+      "id": "N10_meaningful_06",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301906,
+      "block": 150
+    },
+    {
+      "id": "N10_expression_06",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301906,
+      "block": 150
+    },
+    {
+      "id": "N10_temporary_07",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301907,
+      "block": 151
+    },
+    {
+      "id": "N10_expression_07",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301907,
+      "block": 151
+    },
+    {
+      "id": "N10_meaningful_07",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301907,
+      "block": 151
+    },
+    {
+      "id": "N11_expression_03",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20302003,
+      "block": 152
+    },
+    {
+      "id": "N11_temporary_03",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20302003,
+      "block": 152
+    },
+    {
+      "id": "N11_meaningful_03",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20302003,
+      "block": 152
+    },
+    {
+      "id": "N05_expression_09",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20301409,
+      "block": 153
+    },
+    {
+      "id": "N05_temporary_09",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20301409,
+      "block": 153
+    },
+    {
+      "id": "N05_meaningful_09",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20301409,
+      "block": 153
+    },
+    {
+      "id": "N09_expression_03",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301803,
+      "block": 154
+    },
+    {
+      "id": "N09_meaningful_03",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301803,
+      "block": 154
+    },
+    {
+      "id": "N09_temporary_03",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301803,
+      "block": 154
+    },
+    {
+      "id": "N01_meaningful_04",
+      "parent": "N01",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301004,
+      "block": 155
+    },
+    {
+      "id": "N01_expression_04",
+      "parent": "N01",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301004,
+      "block": 155
+    },
+    {
+      "id": "N01_temporary_04",
+      "parent": "N01",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301004,
+      "block": 155
+    },
+    {
+      "id": "N10_temporary_08",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20301908,
+      "block": 156
+    },
+    {
+      "id": "N10_expression_08",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20301908,
+      "block": 156
+    },
+    {
+      "id": "N10_meaningful_08",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20301908,
+      "block": 156
+    },
+    {
+      "id": "N08_meaningful_10",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301710,
+      "block": 157
+    },
+    {
+      "id": "N08_expression_10",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301710,
+      "block": 157
+    },
+    {
+      "id": "N08_temporary_10",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301710,
+      "block": 157
+    },
+    {
+      "id": "N02_expression_04",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301104,
+      "block": 158
+    },
+    {
+      "id": "N02_meaningful_04",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301104,
+      "block": 158
+    },
+    {
+      "id": "N02_temporary_04",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301104,
+      "block": 158
+    },
+    {
+      "id": "N03_meaningful_11",
+      "parent": "N03",
+      "representation": "meaningful",
+      "sample": 11,
+      "seed": 20301211,
+      "block": 159
+    },
+    {
+      "id": "N03_temporary_11",
+      "parent": "N03",
+      "representation": "temporary",
+      "sample": 11,
+      "seed": 20301211,
+      "block": 159
+    },
+    {
+      "id": "N03_expression_11",
+      "parent": "N03",
+      "representation": "expression",
+      "sample": 11,
+      "seed": 20301211,
+      "block": 159
+    },
+    {
+      "id": "N11_expression_01",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302001,
+      "block": 160
+    },
+    {
+      "id": "N11_meaningful_01",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302001,
+      "block": 160
+    },
+    {
+      "id": "N11_temporary_01",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302001,
+      "block": 160
+    },
+    {
+      "id": "N04_meaningful_07",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 7,
+      "seed": 20301307,
+      "block": 161
+    },
+    {
+      "id": "N04_temporary_07",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 7,
+      "seed": 20301307,
+      "block": 161
+    },
+    {
+      "id": "N04_expression_07",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 7,
+      "seed": 20301307,
+      "block": 161
+    },
+    {
+      "id": "N05_expression_04",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301404,
+      "block": 162
+    },
+    {
+      "id": "N05_meaningful_04",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301404,
+      "block": 162
+    },
+    {
+      "id": "N05_temporary_04",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301404,
+      "block": 162
+    },
+    {
+      "id": "N09_temporary_04",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301804,
+      "block": 163
+    },
+    {
+      "id": "N09_expression_04",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301804,
+      "block": 163
+    },
+    {
+      "id": "N09_meaningful_04",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301804,
+      "block": 163
+    },
+    {
+      "id": "N06_meaningful_01",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301501,
+      "block": 164
+    },
+    {
+      "id": "N06_temporary_01",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301501,
+      "block": 164
+    },
+    {
+      "id": "N06_expression_01",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301501,
+      "block": 164
+    },
+    {
+      "id": "N11_meaningful_02",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20302002,
+      "block": 165
+    },
+    {
+      "id": "N11_temporary_02",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20302002,
+      "block": 165
+    },
+    {
+      "id": "N11_expression_02",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20302002,
+      "block": 165
+    },
+    {
+      "id": "N08_temporary_04",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 4,
+      "seed": 20301704,
+      "block": 166
+    },
+    {
+      "id": "N08_expression_04",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 4,
+      "seed": 20301704,
+      "block": 166
+    },
+    {
+      "id": "N08_meaningful_04",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 4,
+      "seed": 20301704,
+      "block": 166
+    },
+    {
+      "id": "N16_meaningful_01",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302501,
+      "block": 167
+    },
+    {
+      "id": "N16_temporary_01",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302501,
+      "block": 167
+    },
+    {
+      "id": "N16_expression_01",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302501,
+      "block": 167
+    },
+    {
+      "id": "N11_expression_08",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302008,
+      "block": 168
+    },
+    {
+      "id": "N11_meaningful_08",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302008,
+      "block": 168
+    },
+    {
+      "id": "N11_temporary_08",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302008,
+      "block": 168
+    },
+    {
+      "id": "N05_expression_03",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301403,
+      "block": 169
+    },
+    {
+      "id": "N05_temporary_03",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301403,
+      "block": 169
+    },
+    {
+      "id": "N05_meaningful_03",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301403,
+      "block": 169
+    },
+    {
+      "id": "N02_temporary_10",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20301110,
+      "block": 170
+    },
+    {
+      "id": "N02_meaningful_10",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20301110,
+      "block": 170
+    },
+    {
+      "id": "N02_expression_10",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20301110,
+      "block": 170
+    },
+    {
+      "id": "N14_meaningful_00",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302300,
+      "block": 171
+    },
+    {
+      "id": "N14_expression_00",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302300,
+      "block": 171
+    },
+    {
+      "id": "N14_temporary_00",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302300,
+      "block": 171
+    },
+    {
+      "id": "N07_expression_01",
+      "parent": "N07",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301601,
+      "block": 172
+    },
+    {
+      "id": "N07_temporary_01",
+      "parent": "N07",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301601,
+      "block": 172
+    },
+    {
+      "id": "N07_meaningful_01",
+      "parent": "N07",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301601,
+      "block": 172
+    },
+    {
+      "id": "N08_temporary_02",
+      "parent": "N08",
+      "representation": "temporary",
+      "sample": 2,
+      "seed": 20301702,
+      "block": 173
+    },
+    {
+      "id": "N08_expression_02",
+      "parent": "N08",
+      "representation": "expression",
+      "sample": 2,
+      "seed": 20301702,
+      "block": 173
+    },
+    {
+      "id": "N08_meaningful_02",
+      "parent": "N08",
+      "representation": "meaningful",
+      "sample": 2,
+      "seed": 20301702,
+      "block": 173
+    },
+    {
+      "id": "N09_expression_00",
+      "parent": "N09",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301800,
+      "block": 174
+    },
+    {
+      "id": "N09_temporary_00",
+      "parent": "N09",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301800,
+      "block": 174
+    },
+    {
+      "id": "N09_meaningful_00",
+      "parent": "N09",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301800,
+      "block": 174
+    },
+    {
+      "id": "N12_expression_01",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20302101,
+      "block": 175
+    },
+    {
+      "id": "N12_meaningful_01",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20302101,
+      "block": 175
+    },
+    {
+      "id": "N12_temporary_01",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20302101,
+      "block": 175
+    },
+    {
+      "id": "N11_temporary_05",
+      "parent": "N11",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20302005,
+      "block": 176
+    },
+    {
+      "id": "N11_meaningful_05",
+      "parent": "N11",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20302005,
+      "block": 176
+    },
+    {
+      "id": "N11_expression_05",
+      "parent": "N11",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20302005,
+      "block": 176
+    },
+    {
+      "id": "N02_temporary_00",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301100,
+      "block": 177
+    },
+    {
+      "id": "N02_expression_00",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301100,
+      "block": 177
+    },
+    {
+      "id": "N02_meaningful_00",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301100,
+      "block": 177
+    },
+    {
+      "id": "N10_meaningful_01",
+      "parent": "N10",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301901,
+      "block": 178
+    },
+    {
+      "id": "N10_temporary_01",
+      "parent": "N10",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301901,
+      "block": 178
+    },
+    {
+      "id": "N10_expression_01",
+      "parent": "N10",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301901,
+      "block": 178
+    },
+    {
+      "id": "N12_meaningful_10",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 10,
+      "seed": 20302110,
+      "block": 179
+    },
+    {
+      "id": "N12_temporary_10",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 10,
+      "seed": 20302110,
+      "block": 179
+    },
+    {
+      "id": "N12_expression_10",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 10,
+      "seed": 20302110,
+      "block": 179
+    },
+    {
+      "id": "N13_temporary_00",
+      "parent": "N13",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20302200,
+      "block": 180
+    },
+    {
+      "id": "N13_expression_00",
+      "parent": "N13",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20302200,
+      "block": 180
+    },
+    {
+      "id": "N13_meaningful_00",
+      "parent": "N13",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20302200,
+      "block": 180
+    },
+    {
+      "id": "N05_meaningful_06",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20301406,
+      "block": 181
+    },
+    {
+      "id": "N05_expression_06",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20301406,
+      "block": 181
+    },
+    {
+      "id": "N05_temporary_06",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20301406,
+      "block": 181
+    },
+    {
+      "id": "N12_temporary_06",
+      "parent": "N12",
+      "representation": "temporary",
+      "sample": 6,
+      "seed": 20302106,
+      "block": 182
+    },
+    {
+      "id": "N12_expression_06",
+      "parent": "N12",
+      "representation": "expression",
+      "sample": 6,
+      "seed": 20302106,
+      "block": 182
+    },
+    {
+      "id": "N12_meaningful_06",
+      "parent": "N12",
+      "representation": "meaningful",
+      "sample": 6,
+      "seed": 20302106,
+      "block": 182
+    },
+    {
+      "id": "N06_meaningful_05",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 5,
+      "seed": 20301505,
+      "block": 183
+    },
+    {
+      "id": "N06_temporary_05",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 5,
+      "seed": 20301505,
+      "block": 183
+    },
+    {
+      "id": "N06_expression_05",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 5,
+      "seed": 20301505,
+      "block": 183
+    },
+    {
+      "id": "N02_temporary_03",
+      "parent": "N02",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301103,
+      "block": 184
+    },
+    {
+      "id": "N02_expression_03",
+      "parent": "N02",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301103,
+      "block": 184
+    },
+    {
+      "id": "N02_meaningful_03",
+      "parent": "N02",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301103,
+      "block": 184
+    },
+    {
+      "id": "N06_expression_00",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 0,
+      "seed": 20301500,
+      "block": 185
+    },
+    {
+      "id": "N06_temporary_00",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 0,
+      "seed": 20301500,
+      "block": 185
+    },
+    {
+      "id": "N06_meaningful_00",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 0,
+      "seed": 20301500,
+      "block": 185
+    },
+    {
+      "id": "N05_meaningful_01",
+      "parent": "N05",
+      "representation": "meaningful",
+      "sample": 1,
+      "seed": 20301401,
+      "block": 186
+    },
+    {
+      "id": "N05_temporary_01",
+      "parent": "N05",
+      "representation": "temporary",
+      "sample": 1,
+      "seed": 20301401,
+      "block": 186
+    },
+    {
+      "id": "N05_expression_01",
+      "parent": "N05",
+      "representation": "expression",
+      "sample": 1,
+      "seed": 20301401,
+      "block": 186
+    },
+    {
+      "id": "N04_meaningful_03",
+      "parent": "N04",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301303,
+      "block": 187
+    },
+    {
+      "id": "N04_expression_03",
+      "parent": "N04",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301303,
+      "block": 187
+    },
+    {
+      "id": "N04_temporary_03",
+      "parent": "N04",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301303,
+      "block": 187
+    },
+    {
+      "id": "N14_meaningful_08",
+      "parent": "N14",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302308,
+      "block": 188
+    },
+    {
+      "id": "N14_expression_08",
+      "parent": "N14",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302308,
+      "block": 188
+    },
+    {
+      "id": "N14_temporary_08",
+      "parent": "N14",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302308,
+      "block": 188
+    },
+    {
+      "id": "N16_temporary_09",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 9,
+      "seed": 20302509,
+      "block": 189
+    },
+    {
+      "id": "N16_meaningful_09",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 9,
+      "seed": 20302509,
+      "block": 189
+    },
+    {
+      "id": "N16_expression_09",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 9,
+      "seed": 20302509,
+      "block": 189
+    },
+    {
+      "id": "N16_temporary_08",
+      "parent": "N16",
+      "representation": "temporary",
+      "sample": 8,
+      "seed": 20302508,
+      "block": 190
+    },
+    {
+      "id": "N16_expression_08",
+      "parent": "N16",
+      "representation": "expression",
+      "sample": 8,
+      "seed": 20302508,
+      "block": 190
+    },
+    {
+      "id": "N16_meaningful_08",
+      "parent": "N16",
+      "representation": "meaningful",
+      "sample": 8,
+      "seed": 20302508,
+      "block": 190
+    },
+    {
+      "id": "N06_expression_03",
+      "parent": "N06",
+      "representation": "expression",
+      "sample": 3,
+      "seed": 20301503,
+      "block": 191
+    },
+    {
+      "id": "N06_meaningful_03",
+      "parent": "N06",
+      "representation": "meaningful",
+      "sample": 3,
+      "seed": 20301503,
+      "block": 191
+    },
+    {
+      "id": "N06_temporary_03",
+      "parent": "N06",
+      "representation": "temporary",
+      "sample": 3,
+      "seed": 20301503,
+      "block": 191
+    }
+  ],
+  "paired_seeds_across_representations": true,
+  "new_paired_seed_count": 192,
+  "randomization": "192 randomized parent/seed blocks, three shuffled representations within each block",
+  "primary_metric": "check improvement count / all 12 attempts per parent/representation; macro average across 16 parents",
+  "auxiliary_metrics": [
+    "mean-bin delta",
+    "valid rate",
+    "tokens",
+    "generation/evaluation time",
+    "distinct improving check behaviors"
+  ],
+  "inference_unit": "parent; hierarchical bootstrap parents and paired sample indices within each selected parent",
+  "parent_dependence_note": "Per-parent empirical winners are exploratory; 12 samples do not prove parent-specific optimal representation.",
+  "original_model_digest": "f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225",
+  "dataset_sha256": "9aace4dbd88e92933c23416699ae43987e4233d79db594c3634f6ef311be2d6e",
+  "parent_sha256": "9d7102c8128b3bfe99f6567bfe0c1757ad24b19923baed19ed0d70b0156ee50b",
+  "script_sha256": "f0ca8023fd9dd273d4774bd47725bb58686dfade28b9fc7f80bde6303e147b5a",
+  "round2_script_sha256": "51e39413ed930a39e33aab15a10351b378decb48105dd27f9537e3f7ec58a98d",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0"
+}

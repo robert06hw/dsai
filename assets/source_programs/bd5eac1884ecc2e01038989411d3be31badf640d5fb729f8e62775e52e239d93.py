@@ -1,0 +1,2 @@
+def score(item, bins):
+    return -(((bins - item) * ((bins - item) - item)) * ((bins - item) * ((bins - item) - item)))

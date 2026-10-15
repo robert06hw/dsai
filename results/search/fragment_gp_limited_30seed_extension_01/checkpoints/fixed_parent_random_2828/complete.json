@@ -1,0 +1,2364 @@
+{
+  "seed": 2828,
+  "method": "fixed_parent_random",
+  "nominal_attempts": 128,
+  "new_child_attempts": 112,
+  "initial_best": {
+    "id": "init_2828_01",
+    "source": "Best-fit",
+    "tree": {
+      "_ast": "UnaryOp",
+      "op": {
+        "_ast": "USub"
+      },
+      "operand": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      }
+    },
+    "expression": "-(bins - item)",
+    "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+    "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+    "internal_nodes": 4,
+    "internal_depth": 3,
+    "nodes": 4,
+    "depth": 3,
+    "type": "V",
+    "historical_tree_class": "exact_existing_strategy",
+    "historical_tree_program_ids": [
+      "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+      "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+      "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+      "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+      "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+      "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+    ],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2067,
+        "runtime": 0.0864818999543786,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+        "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2043,
+        "runtime": 0.08785479993093759,
+        "cpu_seconds": 0.09375,
+        "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+        "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+        "new_bins": 2043
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.127337200101465,
+        "cpu_seconds": 0.125,
+        "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+        "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2068,
+        "runtime": 0.10018159996252507,
+        "cpu_seconds": 0.109375,
+        "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+        "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+        "new_bins": 2068
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2063,
+        "runtime": 0.08131629996933043,
+        "cpu_seconds": 0.0625,
+        "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+        "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+        "new_bins": 2063
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 724
+    },
+    "warnings": [],
+    "mean_bins": 2066.4,
+    "trace_path": "traces/pilot_dev_init_2828_01.npz",
+    "worker_wall_seconds": 0.5226176999276504,
+    "evaluation_wall_seconds": 1.2351808999665082,
+    "evaluation_started_at": "2026-10-05T16:15:51.581806+08:00",
+    "evaluation_completed_at": "2026-10-05T16:15:52.824745+08:00"
+  },
+  "best": {
+    "id": "fixed_parent_random_2828_110",
+    "seed": 2828,
+    "method": "fixed_parent_random",
+    "attempt": 110,
+    "tree": {
+      "_ast": "Call",
+      "func": {
+        "_ast": "Attribute",
+        "value": {
+          "_ast": "Name",
+          "id": "np",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "attr": "where",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "args": [
+        {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "logical_and",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            }
+          ],
+          "keywords": []
+        },
+        {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          "op": {
+            "_ast": "Div"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "abs",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "UnaryOp",
+                    "op": {
+                      "_ast": "USub"
+                    },
+                    "operand": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    }
+                  }
+                ],
+                "keywords": []
+              },
+              {
+                "_ast": "Constant",
+                "value": 1.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        },
+        {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 20.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      ],
+      "keywords": []
+    },
+    "expression": "np.where(np.logical_and(bins > item, bins > item), (bins - item) / np.maximum(np.abs(-bins), 1.0), np.maximum(item, 20.0))",
+    "internal_key": "074a167d7abf733d357609816c0f677e2d99f150e3c746e5789674ade4330d09",
+    "execution_key": "074a167d7abf733d357609816c0f677e2d99f150e3c746e5789674ade4330d09",
+    "internal_nodes": 20,
+    "internal_depth": 6,
+    "nodes": 20,
+    "depth": 6,
+    "type": "V",
+    "operator": "subtree_replace",
+    "parent_id": "init_2828_13",
+    "second_parent_id": null,
+    "target_path": [
+      [
+        "args",
+        1
+      ],
+      [
+        "left",
+        null
+      ]
+    ],
+    "target_type": "V",
+    "replacement_source": "basic_operators",
+    "fragment_key": null,
+    "construction_error": "",
+    "historical_tree_class": "not_matched_supported_historical_tree",
+    "historical_tree_program_ids": [],
+    "split": "pilot_dev",
+    "valid": true,
+    "error": "",
+    "instances": [
+      {
+        "instance_id": "pilot_dev_6001",
+        "bins_used": 2060,
+        "runtime": 0.08567930001299828,
+        "cpu_seconds": 0.09375,
+        "trace_hash": "13aacd3d5218c09aec7ec985023c6b6d50545b9e9f815237de01016e1e127a55",
+        "chosen_capacity_hash": "4743a70ce089b8615a43f1ab9bdac64e0daf9fe8e01b55d71278285b719462fd",
+        "new_bins": 2060
+      },
+      {
+        "instance_id": "pilot_dev_6002",
+        "bins_used": 2040,
+        "runtime": 0.08520440000575036,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "925e454481879aadb171d82c1d6e0c4c2eaf0e3c7bf2ba2b2335584e21736afd",
+        "chosen_capacity_hash": "784aedbc8c28ea4c0ce1bd3b9e24c182a50e748848a6142e371c3dda98c2b280",
+        "new_bins": 2040
+      },
+      {
+        "instance_id": "pilot_dev_6003",
+        "bins_used": 2091,
+        "runtime": 0.08465069998055696,
+        "cpu_seconds": 0.078125,
+        "trace_hash": "dc01c4cd63a00265e521b9aabd6ee6d4c94e0ed4d72bd98ff965ec5ceb654c5a",
+        "chosen_capacity_hash": "a028e8a259030864e8fb22d94797da9b6be97266a643e527a702c31e5e2fbe5b",
+        "new_bins": 2091
+      },
+      {
+        "instance_id": "pilot_dev_6004",
+        "bins_used": 2067,
+        "runtime": 0.08604109997395426,
+        "cpu_seconds": 0.09375,
+        "trace_hash": "0bfb9a8825a738dfc8de072f279c18279d73b1bf319f095617325bfdad7b6e88",
+        "chosen_capacity_hash": "120a11cdb6d28ee3941af119e0383bc4789cc76984c1eb1280d3bf6836953a49",
+        "new_bins": 2067
+      },
+      {
+        "instance_id": "pilot_dev_6005",
+        "bins_used": 2064,
+        "runtime": 0.08405610010959208,
+        "cpu_seconds": 0.09375,
+        "trace_hash": "95cbda0fb46a11f8dac1acd6850f08fedf8c71a611fdc6d8f7579efd12e81da2",
+        "chosen_capacity_hash": "5f76a159c90fb1bd929a2e758b6792dab8ae34e006eaa3e44724ebc5a7f85a78",
+        "new_bins": 2064
+      }
+    ],
+    "resource_limit": {
+      "enforced": true,
+      "bytes": 536870912,
+      "job_handle": 592
+    },
+    "warnings": [],
+    "mean_bins": 2064.4,
+    "trace_path": "traces/pilot_dev_fixed_parent_random_2828_110.npz",
+    "worker_wall_seconds": 0.45967179990839213,
+    "evaluation_wall_seconds": 0.9948606999823824,
+    "evaluation_started_at": "2026-10-05T16:24:43.073214+08:00",
+    "evaluation_completed_at": "2026-10-05T16:24:44.075549+08:00",
+    "historical_tree_rediscovered": false,
+    "observed_historical_behavior_signature": null,
+    "observed_historical_behavior_program_count": 0,
+    "observed_behavior_note": "matching complete pilot_dev decisions only; not universal semantic equivalence"
+  },
+  "population": [
+    {
+      "id": "init_2828_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2067,
+          "runtime": 0.0864818999543786,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "cf0e277deb10105cda8843e38c5bd1748a72a53504d46aece8ffcf8168f8c2d7",
+          "chosen_capacity_hash": "403057d546977635ba6b81a421133204a66a9ef97b6e2888e2d531d99aa4fc0b",
+          "new_bins": 2067
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2043,
+          "runtime": 0.08785479993093759,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "1348d55d0ab3ea1524bb46a1448f80050596b1121c87e3b96ae3c0485538e042",
+          "chosen_capacity_hash": "115acc638b80e3b8b246c24b8ea7ea9598d47986319989bfd3f213f2639f59fc",
+          "new_bins": 2043
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2091,
+          "runtime": 0.127337200101465,
+          "cpu_seconds": 0.125,
+          "trace_hash": "030656a86ed05ebe2261dd485c46decd2f8573cff2f2d1c4e5214c6ba3fa04fe",
+          "chosen_capacity_hash": "f53592256b84ff215eb8a424dd5934d442a0c5b034c713e4205a5b42d6a22a65",
+          "new_bins": 2091
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2068,
+          "runtime": 0.10018159996252507,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "eff4d38efdf1c49fdfdc28b645f376599f9ecbedab682df973bc7954ee3e9c11",
+          "chosen_capacity_hash": "fed53d3cf3e515774305579774ba3df2ebb1bbca2f657bb2d4c38b4bb906a41d",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2063,
+          "runtime": 0.08131629996933043,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "45c219ba9b7792a0d972216dba72538d3e1e02f3390071155bab1d00245b87f7",
+          "chosen_capacity_hash": "830d78b74144b96ce6c70bf14970ee42e6591a369d02e14d31948f2d7158c43b",
+          "new_bins": 2063
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 724
+      },
+      "warnings": [],
+      "mean_bins": 2066.4,
+      "trace_path": "traces/pilot_dev_init_2828_01.npz",
+      "worker_wall_seconds": 0.5226176999276504,
+      "evaluation_wall_seconds": 1.2351808999665082,
+      "evaluation_started_at": "2026-10-05T16:15:51.581806+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:52.824745+08:00"
+    },
+    {
+      "id": "init_2828_13",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Div"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "maximum",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "abs",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "UnaryOp",
+                      "op": {
+                        "_ast": "USub"
+                      },
+                      "operand": {
+                        "_ast": "Name",
+                        "id": "bins",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      }
+                    }
+                  ],
+                  "keywords": []
+                },
+                {
+                  "_ast": "Constant",
+                  "value": 1.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 20.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins / np.maximum(np.abs(-bins), 1.0), np.maximum(item, 20.0))",
+      "internal_key": "4edabdfcecfb1b2966683b3ee7e64eddc47f7ae84a79219b6286f322452b3501",
+      "execution_key": "4edabdfcecfb1b2966683b3ee7e64eddc47f7ae84a79219b6286f322452b3501",
+      "internal_nodes": 18,
+      "internal_depth": 6,
+      "nodes": 18,
+      "depth": 6,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2070,
+          "runtime": 0.11833309999201447,
+          "cpu_seconds": 0.125,
+          "trace_hash": "de6f7a538ff766371d0a0b8b0c722c35134afd81f63a7c45c7ddb042ffadc981",
+          "chosen_capacity_hash": "b3aa7425219b8bc7c658ec4b2244362e7ff1e1aa7cc0980fecb2cf3cd7c05206",
+          "new_bins": 2070
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2045,
+          "runtime": 0.11816090007778257,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "3e3c673a9ca8ed4a31341435fdf5b08431c368839ab8406ab5dffd1142bd4b48",
+          "chosen_capacity_hash": "d211065890b1b2c59087f30fd5942c00d15c00e5ee9c96564bbd80dfa022fb81",
+          "new_bins": 2045
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2095,
+          "runtime": 0.11935989989433438,
+          "cpu_seconds": 0.125,
+          "trace_hash": "afb9e5ab1b4824bd9b0a002ce38b1c2373c24027019411a93059a0d8fc94bbcb",
+          "chosen_capacity_hash": "d42d83122e1a972179ff83dad713f13167d923dbd76b9d9632084852d5f2e030",
+          "new_bins": 2095
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2071,
+          "runtime": 0.09639630001038313,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "b26aa05f6b0db8fa78df956070b5cc3accd4e79f65a58766298b340f351eb05f",
+          "chosen_capacity_hash": "c61e0cf8d6d725edf6476b86b2e7b0ab2c12137decbf9ce3fd0c9e7d8c876f49",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2067,
+          "runtime": 0.10712569998577237,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "3490a15363ba55a6476629210a6cd847616c184bdf842ef500429043fd8216fa",
+          "chosen_capacity_hash": "72e283e64e254c5fa8e86c046f21b42b14c8a67dd4f1e6dd6976e310f43415c1",
+          "new_bins": 2067
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 548
+      },
+      "warnings": [],
+      "mean_bins": 2069.6,
+      "trace_path": "traces/pilot_dev_init_2828_13.npz",
+      "worker_wall_seconds": 0.6044482999714091,
+      "evaluation_wall_seconds": 1.2759338000323623,
+      "evaluation_started_at": "2026-10-05T16:15:55.038666+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:56.320685+08:00"
+    },
+    {
+      "id": "init_2828_07",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "zeros_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.zeros_like(bins)",
+      "internal_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "execution_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "01292ca3100b782ac82d4c20218e0309c26d521947211cc5d3886595eaf69604",
+        "2280ab8a9244b1c320b18cd69254665b79ed62690077c8cec0aaa3689425e48f",
+        "c8ba59061ca87d62c051d9fc503b78c51947b2083a4e8e0680f88fdd60840437"
+      ],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2071,
+          "runtime": 0.08391330006998032,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c565dee7ffb56e324646796f04f17fcad3546c1872846e77b0fff00ccf735d01",
+          "chosen_capacity_hash": "0c6ed44ad29060c503df41cf90b347689db7831781c43591cd6c4c5a3289c9c7",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2049,
+          "runtime": 0.0717846000334248,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "8d094aadb88af122a8e9affb9a9ffef9fe01a1dfd3721b465b0511f17b39cb08",
+          "chosen_capacity_hash": "11b22820dbcbe750409bb9a8abbcbed6a7169739a90861f7582a535f3a67407f",
+          "new_bins": 2049
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2098,
+          "runtime": 0.07232099992688745,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "625a3e5e52910eb13f32110d1ba5e9afd8478fefb034d35fb080ef08e6014179",
+          "chosen_capacity_hash": "d133bea6661a917315f688384d145c3a989c0dc3271a72013acd38ef6f56d4e5",
+          "new_bins": 2098
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2076,
+          "runtime": 0.07957970001734793,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c216ebd297b2f2ce1401939676e21aba8b689dca1752074b39ad1d6cc00ccee4",
+          "chosen_capacity_hash": "6952953e0de8c9bf7c4fd772def2d10fd08c82526e78e05498078253e361f2cb",
+          "new_bins": 2076
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2073,
+          "runtime": 0.06744649994652718,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "c90eb29fc90bf999a548fd7b1b4131ece2b712cd582809a7129cd6e1feb90d31",
+          "chosen_capacity_hash": "e6b5663f4afbd52145f26f8e26ecf11b6f5639611a998869e9bf06b094c8d59f",
+          "new_bins": 2073
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 656
+      },
+      "warnings": [],
+      "mean_bins": 2073.4,
+      "trace_path": "traces/pilot_dev_init_2828_07.npz",
+      "worker_wall_seconds": 0.4147672000108287,
+      "evaluation_wall_seconds": 0.9902881000889465,
+      "evaluation_started_at": "2026-10-05T16:15:52.947961+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:53.946100+08:00"
+    },
+    {
+      "id": "init_2828_08",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "ones_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.ones_like(bins)",
+      "internal_key": "9fa9740ba109983b2443ced118efe1eb08bd66a2fd528fae2afb642b92a487ec",
+      "execution_key": "9fa9740ba109983b2443ced118efe1eb08bd66a2fd528fae2afb642b92a487ec",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2071,
+          "runtime": 0.07646969996858388,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c565dee7ffb56e324646796f04f17fcad3546c1872846e77b0fff00ccf735d01",
+          "chosen_capacity_hash": "0c6ed44ad29060c503df41cf90b347689db7831781c43591cd6c4c5a3289c9c7",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2049,
+          "runtime": 0.07177779998164624,
+          "cpu_seconds": 0.046875,
+          "trace_hash": "8d094aadb88af122a8e9affb9a9ffef9fe01a1dfd3721b465b0511f17b39cb08",
+          "chosen_capacity_hash": "11b22820dbcbe750409bb9a8abbcbed6a7169739a90861f7582a535f3a67407f",
+          "new_bins": 2049
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2098,
+          "runtime": 0.06921069999225438,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "625a3e5e52910eb13f32110d1ba5e9afd8478fefb034d35fb080ef08e6014179",
+          "chosen_capacity_hash": "d133bea6661a917315f688384d145c3a989c0dc3271a72013acd38ef6f56d4e5",
+          "new_bins": 2098
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2076,
+          "runtime": 0.07334849995095283,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "c216ebd297b2f2ce1401939676e21aba8b689dca1752074b39ad1d6cc00ccee4",
+          "chosen_capacity_hash": "6952953e0de8c9bf7c4fd772def2d10fd08c82526e78e05498078253e361f2cb",
+          "new_bins": 2076
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2073,
+          "runtime": 0.08749730000272393,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c90eb29fc90bf999a548fd7b1b4131ece2b712cd582809a7129cd6e1feb90d31",
+          "chosen_capacity_hash": "e6b5663f4afbd52145f26f8e26ecf11b6f5639611a998869e9bf06b094c8d59f",
+          "new_bins": 2073
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 360
+      },
+      "warnings": [],
+      "mean_bins": 2073.4,
+      "trace_path": "traces/pilot_dev_init_2828_08.npz",
+      "worker_wall_seconds": 0.42278699995949864,
+      "evaluation_wall_seconds": 1.041693800012581,
+      "evaluation_started_at": "2026-10-05T16:15:53.448697+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:54.500803+08:00"
+    },
+    {
+      "id": "init_2828_03",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "minimum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.minimum(np.ones_like(bins), item)",
+      "internal_key": "a0f7d73a72190de3a947b2cc5077c737d0e17050774b137462c192f919e40ee7",
+      "execution_key": "a0f7d73a72190de3a947b2cc5077c737d0e17050774b137462c192f919e40ee7",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2071,
+          "runtime": 0.10466099996119738,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c565dee7ffb56e324646796f04f17fcad3546c1872846e77b0fff00ccf735d01",
+          "chosen_capacity_hash": "0c6ed44ad29060c503df41cf90b347689db7831781c43591cd6c4c5a3289c9c7",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2049,
+          "runtime": 0.11726580001413822,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "8d094aadb88af122a8e9affb9a9ffef9fe01a1dfd3721b465b0511f17b39cb08",
+          "chosen_capacity_hash": "11b22820dbcbe750409bb9a8abbcbed6a7169739a90861f7582a535f3a67407f",
+          "new_bins": 2049
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2098,
+          "runtime": 0.10360470006708056,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "625a3e5e52910eb13f32110d1ba5e9afd8478fefb034d35fb080ef08e6014179",
+          "chosen_capacity_hash": "d133bea6661a917315f688384d145c3a989c0dc3271a72013acd38ef6f56d4e5",
+          "new_bins": 2098
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2076,
+          "runtime": 0.0839214000152424,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c216ebd297b2f2ce1401939676e21aba8b689dca1752074b39ad1d6cc00ccee4",
+          "chosen_capacity_hash": "6952953e0de8c9bf7c4fd772def2d10fd08c82526e78e05498078253e361f2cb",
+          "new_bins": 2076
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2073,
+          "runtime": 0.07081820000894368,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c90eb29fc90bf999a548fd7b1b4131ece2b712cd582809a7129cd6e1feb90d31",
+          "chosen_capacity_hash": "e6b5663f4afbd52145f26f8e26ecf11b6f5639611a998869e9bf06b094c8d59f",
+          "new_bins": 2073
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 628
+      },
+      "warnings": [],
+      "mean_bins": 2073.4,
+      "trace_path": "traces/pilot_dev_init_2828_03.npz",
+      "worker_wall_seconds": 0.5193703999975696,
+      "evaluation_wall_seconds": 1.2373588000191376,
+      "evaluation_started_at": "2026-10-05T16:15:51.688970+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:52.937833+08:00"
+    },
+    {
+      "id": "init_2828_14",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "zeros_like",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "zeros_like",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.zeros_like(bins) + np.zeros_like(bins)",
+      "internal_key": "e3ab757c56f2cbbf00fc28f9855b772d1b0e7a74882153d9a38027e60929e711",
+      "execution_key": "e3ab757c56f2cbbf00fc28f9855b772d1b0e7a74882153d9a38027e60929e711",
+      "internal_nodes": 5,
+      "internal_depth": 3,
+      "nodes": 5,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2071,
+          "runtime": 0.09972479997668415,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c565dee7ffb56e324646796f04f17fcad3546c1872846e77b0fff00ccf735d01",
+          "chosen_capacity_hash": "0c6ed44ad29060c503df41cf90b347689db7831781c43591cd6c4c5a3289c9c7",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2049,
+          "runtime": 0.09818380000069737,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "8d094aadb88af122a8e9affb9a9ffef9fe01a1dfd3721b465b0511f17b39cb08",
+          "chosen_capacity_hash": "11b22820dbcbe750409bb9a8abbcbed6a7169739a90861f7582a535f3a67407f",
+          "new_bins": 2049
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2098,
+          "runtime": 0.09759549994487315,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "625a3e5e52910eb13f32110d1ba5e9afd8478fefb034d35fb080ef08e6014179",
+          "chosen_capacity_hash": "d133bea6661a917315f688384d145c3a989c0dc3271a72013acd38ef6f56d4e5",
+          "new_bins": 2098
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2076,
+          "runtime": 0.09966820001136512,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c216ebd297b2f2ce1401939676e21aba8b689dca1752074b39ad1d6cc00ccee4",
+          "chosen_capacity_hash": "6952953e0de8c9bf7c4fd772def2d10fd08c82526e78e05498078253e361f2cb",
+          "new_bins": 2076
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2073,
+          "runtime": 0.09506770002190024,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c90eb29fc90bf999a548fd7b1b4131ece2b712cd582809a7129cd6e1feb90d31",
+          "chosen_capacity_hash": "e6b5663f4afbd52145f26f8e26ecf11b6f5639611a998869e9bf06b094c8d59f",
+          "new_bins": 2073
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 676
+      },
+      "warnings": [],
+      "mean_bins": 2073.4,
+      "trace_path": "traces/pilot_dev_init_2828_14.npz",
+      "worker_wall_seconds": 0.5309141000034288,
+      "evaluation_wall_seconds": 1.2078438999596983,
+      "evaluation_started_at": "2026-10-05T16:15:55.065860+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:56.280783+08:00"
+    },
+    {
+      "id": "init_2828_06",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "maximum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "abs",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "zeros_like",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ],
+                "keywords": []
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Constant",
+              "value": -50.0,
+              "kind": null
+            },
+            "op": {
+              "_ast": "Add"
+            },
+            "right": {
+              "_ast": "Constant",
+              "value": -20.0,
+              "kind": null
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.maximum(np.abs(np.zeros_like(bins)), -50.0 + -20.0)",
+      "internal_key": "00a3d75f65c6207ca0ff81ae74efeed83fb5fbf637ee16980357148520adb611",
+      "execution_key": "dcb1a9a3e58fdd30f5245d73a0e56d2b2adc8df6f505592a9e3ccfc21826b5a6",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 9,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2071,
+          "runtime": 0.09247579996008426,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c565dee7ffb56e324646796f04f17fcad3546c1872846e77b0fff00ccf735d01",
+          "chosen_capacity_hash": "0c6ed44ad29060c503df41cf90b347689db7831781c43591cd6c4c5a3289c9c7",
+          "new_bins": 2071
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2049,
+          "runtime": 0.08406810008455068,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "8d094aadb88af122a8e9affb9a9ffef9fe01a1dfd3721b465b0511f17b39cb08",
+          "chosen_capacity_hash": "11b22820dbcbe750409bb9a8abbcbed6a7169739a90861f7582a535f3a67407f",
+          "new_bins": 2049
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2098,
+          "runtime": 0.07788820005953312,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "625a3e5e52910eb13f32110d1ba5e9afd8478fefb034d35fb080ef08e6014179",
+          "chosen_capacity_hash": "d133bea6661a917315f688384d145c3a989c0dc3271a72013acd38ef6f56d4e5",
+          "new_bins": 2098
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2076,
+          "runtime": 0.0796595000429079,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "c216ebd297b2f2ce1401939676e21aba8b689dca1752074b39ad1d6cc00ccee4",
+          "chosen_capacity_hash": "6952953e0de8c9bf7c4fd772def2d10fd08c82526e78e05498078253e361f2cb",
+          "new_bins": 2076
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2073,
+          "runtime": 0.09452090004924685,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "c90eb29fc90bf999a548fd7b1b4131ece2b712cd582809a7129cd6e1feb90d31",
+          "chosen_capacity_hash": "e6b5663f4afbd52145f26f8e26ecf11b6f5639611a998869e9bf06b094c8d59f",
+          "new_bins": 2073
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 672
+      },
+      "warnings": [],
+      "mean_bins": 2073.4,
+      "trace_path": "traces/pilot_dev_init_2828_06.npz",
+      "worker_wall_seconds": 0.46802030003163964,
+      "evaluation_wall_seconds": 1.0678372998954728,
+      "evaluation_started_at": "2026-10-05T16:15:52.887085+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:53.977467+08:00"
+    },
+    {
+      "id": "init_2828_12",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": -5.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(bins > item, bins, -5.0) - (bins - item)",
+      "internal_key": "cc6a64d34a796ca5f002ffd414e2e6fef4363949a3797a615474b190dbf5eaac",
+      "execution_key": "53b5718ce6cd336d8a20c12954224822ac77ba2a85056d819fdb7542f58f9fd5",
+      "internal_nodes": 10,
+      "internal_depth": 4,
+      "nodes": 11,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2087,
+          "runtime": 0.11053790000732988,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "eb0eea9c3352539ba103ac6d9c2d233c75621f8533d5fc4fcdecdaade9c7e079",
+          "chosen_capacity_hash": "d2f2b44e7919eb3ad80d1ea6bd3ec43f0e0f7c755a70c953cd4572b88ff02210",
+          "new_bins": 2087
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2068,
+          "runtime": 0.09346419991925359,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "73ca8753eacc973b7cff2cb1769d0ee0cf26e0ba787db3b53aac97f100755e6c",
+          "chosen_capacity_hash": "0690e59f0689f57625a48361c0afe30ffbe9506971bb63d2e62b3e560df4e63c",
+          "new_bins": 2068
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2117,
+          "runtime": 0.10991839994676411,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "2428d8dadd7d4620b8accf0f828f79e6a882101574f5a17771e4a8de6b7a4261",
+          "chosen_capacity_hash": "baa393145d4cdacf8977e0ab2a48d64e06460819a8f0bf7047ba688da5652be3",
+          "new_bins": 2117
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2095,
+          "runtime": 0.1117466000141576,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "606723bd90fe0b13e029629ae49321a5a003ef6ed0dcc94a088191e44f974786",
+          "chosen_capacity_hash": "b2b1690a51b6e775eda0698e52f092ba67fcb5a00143033e10a04d7d5d894d36",
+          "new_bins": 2095
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2090,
+          "runtime": 0.09946139995008707,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "4d1384f3d5cd62bff683cbbbce8b628bc7c24be4b336e0e3fb2a365720b3e615",
+          "chosen_capacity_hash": "57b6ddd45986176826f48d92654507ce17511226daa6b27ffcc6057b30a5aa00",
+          "new_bins": 2090
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 576
+      },
+      "warnings": [],
+      "mean_bins": 2091.4,
+      "trace_path": "traces/pilot_dev_init_2828_12.npz",
+      "worker_wall_seconds": 0.5708481000037864,
+      "evaluation_wall_seconds": 1.2128665000200272,
+      "evaluation_started_at": "2026-10-05T16:15:54.508371+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:55.730401+08:00"
+    },
+    {
+      "id": "init_2828_16",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "maximum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          {
+            "_ast": "Constant",
+            "value": 1.0,
+            "kind": null
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.maximum(bins, 1.0)",
+      "internal_key": "180647a41334d1e8e5a2feabdd4b6ecab5c79f5ae41fc2f0aa9c5a215cb652d7",
+      "execution_key": "180647a41334d1e8e5a2feabdd4b6ecab5c79f5ae41fc2f0aa9c5a215cb652d7",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2242,
+          "runtime": 0.08648830000311136,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "9a19e51769f5decb83afcd4f7593f7f49b271fcc4156f00a387fed5188eb620e",
+          "chosen_capacity_hash": "c3d65ace560665668b7d592418f62ae5ffadf8800adc51fb06332120256f21ce",
+          "new_bins": 2242
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2214,
+          "runtime": 0.07491819991264492,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "2ec0dc0a9be9f4961f5ecbea04933a30137a165e5dc700998a8f772a795e29fc",
+          "chosen_capacity_hash": "977da66042fdf63e2880fd3d05949f8d2cbe3dab502efb91926befce5e67a9f2",
+          "new_bins": 2214
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2281,
+          "runtime": 0.07399599999189377,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "887696dec8fe6a774cf968cae7f61a586cec61475000a634bb8790139f86cf58",
+          "chosen_capacity_hash": "4c872c2da70db4685c5194ab3c73555be00c00d83580ed7fcfc45dac8fb6451a",
+          "new_bins": 2281
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2251,
+          "runtime": 0.06926899997051805,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "70960783732fc6f6792db4b8cc4937c5528beaa51023a5a3b9de3ad3fc8e4f67",
+          "chosen_capacity_hash": "e6d57d35de712f6d7842c32b020d74739d618f6708b2e7d6799c184153ed7633",
+          "new_bins": 2251
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2255,
+          "runtime": 0.09398649993818253,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "b7f72ae1501b0953f8cf39f5474318b3d9cec6e456d4a6f08a5e475277a6fe31",
+          "chosen_capacity_hash": "d9a038b442db53556b9dc49080604e6e0c2c5e0fc3fabd043e1917fd888816ef",
+          "new_bins": 2255
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 384
+      },
+      "warnings": [],
+      "mean_bins": 2248.6,
+      "trace_path": "traces/pilot_dev_init_2828_16.npz",
+      "worker_wall_seconds": 0.4372119000181556,
+      "evaluation_wall_seconds": 1.0977938000578433,
+      "evaluation_started_at": "2026-10-05T16:15:55.738469+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:56.844202+08:00"
+    },
+    {
+      "id": "init_2828_02",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2242,
+          "runtime": 0.08765640005003661,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "9a19e51769f5decb83afcd4f7593f7f49b271fcc4156f00a387fed5188eb620e",
+          "chosen_capacity_hash": "c3d65ace560665668b7d592418f62ae5ffadf8800adc51fb06332120256f21ce",
+          "new_bins": 2242
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2214,
+          "runtime": 0.1049460000358522,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "2ec0dc0a9be9f4961f5ecbea04933a30137a165e5dc700998a8f772a795e29fc",
+          "chosen_capacity_hash": "977da66042fdf63e2880fd3d05949f8d2cbe3dab502efb91926befce5e67a9f2",
+          "new_bins": 2214
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2281,
+          "runtime": 0.10236169991549104,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "887696dec8fe6a774cf968cae7f61a586cec61475000a634bb8790139f86cf58",
+          "chosen_capacity_hash": "4c872c2da70db4685c5194ab3c73555be00c00d83580ed7fcfc45dac8fb6451a",
+          "new_bins": 2281
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2251,
+          "runtime": 0.08103400003165007,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "70960783732fc6f6792db4b8cc4937c5528beaa51023a5a3b9de3ad3fc8e4f67",
+          "chosen_capacity_hash": "e6d57d35de712f6d7842c32b020d74739d618f6708b2e7d6799c184153ed7633",
+          "new_bins": 2251
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2255,
+          "runtime": 0.07095820002723485,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "b7f72ae1501b0953f8cf39f5474318b3d9cec6e456d4a6f08a5e475277a6fe31",
+          "chosen_capacity_hash": "d9a038b442db53556b9dc49080604e6e0c2c5e0fc3fabd043e1917fd888816ef",
+          "new_bins": 2255
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 676
+      },
+      "warnings": [],
+      "mean_bins": 2248.6,
+      "trace_path": "traces/pilot_dev_init_2828_02.npz",
+      "worker_wall_seconds": 0.4839975000359118,
+      "evaluation_wall_seconds": 1.2058439999818802,
+      "evaluation_started_at": "2026-10-05T16:15:51.642286+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:52.856763+08:00"
+    },
+    {
+      "id": "init_2828_10",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.abs(bins - item)",
+      "internal_key": "7ef67572a056cdc75a025c3e7e4e757873b4f70750fceda577b1eb926185e09d",
+      "execution_key": "7ef67572a056cdc75a025c3e7e4e757873b4f70750fceda577b1eb926185e09d",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2242,
+          "runtime": 0.07374300004448742,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "9a19e51769f5decb83afcd4f7593f7f49b271fcc4156f00a387fed5188eb620e",
+          "chosen_capacity_hash": "c3d65ace560665668b7d592418f62ae5ffadf8800adc51fb06332120256f21ce",
+          "new_bins": 2242
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2214,
+          "runtime": 0.06946110003627837,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "2ec0dc0a9be9f4961f5ecbea04933a30137a165e5dc700998a8f772a795e29fc",
+          "chosen_capacity_hash": "977da66042fdf63e2880fd3d05949f8d2cbe3dab502efb91926befce5e67a9f2",
+          "new_bins": 2214
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2281,
+          "runtime": 0.07585729996208102,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "887696dec8fe6a774cf968cae7f61a586cec61475000a634bb8790139f86cf58",
+          "chosen_capacity_hash": "4c872c2da70db4685c5194ab3c73555be00c00d83580ed7fcfc45dac8fb6451a",
+          "new_bins": 2281
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2251,
+          "runtime": 0.07241390005219728,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "70960783732fc6f6792db4b8cc4937c5528beaa51023a5a3b9de3ad3fc8e4f67",
+          "chosen_capacity_hash": "e6d57d35de712f6d7842c32b020d74739d618f6708b2e7d6799c184153ed7633",
+          "new_bins": 2251
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2255,
+          "runtime": 0.0857120999135077,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "b7f72ae1501b0953f8cf39f5474318b3d9cec6e456d4a6f08a5e475277a6fe31",
+          "chosen_capacity_hash": "d9a038b442db53556b9dc49080604e6e0c2c5e0fc3fabd043e1917fd888816ef",
+          "new_bins": 2255
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 688
+      },
+      "warnings": [],
+      "mean_bins": 2248.6,
+      "trace_path": "traces/pilot_dev_init_2828_10.npz",
+      "worker_wall_seconds": 0.4163162999320775,
+      "evaluation_wall_seconds": 1.0369095000205562,
+      "evaluation_started_at": "2026-10-05T16:15:53.985619+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:55.028459+08:00"
+    },
+    {
+      "id": "init_2828_05",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "where",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "logical_and",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Mult"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "abs",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Constant",
+                "value": 5.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.where(np.logical_and(bins > item, bins > item), bins * bins, np.abs(5.0))",
+      "internal_key": "fe41ec70078107ec8019ceabd851f9db8aac9137156c67aa3bcd3878e0f4bddf",
+      "execution_key": "fe41ec70078107ec8019ceabd851f9db8aac9137156c67aa3bcd3878e0f4bddf",
+      "internal_nodes": 13,
+      "internal_depth": 4,
+      "nodes": 13,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2242,
+          "runtime": 0.08525990007910877,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "9a19e51769f5decb83afcd4f7593f7f49b271fcc4156f00a387fed5188eb620e",
+          "chosen_capacity_hash": "c3d65ace560665668b7d592418f62ae5ffadf8800adc51fb06332120256f21ce",
+          "new_bins": 2242
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2214,
+          "runtime": 0.10621380002703518,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "2ec0dc0a9be9f4961f5ecbea04933a30137a165e5dc700998a8f772a795e29fc",
+          "chosen_capacity_hash": "977da66042fdf63e2880fd3d05949f8d2cbe3dab502efb91926befce5e67a9f2",
+          "new_bins": 2214
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2281,
+          "runtime": 0.08351239992771298,
+          "cpu_seconds": 0.0625,
+          "trace_hash": "887696dec8fe6a774cf968cae7f61a586cec61475000a634bb8790139f86cf58",
+          "chosen_capacity_hash": "4c872c2da70db4685c5194ab3c73555be00c00d83580ed7fcfc45dac8fb6451a",
+          "new_bins": 2281
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2251,
+          "runtime": 0.0829278000164777,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "70960783732fc6f6792db4b8cc4937c5528beaa51023a5a3b9de3ad3fc8e4f67",
+          "chosen_capacity_hash": "e6d57d35de712f6d7842c32b020d74739d618f6708b2e7d6799c184153ed7633",
+          "new_bins": 2251
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2255,
+          "runtime": 0.08914490009192377,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "b7f72ae1501b0953f8cf39f5474318b3d9cec6e456d4a6f08a5e475277a6fe31",
+          "chosen_capacity_hash": "d9a038b442db53556b9dc49080604e6e0c2c5e0fc3fabd043e1917fd888816ef",
+          "new_bins": 2255
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 604
+      },
+      "warnings": [],
+      "mean_bins": 2248.6,
+      "trace_path": "traces/pilot_dev_init_2828_05.npz",
+      "worker_wall_seconds": 0.4849833999760449,
+      "evaluation_wall_seconds": 1.0871156000066549,
+      "evaluation_started_at": "2026-10-05T16:15:52.864849+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:53.968337+08:00"
+    },
+    {
+      "id": "init_2828_04",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "zeros_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          },
+          "op": {
+            "_ast": "Div"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "abs",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ],
+                "keywords": []
+              },
+              {
+                "_ast": "Constant",
+                "value": 1.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        }
+      },
+      "expression": "np.maximum(bins - item, np.zeros_like(bins)) - np.ones_like(bins) / np.maximum(np.abs(item), 1.0)",
+      "internal_key": "1ec9ec3e311e0750d881fefb3be21d3e46ec968c4f7db99d75e5f2cd4612c0df",
+      "execution_key": "1ec9ec3e311e0750d881fefb3be21d3e46ec968c4f7db99d75e5f2cd4612c0df",
+      "internal_nodes": 14,
+      "internal_depth": 5,
+      "nodes": 14,
+      "depth": 5,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": [],
+      "split": "pilot_dev",
+      "valid": true,
+      "error": "",
+      "instances": [
+        {
+          "instance_id": "pilot_dev_6001",
+          "bins_used": 2242,
+          "runtime": 0.10197429999243468,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "9a19e51769f5decb83afcd4f7593f7f49b271fcc4156f00a387fed5188eb620e",
+          "chosen_capacity_hash": "c3d65ace560665668b7d592418f62ae5ffadf8800adc51fb06332120256f21ce",
+          "new_bins": 2242
+        },
+        {
+          "instance_id": "pilot_dev_6002",
+          "bins_used": 2214,
+          "runtime": 0.1008004000177607,
+          "cpu_seconds": 0.078125,
+          "trace_hash": "2ec0dc0a9be9f4961f5ecbea04933a30137a165e5dc700998a8f772a795e29fc",
+          "chosen_capacity_hash": "977da66042fdf63e2880fd3d05949f8d2cbe3dab502efb91926befce5e67a9f2",
+          "new_bins": 2214
+        },
+        {
+          "instance_id": "pilot_dev_6003",
+          "bins_used": 2281,
+          "runtime": 0.10296649998053908,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "887696dec8fe6a774cf968cae7f61a586cec61475000a634bb8790139f86cf58",
+          "chosen_capacity_hash": "4c872c2da70db4685c5194ab3c73555be00c00d83580ed7fcfc45dac8fb6451a",
+          "new_bins": 2281
+        },
+        {
+          "instance_id": "pilot_dev_6004",
+          "bins_used": 2251,
+          "runtime": 0.09807840001303703,
+          "cpu_seconds": 0.09375,
+          "trace_hash": "70960783732fc6f6792db4b8cc4937c5528beaa51023a5a3b9de3ad3fc8e4f67",
+          "chosen_capacity_hash": "e6d57d35de712f6d7842c32b020d74739d618f6708b2e7d6799c184153ed7633",
+          "new_bins": 2251
+        },
+        {
+          "instance_id": "pilot_dev_6005",
+          "bins_used": 2255,
+          "runtime": 0.09839289996307343,
+          "cpu_seconds": 0.109375,
+          "trace_hash": "b7f72ae1501b0953f8cf39f5474318b3d9cec6e456d4a6f08a5e475277a6fe31",
+          "chosen_capacity_hash": "d9a038b442db53556b9dc49080604e6e0c2c5e0fc3fabd043e1917fd888816ef",
+          "new_bins": 2255
+        }
+      ],
+      "resource_limit": {
+        "enforced": true,
+        "bytes": 536870912,
+        "job_handle": 428
+      },
+      "warnings": [],
+      "mean_bins": 2248.6,
+      "trace_path": "traces/pilot_dev_init_2828_04.npz",
+      "worker_wall_seconds": 0.5390845999354497,
+      "evaluation_wall_seconds": 1.2544128999579698,
+      "evaluation_started_at": "2026-10-05T16:15:52.176505+08:00",
+      "evaluation_completed_at": "2026-10-05T16:15:53.440601+08:00"
+    }
+  ],
+  "completed_at": "2026-10-05T16:24:46.255497+08:00",
+  "LLM_requests": 0,
+  "actual_run_cumulative_seconds": 101.85730979999062,
+  "timing_scope": "full run, includes construction, selection, candidate evaluation, checkpoint I/O; shared initialization separately counted"
+}

@@ -1,10 +1,23 @@
-# Historical Fragment Priors for Genetic Programming
+# Historical Fragment Priors and Behavior-Guided Position Selection for Genetic Programming
 
 DSAI6707 Advanced Computational Intelligence, Project 1: Evolutionary Computation for Emerging AI.
 
-This project studies whether reusable expressions from earlier small language model outputs help a bounded CPU genetic programming search find better online bin packing rules. The main comparison contains **four methods and 30 paired search seeds**, with Best-fit and public EoH rules as fixed quality references. The repository also includes an insertion-position study with three methods and 30 paired seeds. The GP stage makes **zero new LLM calls**; its historical corpus was produced by earlier model requests.
+This project combines reusable expressions from earlier small language model outputs with CPU genetic programming for online bin packing. It evaluates historical fragment reuse in a **four-method, 30-seed study** and behavior-guided insertion-position selection in a **three-method, 30-seed study**. Historical fragment GP and behavior-guided position GP achieved the lowest observed mean test bin counts in their respective comparisons. Lower bin counts mean better packing.
+
+## Project advantages
+
+- **Better average packing with historical fragments.** Across the 30 paired seeds, historical fragment GP used 2.798 fewer bins per B instance than basic GP and 2.939 fewer than matched random fragment GP.
+- **More runs improved their starting point.** Historical fragment GP improved development initialization in 12 of 30 runs (40.0%), compared with 1 of 30 for basic GP and 2 of 30 for matched random fragment GP.
+- **Better average packing within the same time budget.** Behavior-guided position GP used 1.873 fewer test bins than structure-guided selection and 1.239 fewer than uniform position selection, with 120 seconds per run for every method.
+- **CPU search with zero new LLM calls.** Search reuses the historical corpus, typed fragment library, and frozen ranking models. Initialization, trial insertion, behavior probes, ranking, evaluation, and logging are included in the position study's run budget.
+
+The implementation converts 1,166 of the 1,242 historical valid programs into input-resolved typed expressions and supplies 1,240 eligible historical fragments. GP combines compatible subtrees under depth and size limits. For eligible fragment insertions, behavior-guided selection compares up to three legal positions before fully evaluating the selected child. The repository supplies source code, fixed data, final programs, complete search traces, and reproduction tools.
 
 ## Main findings
+
+### Historical fragment reuse: 30 paired seeds
+
+All four methods share initialization and use 128 nominal candidate slots per run, including 16 initial slots. Invalid and duplicate attempts consume slots.
 
 | Method | Mean B bins | SD across 30 run means | Runs improving development initialization |
 | --- | ---: | ---: | ---: |
@@ -13,9 +26,19 @@ This project studies whether reusable expressions from earlier small language mo
 | Fixed parent fragment sampling | 2090.507 | 3.829 | 10/30 |
 | Matched random fragment GP | 2092.453 | 0.310 | 2/30 |
 
-Historical fragment GP uses 2.939 fewer B bins than the matched random fragment control on average, with a descriptive crossed-bootstrap 95% interval of [1.242, 4.846]. The mean difference relative to fixed parent sampling is 0.992 bins, interval [-1.021, 3.172].
+Historical fragment GP also used 0.992 fewer B bins than fixed-parent fragment sampling on average. The [historical study results](results/aggregate/) contain all 120 run summaries, 3,690 instance results, and paired comparisons.
 
+### Insertion-position selection: 30 paired seeds
 
+The initial 10 seeds and first 20-seed extension form 90 runs. Each method receives 120 seconds per run and the same paired initialization.
+
+| Method | Mean B bins | SD across 30 run means | Time budget per run |
+| --- | ---: | ---: | ---: |
+| Uniform position GP | 2087.254 | 6.421 | 120 s |
+| Structure-guided position GP | 2087.889 | 4.960 | 120 s |
+| Behavior-guided position GP (A) | 2086.016 | 7.249 | 120 s |
+
+Behavior-guided position GP achieved the lowest average bin count with probe and ranking costs included in the shared time budget. The [combined position results](fragment_position_gp_equal_time_20seed_extension_01/aggregate/) contain all 90 run summaries, 2,790 instance results, and paired comparisons. Each study uses its own saved B instance collection.
 
 ## Setup
 
@@ -62,7 +85,7 @@ python -m dsai replay
 python -m dsai evaluate --out runs/B_recheck --compare-archived
 ```
 
-The generated data in `generate-data` are a reproduction of already viewed sequences, not a new holdout. All 30 B instances are included once and shared across the search seeds.
+The `generate-data` command reproduces the saved item sequences. All 30 B instances are included once and shared across the search seeds.
 
 For a smaller conversion check before the full 1,166-program verification:
 
@@ -116,6 +139,6 @@ The insertion-position study uses the initial 10 seeds and the first 20-seed ext
 
 ## Coursework deliverables
 
-The source code, setup instructions, data preparation, execution, evaluation and supporting raw/processed evidence are supplied here. `docs/DELIVERABLES.md` maps them to the assignment. A complete research report and its required recent-literature review are separate submission items; this repository does not claim to provide them. Word documents are not included.
+The source code, setup instructions, data preparation, execution, evaluation and supporting raw/processed evidence are supplied here. `docs/DELIVERABLES.md` maps them to the assignment. The research report and recent-literature review are submitted separately. Word documents are not included.
 
 See [the experimental protocol](docs/EXPERIMENT.md), [reproduction details](docs/REPRODUCIBILITY.md) and [third-party attribution](THIRD_PARTY_NOTICES.md). Project-specific code is supplied for course assessment; no blanket open-source license is asserted for all contents. The included EoH-derived material retains its own license and attribution.

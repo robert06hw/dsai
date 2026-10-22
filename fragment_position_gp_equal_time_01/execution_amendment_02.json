@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-18T10:30:56.156274+08:00",
+  "status": "user_authorized_extra_restart_after_passed_tests",
+  "reason": "OneDrive transient deny-delete locks caused atomic JSON writes to fail. Infrastructure outcomes cannot be treated as heuristic-quality failures.",
+  "repair": "unique per-write temporary file plus up to30 PermissionError retries at50ms, matching archived framework retry allowance; all retries inside120s run deadline; reject late commits",
+  "methods_models_seeds_time_unchanged": true,
+  "registration_sha256": "c836b6ad7e5b6227523a5bd748b098f0916a6269d9562e22c6580141ba58da3f",
+  "prelaunch_audit_passed": true,
+  "audit_sha256": "dc7963c3d2b13b4a583c209ebf64168c033020ec26c8f4ffc580155d46ab80f7",
+  "additional_restart_exceeds_original_single_retry_limit": true,
+  "user_authorization_received": true,
+  "no_new_search_after_hold": true,
+  "archives": [
+    {
+      "archive": "startup_failure_01",
+      "manifest_sha256": "9c6714b185ec75a4ad8a85686f6b398a33e48bfab35b18bdf67f9d564b86d0e8",
+      "runs": [
+        {
+          "run": "behavior_A_position_gp_97688696",
+          "last_commit_elapsed_seconds": 37.28314460000547,
+          "completed_before_stop": false,
+          "scheduler_stop_elapsed_seconds": null,
+          "IO_worker_failures": 0,
+          "quality_inspected_for_restart": false
+        }
+      ]
+    },
+    {
+      "archive": "startup_failure_02",
+      "manifest_sha256": "f8e7986837e65fe6bd88da651066a077cd76324103fa3ab954f1d439141fc4d8",
+      "runs": [
+        {
+          "run": "behavior_A_position_gp_97688696",
+          "last_commit_elapsed_seconds": 119.85416989999794,
+          "completed_before_stop": true,
+          "scheduler_stop_elapsed_seconds": 120.00422889999754,
+          "IO_worker_failures": 2,
+          "quality_inspected_for_restart": false
+        },
+        {
+          "run": "structure_position_gp_97688696",
+          "last_commit_elapsed_seconds": 112.23931670000457,
+          "completed_before_stop": false,
+          "scheduler_stop_elapsed_seconds": null,
+          "IO_worker_failures": 4,
+          "quality_inspected_for_restart": false
+        }
+      ]
+    }
+  ],
+  "new_LLM_calls": 0,
+  "user_authorization_file": "restart_authorization_02.json",
+  "user_authorization_sha256": "fc90ae8a1604a5a90917e6f234b925e49b6f9839a48701da2e291aaea63e2ef9"
+}

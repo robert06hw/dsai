@@ -1,0 +1,3159 @@
+{
+  "303": [
+    {
+      "id": "init_303_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ]
+    },
+    {
+      "id": "init_303_02",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.abs(bins)",
+      "internal_key": "62ee4c5c17144f58ec07325626d415aa51586a3013b5de151e1ad30c830f52fe",
+      "execution_key": "62ee4c5c17144f58ec07325626d415aa51586a3013b5de151e1ad30c830f52fe",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_03",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "minimum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.minimum(bins - item, bins - item)",
+      "internal_key": "26a8f985f3719ad68695c351dddfebcd10497cff39f84c141c697b8a3db7ec9a",
+      "execution_key": "26a8f985f3719ad68695c351dddfebcd10497cff39f84c141c697b8a3db7ec9a",
+      "internal_nodes": 7,
+      "internal_depth": 3,
+      "nodes": 7,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_04",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "zeros_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.abs(np.zeros_like(bins))",
+      "internal_key": "c3255322489959dd9754b297d8b88583c5548f9990a2c7d598cda648ec08f4a8",
+      "execution_key": "c3255322489959dd9754b297d8b88583c5548f9990a2c7d598cda648ec08f4a8",
+      "internal_nodes": 3,
+      "internal_depth": 3,
+      "nodes": 3,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_05",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_06",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "expression": "bins",
+      "internal_key": "72d2309bfefe6fb102f5c8344ba7dc1d54e49f679c9aa39ecfe60ec48d5e3e53",
+      "execution_key": "72d2309bfefe6fb102f5c8344ba7dc1d54e49f679c9aa39ecfe60ec48d5e3e53",
+      "internal_nodes": 1,
+      "internal_depth": 1,
+      "nodes": 1,
+      "depth": 1,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_07",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_08",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "USub"
+              },
+              "operand": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Div"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "abs",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Constant",
+                    "value": -25.0,
+                    "kind": null
+                  }
+                ],
+                "keywords": []
+              },
+              {
+                "_ast": "Constant",
+                "value": 1.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        }
+      },
+      "expression": "np.maximum(-bins, np.ones_like(bins)) + bins / np.maximum(np.abs(-25.0), 1.0)",
+      "internal_key": "24d42c3b9be8a090bd98710632c0a82063b373641831e575697b6df9c8133f25",
+      "execution_key": "b038bf23fe84fb90da3d5075de40cecf233a36cbc6eac0af562316f245763855",
+      "internal_nodes": 12,
+      "internal_depth": 5,
+      "nodes": 13,
+      "depth": 6,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_09",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "zeros_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.zeros_like(bins)",
+      "internal_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "execution_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "01292ca3100b782ac82d4c20218e0309c26d521947211cc5d3886595eaf69604",
+        "2280ab8a9244b1c320b18cd69254665b79ed62690077c8cec0aaa3689425e48f",
+        "c8ba59061ca87d62c051d9fc503b78c51947b2083a4e8e0680f88fdd60840437"
+      ]
+    },
+    {
+      "id": "init_303_10",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(bins > item, np.ones_like(bins), item) - -bins",
+      "internal_key": "f38207a2afe444f2cd223c2ded4831e8718154511c56f50e1e33c73e70a43699",
+      "execution_key": "f38207a2afe444f2cd223c2ded4831e8718154511c56f50e1e33c73e70a43699",
+      "internal_nodes": 10,
+      "internal_depth": 4,
+      "nodes": 10,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_11",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(np.ones_like(bins))",
+      "internal_key": "00c54cf72c412db99831dce7508e84342a361b13ad9e31057fd1644750cbd9d5",
+      "execution_key": "00c54cf72c412db99831dce7508e84342a361b13ad9e31057fd1644750cbd9d5",
+      "internal_nodes": 3,
+      "internal_depth": 3,
+      "nodes": 3,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_12",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "zeros_like",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ],
+                "keywords": []
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.abs(np.maximum(bins, np.zeros_like(bins)))",
+      "internal_key": "bf1cb1d0e01bea8c9c298f243f510b0d03e53ea56d20c7ef56d8d839462df8dd",
+      "execution_key": "bf1cb1d0e01bea8c9c298f243f510b0d03e53ea56d20c7ef56d8d839462df8dd",
+      "internal_nodes": 5,
+      "internal_depth": 4,
+      "nodes": 5,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_13",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "zeros_like",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Div"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "abs",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Constant",
+                  "value": -20.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.zeros_like(bins) / np.maximum(np.abs(-20.0), 1.0)",
+      "internal_key": "6a3340665d395800f2849f003887da7c82ceffb849ecb4dc0b605d13dcf8620d",
+      "execution_key": "50fe944dcc885cbbf4f7b01c96f393f42688b67fc3e739518b333426d5858e0c",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 8,
+      "depth": 5,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_14",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(bins)",
+      "internal_key": "bf4c66614df5cb174601cc30e1de90c694fd342dc261226f15f2c4efd69c17c1",
+      "execution_key": "bf4c66614df5cb174601cc30e1de90c694fd342dc261226f15f2c4efd69c17c1",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_15",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "square",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "USub"
+              },
+              "operand": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Div"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "abs",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Call",
+                  "func": {
+                    "_ast": "Attribute",
+                    "value": {
+                      "_ast": "Name",
+                      "id": "np",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "attr": "zeros_like",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "args": [
+                    {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    }
+                  ],
+                  "keywords": []
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.square(-bins) / np.maximum(np.abs(np.zeros_like(bins)), 1.0)",
+      "internal_key": "f4aa2e4309d2f6f3e9ed7dd95dece2fcca6138b470b91988edb7b99bf801ec80",
+      "execution_key": "f4aa2e4309d2f6f3e9ed7dd95dece2fcca6138b470b91988edb7b99bf801ec80",
+      "internal_nodes": 9,
+      "internal_depth": 5,
+      "nodes": 9,
+      "depth": 5,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_303_16",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "zeros_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(np.zeros_like(bins))",
+      "internal_key": "0cb9269b049fcf83559914cb28d2cf803c03fb0778d43b34496db171b6f575e3",
+      "execution_key": "0cb9269b049fcf83559914cb28d2cf803c03fb0778d43b34496db171b6f575e3",
+      "internal_nodes": 3,
+      "internal_depth": 3,
+      "nodes": 3,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    }
+  ],
+  "404": [
+    {
+      "id": "init_404_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ]
+    },
+    {
+      "id": "init_404_02",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "minimum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "square",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.minimum(bins - item, np.ones_like(bins)) + np.square(bins)",
+      "internal_key": "17cc8a86cee0bc08f66575114f6ecadfb0b389001fe734bffec42aa7a5e882c0",
+      "execution_key": "17cc8a86cee0bc08f66575114f6ecadfb0b389001fe734bffec42aa7a5e882c0",
+      "internal_nodes": 9,
+      "internal_depth": 4,
+      "nodes": 9,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_03",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "zeros_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.zeros_like(bins)",
+      "internal_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "execution_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "01292ca3100b782ac82d4c20218e0309c26d521947211cc5d3886595eaf69604",
+        "2280ab8a9244b1c320b18cd69254665b79ed62690077c8cec0aaa3689425e48f",
+        "c8ba59061ca87d62c051d9fc503b78c51947b2083a4e8e0680f88fdd60840437"
+      ]
+    },
+    {
+      "id": "init_404_04",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "minimum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "where",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Compare",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "ops": [
+                  {
+                    "_ast": "Gt"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ]
+              },
+              {
+                "_ast": "Call",
+                "func": {
+                  "_ast": "Attribute",
+                  "value": {
+                    "_ast": "Name",
+                    "id": "np",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  },
+                  "attr": "zeros_like",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "args": [
+                  {
+                    "_ast": "Name",
+                    "id": "bins",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                ],
+                "keywords": []
+              },
+              {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Constant",
+              "value": 0.0,
+              "kind": null
+            },
+            "op": {
+              "_ast": "Mult"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.minimum(np.where(bins > item, np.zeros_like(bins), item), 0.0 * item)",
+      "internal_key": "2f498610a0a7c8dad88cab3a18fb9328e45f1523ceda15beb037750155543a13",
+      "execution_key": "2f498610a0a7c8dad88cab3a18fb9328e45f1523ceda15beb037750155543a13",
+      "internal_nodes": 11,
+      "internal_depth": 4,
+      "nodes": 11,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_05",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "minimum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "zeros_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "ones_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Add"
+          },
+          "right": {
+            "_ast": "Constant",
+            "value": 100.0,
+            "kind": null
+          }
+        }
+      },
+      "expression": "np.minimum(np.zeros_like(bins), np.ones_like(bins)) * (bins + 100.0)",
+      "internal_key": "c73627553f1bc2bf6a09f1c27a0ba2656c6f9daf2d3cb0e586e5157c5713ca91",
+      "execution_key": "c73627553f1bc2bf6a09f1c27a0ba2656c6f9daf2d3cb0e586e5157c5713ca91",
+      "internal_nodes": 9,
+      "internal_depth": 4,
+      "nodes": 9,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_06",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ]
+    },
+    {
+      "id": "init_404_07",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ]
+    },
+    {
+      "id": "init_404_08",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "maximum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "maximum",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Constant",
+                "value": -50.0,
+                "kind": null
+              },
+              {
+                "_ast": "Constant",
+                "value": 100.0,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.maximum(bins - item, np.maximum(-50.0, 100.0))",
+      "internal_key": "629d581820484edc2197f2fdf8c3cba7543736f96e2b859fdd20441ae86224f6",
+      "execution_key": "00f44f000249f518426b2c8a9899b0db48a788a5b4dac6a57e89124bab266385",
+      "internal_nodes": 7,
+      "internal_depth": 3,
+      "nodes": 8,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_09",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "bins * (bins - item)",
+      "internal_key": "5e78e86514d2fc3e001e45bc40f66ec134c24c11d1d0af1c628ba74c9e8a7f9b",
+      "execution_key": "5e78e86514d2fc3e001e45bc40f66ec134c24c11d1d0af1c628ba74c9e8a7f9b",
+      "internal_nodes": 5,
+      "internal_depth": 3,
+      "nodes": 5,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_10",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ]
+    },
+    {
+      "id": "init_404_11",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "zeros_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(bins - np.zeros_like(bins))",
+      "internal_key": "4b9575f9307710671f8f268e0d211b02de878773fa189ea1af118d11b8288377",
+      "execution_key": "4b9575f9307710671f8f268e0d211b02de878773fa189ea1af118d11b8288377",
+      "internal_nodes": 5,
+      "internal_depth": 4,
+      "nodes": 5,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_12",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_13",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Div"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "abs",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Constant",
+                  "value": 10.0,
+                  "kind": null
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "bins / np.maximum(np.abs(10.0), 1.0)",
+      "internal_key": "ae42633c618b7957ab57400836841d4623440203654103fce4d83cb732bfed1a",
+      "execution_key": "ae42633c618b7957ab57400836841d4623440203654103fce4d83cb732bfed1a",
+      "internal_nodes": 6,
+      "internal_depth": 4,
+      "nodes": 6,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_14",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "zeros_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.zeros_like(bins)",
+      "internal_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "execution_key": "32e4b648ef65f37aaa56b85829a99714ed3e69c53debfc7a002020342477e79c",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "01292ca3100b782ac82d4c20218e0309c26d521947211cc5d3886595eaf69604",
+        "2280ab8a9244b1c320b18cd69254665b79ed62690077c8cec0aaa3689425e48f",
+        "c8ba59061ca87d62c051d9fc503b78c51947b2083a4e8e0680f88fdd60840437"
+      ]
+    },
+    {
+      "id": "init_404_15",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Mult"
+            },
+            "right": {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "USub"
+              },
+              "operand": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.abs(bins * -bins)",
+      "internal_key": "07495b6b3b64e7944d48fb2583c641555f2b69c5473878c0ba867e1268b09e9b",
+      "execution_key": "07495b6b3b64e7944d48fb2583c641555f2b69c5473878c0ba867e1268b09e9b",
+      "internal_nodes": 5,
+      "internal_depth": 4,
+      "nodes": 5,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_404_16",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ]
+    }
+  ],
+  "505": [
+    {
+      "id": "init_505_01",
+      "source": "Best-fit",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "-(bins - item)",
+      "internal_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "execution_key": "2f481abc52aa825ea8db6db3a22a7d48bfbac07cdd23e518cb36f6f8398a73ba",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "15b836e020194f48a50dc019d6dbf6e3071f2d2359149f078994e5b33bc4dcfb",
+        "441a7d32be162f54280f9d150e5925cf4284dd1ad4f4665278ec497c424e759f",
+        "a55a00b31e6676894ea0fb92e3d200b3317bfa14aa6eb09f3ccadee55ec111de",
+        "a6c13257b3985d88ccc387045bafff4415415f4212600ce1bf229d67d4fd19bb",
+        "a6dc55a007624307a7be924a25639a9600e17f761206043dcc8655761212dc26",
+        "f33d2a16fef1ebe6e825d2837cedb60ee21dafb6402786149b75c04baf8a0870"
+      ]
+    },
+    {
+      "id": "init_505_02",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "expression": "bins",
+      "internal_key": "72d2309bfefe6fb102f5c8344ba7dc1d54e49f679c9aa39ecfe60ec48d5e3e53",
+      "execution_key": "72d2309bfefe6fb102f5c8344ba7dc1d54e49f679c9aa39ecfe60ec48d5e3e53",
+      "internal_nodes": 1,
+      "internal_depth": 1,
+      "nodes": 1,
+      "depth": 1,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_03",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          "op": {
+            "_ast": "Mult"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "(bins - item) * np.ones_like(bins) + item",
+      "internal_key": "71a1a7c5609da7afec582e5fb77248815b93e36e1ac57030c0ed47b9a14da14c",
+      "execution_key": "71a1a7c5609da7afec582e5fb77248815b93e36e1ac57030c0ed47b9a14da14c",
+      "internal_nodes": 8,
+      "internal_depth": 4,
+      "nodes": 8,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_04",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_05",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "maximum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.maximum(bins, np.ones_like(bins))",
+      "internal_key": "474e528b0db1d05838bca3d0409a16b671a92a7e36e11854faf149557a442f62",
+      "execution_key": "474e528b0db1d05838bca3d0409a16b671a92a7e36e11854faf149557a442f62",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_06",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Sub"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "item",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins - item",
+      "internal_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "execution_key": "7db402929fca45793ec62a2eeb4ec393e45b8f3f906e7f40ebcf68a7b7787a8e",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "exact_existing_strategy",
+      "historical_tree_program_ids": [
+        "26919380fc1256ae1d9debafc2122a6f186431cf70055bd962f74823cb5a09db",
+        "5e179deb30a321fd691310884815bbb46f6b7a77c5529022d1c37b95566d054d",
+        "750b4081c90fd3ef4e40fa701354dbdfdbac61229f96ee2ed2636c66d9a73428",
+        "a0dc020bc33b796cd463c349b247cf46720e437228a76271f5d71800bf5c1ba8",
+        "b1215b3437f8fe3d4a38757824827d2108d6cdf971059a05c5ee34edcb36746b",
+        "d478f9400606d01f7e0738e9938e5d40f48d646bd0f005bb3b0f048155e1e1dc",
+        "f31ed353b4b84993db7a3823326f53ddddf3dc5925884b0aaa87e99be6af66ab"
+      ]
+    },
+    {
+      "id": "init_505_07",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(bins - item)",
+      "internal_key": "7ea8bb27baa3cb550855eb8ad25c568ae75c223f4a1356a8ab9341034dcaa416",
+      "execution_key": "7ea8bb27baa3cb550855eb8ad25c568ae75c223f4a1356a8ab9341034dcaa416",
+      "internal_nodes": 4,
+      "internal_depth": 3,
+      "nodes": 4,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_08",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "square",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "ones_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.square(np.ones_like(bins))",
+      "internal_key": "00c54cf72c412db99831dce7508e84342a361b13ad9e31057fd1644750cbd9d5",
+      "execution_key": "00c54cf72c412db99831dce7508e84342a361b13ad9e31057fd1644750cbd9d5",
+      "internal_nodes": 3,
+      "internal_depth": 3,
+      "nodes": 3,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_09",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "USub"
+              },
+              "operand": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 25.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "UnaryOp",
+          "op": {
+            "_ast": "USub"
+          },
+          "operand": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.where(bins > item, -bins, 25.0) + -bins",
+      "internal_key": "68db03823d6b0eae1d7dd685c31745915f627dd29e922fbb1963fc21300559eb",
+      "execution_key": "68db03823d6b0eae1d7dd685c31745915f627dd29e922fbb1963fc21300559eb",
+      "internal_nodes": 10,
+      "internal_depth": 4,
+      "nodes": 10,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_10",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "UnaryOp",
+        "op": {
+          "_ast": "USub"
+        },
+        "operand": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "-bins",
+      "internal_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "execution_key": "4c82d73328c876dc71dc058493ae6d73837b12e331f6f5ee7cbc7197dc7db423",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_11",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "zeros_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          },
+          "op": {
+            "_ast": "Mult"
+          },
+          "right": {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "zeros_like",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            ],
+            "keywords": []
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Constant",
+            "value": 25.0,
+            "kind": null
+          },
+          "op": {
+            "_ast": "Sub"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "item",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        }
+      },
+      "expression": "np.zeros_like(bins) * np.zeros_like(bins) + (25.0 - item)",
+      "internal_key": "e2d02f78ad1b89aa78637dc247e8eebb409abb31ae0d6e20a37ea9485851f32d",
+      "execution_key": "e2d02f78ad1b89aa78637dc247e8eebb409abb31ae0d6e20a37ea9485851f32d",
+      "internal_nodes": 9,
+      "internal_depth": 4,
+      "nodes": 9,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_12",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "ones_like",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        ],
+        "keywords": []
+      },
+      "expression": "np.ones_like(bins)",
+      "internal_key": "9fa9740ba109983b2443ced118efe1eb08bd66a2fd528fae2afb642b92a487ec",
+      "execution_key": "9fa9740ba109983b2443ced118efe1eb08bd66a2fd528fae2afb642b92a487ec",
+      "internal_nodes": 2,
+      "internal_depth": 2,
+      "nodes": 2,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_13",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "Gt"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "zeros_like",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Div"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Call",
+              "func": {
+                "_ast": "Attribute",
+                "value": {
+                  "_ast": "Name",
+                  "id": "np",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "attr": "abs",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "args": [
+                {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "Constant",
+                    "value": 10.0,
+                    "kind": null
+                  },
+                  "op": {
+                    "_ast": "Div"
+                  },
+                  "right": {
+                    "_ast": "Call",
+                    "func": {
+                      "_ast": "Attribute",
+                      "value": {
+                        "_ast": "Name",
+                        "id": "np",
+                        "ctx": {
+                          "_ast": "Load"
+                        }
+                      },
+                      "attr": "maximum",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "args": [
+                      {
+                        "_ast": "Call",
+                        "func": {
+                          "_ast": "Attribute",
+                          "value": {
+                            "_ast": "Name",
+                            "id": "np",
+                            "ctx": {
+                              "_ast": "Load"
+                            }
+                          },
+                          "attr": "abs",
+                          "ctx": {
+                            "_ast": "Load"
+                          }
+                        },
+                        "args": [
+                          {
+                            "_ast": "Name",
+                            "id": "item",
+                            "ctx": {
+                              "_ast": "Load"
+                            }
+                          }
+                        ],
+                        "keywords": []
+                      },
+                      {
+                        "_ast": "Constant",
+                        "value": 1.0,
+                        "kind": null
+                      }
+                    ],
+                    "keywords": []
+                  }
+                }
+              ],
+              "keywords": []
+            },
+            {
+              "_ast": "Constant",
+              "value": 1.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.where(bins > item, np.zeros_like(bins), item) / np.maximum(np.abs(10.0 / np.maximum(np.abs(item), 1.0)), 1.0)",
+      "internal_key": "801d7d5e074ad4ebca0c1921a96d746453b4f09b6c0dcea09eeee3e55c226d60",
+      "execution_key": "801d7d5e074ad4ebca0c1921a96d746453b4f09b6c0dcea09eeee3e55c226d60",
+      "internal_nodes": 17,
+      "internal_depth": 7,
+      "nodes": 17,
+      "depth": 7,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_14",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Name",
+          "id": "bins",
+          "ctx": {
+            "_ast": "Load"
+          }
+        }
+      },
+      "expression": "bins + bins",
+      "internal_key": "3be20aa43e823a6c70650f6cfd05587ec623e57f62347814bc3b13f0e25c1482",
+      "execution_key": "3be20aa43e823a6c70650f6cfd05587ec623e57f62347814bc3b13f0e25c1482",
+      "internal_nodes": 3,
+      "internal_depth": 2,
+      "nodes": 3,
+      "depth": 2,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_15",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "square",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "UnaryOp",
+              "op": {
+                "_ast": "USub"
+              },
+              "operand": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "maximum",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Constant",
+              "value": -100.0,
+              "kind": null
+            },
+            {
+              "_ast": "Constant",
+              "value": -10.0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "np.square(-bins) * np.maximum(-100.0, -10.0)",
+      "internal_key": "2dc263ce4eeef5096b7fe6dda63c8c04858614dbf08012d57409c672c2aa4d75",
+      "execution_key": "880e7702bbe9d11eb04c1aac1272e4d1fb41c382446340fa410f86736f80e4d6",
+      "internal_nodes": 7,
+      "internal_depth": 4,
+      "nodes": 9,
+      "depth": 4,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    },
+    {
+      "id": "init_505_16",
+      "source": "basic_random",
+      "tree": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "BinOp",
+          "left": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "op": {
+            "_ast": "Add"
+          },
+          "right": {
+            "_ast": "Name",
+            "id": "bins",
+            "ctx": {
+              "_ast": "Load"
+            }
+          }
+        },
+        "op": {
+          "_ast": "Add"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "zeros_like",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "expression": "bins + bins + np.zeros_like(bins)",
+      "internal_key": "2296ddc9ac6cf63da282bfb30fda2396eef987b046664c43ef7ba384dabcda3f",
+      "execution_key": "2296ddc9ac6cf63da282bfb30fda2396eef987b046664c43ef7ba384dabcda3f",
+      "internal_nodes": 6,
+      "internal_depth": 3,
+      "nodes": 6,
+      "depth": 3,
+      "type": "V",
+      "historical_tree_class": "not_matched_supported_historical_tree",
+      "historical_tree_program_ids": []
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": "structure_position_gp_1917169949_000022",
+  "tree": {
+    "_ast": "BinOp",
+    "left": {
+      "_ast": "UnaryOp",
+      "op": {
+        "_ast": "USub"
+      },
+      "operand": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      }
+    },
+    "op": {
+      "_ast": "Add"
+    },
+    "right": {
+      "_ast": "BinOp",
+      "left": {
+        "_ast": "BinOp",
+        "left": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "GtE"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        },
+        "op": {
+          "_ast": "Mult"
+        },
+        "right": {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "where",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "Compare",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "ops": [
+                {
+                  "_ast": "GtE"
+                }
+              ],
+              "comparators": [
+                {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              ]
+            },
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "BinOp",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "op": {
+                  "_ast": "Sub"
+                },
+                "right": {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Constant",
+                "value": 25,
+                "kind": null
+              }
+            },
+            {
+              "_ast": "Constant",
+              "value": 0,
+              "kind": null
+            }
+          ],
+          "keywords": []
+        }
+      },
+      "op": {
+        "_ast": "Sub"
+      },
+      "right": {
+        "_ast": "Name",
+        "id": "item",
+        "ctx": {
+          "_ast": "Load"
+        }
+      }
+    }
+  },
+  "expression": "-bins + (np.where(bins >= item, bins - item, 0) * np.where(bins >= item, bins - item - 25, 0) - item)",
+  "execution_key": "6a12e61145cac021474b0393ad1e3546107e9cb559f1cc2bb98c418be21f025d",
+  "internal_key": "6a12e61145cac021474b0393ad1e3546107e9cb559f1cc2bb98c418be21f025d",
+  "nodes": 24,
+  "depth": 7,
+  "type": "V",
+  "valid": true,
+  "mean_bins": 2062.8,
+  "instances": [
+    {
+      "instance_id": "pilot_dev_6001",
+      "bins_used": 2056,
+      "runtime": 0.07095220000337576,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "8caa0b90500432c6ab2b865fe21ec883c0895db5b115728bbc9b240072210a03",
+      "chosen_capacity_hash": "1cb9737682a2694777cd5551702183c138dc93f7275e505b8f9be2661f51cd2d",
+      "new_bins": 2056
+    },
+    {
+      "instance_id": "pilot_dev_6002",
+      "bins_used": 2041,
+      "runtime": 0.07101400000101421,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "b58100edb2190d57f7dfcd180737770e8be797cd19e78a429743681cf8594e55",
+      "chosen_capacity_hash": "7135d1c87f588d72a7304fa0c2e259c80c6e43e76d215aa1490c0efb8de1e128",
+      "new_bins": 2041
+    },
+    {
+      "instance_id": "pilot_dev_6003",
+      "bins_used": 2088,
+      "runtime": 0.07005070000013802,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "d6f3181347b6c9934734ac513d5df04922388d67bd02de53bdf82d0056556b31",
+      "chosen_capacity_hash": "97b73fddbbf131415faca804b18481a90ba6d7ca10418ec17d76218c308ed9e8",
+      "new_bins": 2088
+    },
+    {
+      "instance_id": "pilot_dev_6004",
+      "bins_used": 2065,
+      "runtime": 0.07012419999955455,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "43199840026b06a6c141fb34820405979ff013280c2094008758bc9660111959",
+      "chosen_capacity_hash": "edb88653c9bec67b75868cee493ea7cd6f6948927e6dae702455c41e492333a0",
+      "new_bins": 2065
+    },
+    {
+      "instance_id": "pilot_dev_6005",
+      "bins_used": 2064,
+      "runtime": 0.0718838999964646,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "7ab0495178b35a36a4f7a1b2716c9f6f0c1a270d7b709d7fcac46af0f9ede32b",
+      "chosen_capacity_hash": "eec6e4650d1ad7735e7f815354d5c652f0a7a03a00512367d913e5161216c675",
+      "new_bins": 2064
+    }
+  ],
+  "error": "",
+  "resource_limit": {
+    "enforced": true,
+    "bytes": 536870912,
+    "job_handle": 384
+  },
+  "worker_started_perf": 60266.4729611,
+  "warnings": [],
+  "partial": false,
+  "worker_finished_perf": 60267.1321282,
+  "worker_wall_seconds": 0.6591671999995015,
+  "evaluation_wall_seconds": 0.8621831999989809
+}

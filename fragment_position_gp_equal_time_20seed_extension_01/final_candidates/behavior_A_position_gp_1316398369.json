@@ -1,0 +1,154 @@
+{
+  "id": "behavior_A_position_gp_1316398369_000063",
+  "tree": {
+    "_ast": "BinOp",
+    "left": {
+      "_ast": "Call",
+      "func": {
+        "_ast": "Attribute",
+        "value": {
+          "_ast": "Name",
+          "id": "np",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "attr": "sqrt",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "args": [
+        {
+          "_ast": "Call",
+          "func": {
+            "_ast": "Attribute",
+            "value": {
+              "_ast": "Name",
+              "id": "np",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "attr": "square",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "args": [
+            {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "BinOp",
+                "left": {
+                  "_ast": "Name",
+                  "id": "bins",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                },
+                "op": {
+                  "_ast": "Sub"
+                },
+                "right": {
+                  "_ast": "Name",
+                  "id": "item",
+                  "ctx": {
+                    "_ast": "Load"
+                  }
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Constant",
+                "value": 15.0,
+                "kind": null
+              }
+            }
+          ],
+          "keywords": []
+        }
+      ],
+      "keywords": []
+    },
+    "op": {
+      "_ast": "Div"
+    },
+    "right": {
+      "_ast": "Name",
+      "id": "bins",
+      "ctx": {
+        "_ast": "Load"
+      }
+    }
+  },
+  "expression": "np.sqrt(np.square(bins - item - 15.0)) / bins",
+  "execution_key": "67f84879357a120513b62ddfb998ff2cca38e56ac4d74fafcaf993ed7791a660",
+  "internal_key": "67f84879357a120513b62ddfb998ff2cca38e56ac4d74fafcaf993ed7791a660",
+  "nodes": 9,
+  "depth": 6,
+  "type": "V",
+  "valid": true,
+  "mean_bins": 2057.2,
+  "instances": [
+    {
+      "instance_id": "pilot_dev_6001",
+      "bins_used": 2057,
+      "runtime": 0.0734223000035854,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "f2a8606716430a35eae4daeb8d5fe3f7222c445f0a9db462a5cf90034323edfa",
+      "chosen_capacity_hash": "c602370825ea9e565fc499a34a4339f0e8dc5f567d5ff3fe4bc8956176c31df3",
+      "new_bins": 2057
+    },
+    {
+      "instance_id": "pilot_dev_6002",
+      "bins_used": 2034,
+      "runtime": 0.06402869999874383,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "6268424327ff56788a68ba065a9c5dad390c39675f6ea8101f87a28cff5326d8",
+      "chosen_capacity_hash": "b6b1191217bc5c7f818d2013e11fd6eabd72102b2d7160a4c3d480f5ae3c04eb",
+      "new_bins": 2034
+    },
+    {
+      "instance_id": "pilot_dev_6003",
+      "bins_used": 2078,
+      "runtime": 0.07187890000204789,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "b960742a03d7b3dca2576dd637ecbb129a419a3c1d3ebff4d280a4ee773f9175",
+      "chosen_capacity_hash": "64c2966814c653a33e40a9cacd7d8dabf55f4e64eecb9a1cc32807bb3e3c6997",
+      "new_bins": 2078
+    },
+    {
+      "instance_id": "pilot_dev_6004",
+      "bins_used": 2061,
+      "runtime": 0.06392659999983152,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "4a2a86fb73d2c7c5bafa9290ae5ef7df77843b8e78e7b970b04a4562cc23b923",
+      "chosen_capacity_hash": "f61dc5967ecf0df47fdf5ae84d290dd93ad9ad5aadf5a3f672cbccae4f489e88",
+      "new_bins": 2061
+    },
+    {
+      "instance_id": "pilot_dev_6005",
+      "bins_used": 2056,
+      "runtime": 0.06244479999440955,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "74e4392857f6cfdac5c5dde4737ee0867ad4e22abd832f8a0b439bfd75c3d678",
+      "chosen_capacity_hash": "61f306417ec57dc47f5c4932d25a4ca74f58ee4909cd54cc6fa8720e972a8ff0",
+      "new_bins": 2056
+    }
+  ],
+  "error": "",
+  "resource_limit": {
+    "enforced": true,
+    "bytes": 536870912,
+    "job_handle": 380
+  },
+  "worker_started_perf": 59221.8370943,
+  "warnings": [],
+  "partial": false,
+  "worker_finished_perf": 59222.5985886,
+  "worker_wall_seconds": 0.7614944000015385,
+  "evaluation_wall_seconds": 1.0497503000005963
+}

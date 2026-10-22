@@ -1,0 +1,141 @@
+{
+  "id": "structure_position_gp_1614563984_000096",
+  "tree": {
+    "_ast": "Call",
+    "func": {
+      "_ast": "Attribute",
+      "value": {
+        "_ast": "Name",
+        "id": "np",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "attr": "square",
+      "ctx": {
+        "_ast": "Load"
+      }
+    },
+    "args": [
+      {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "abs",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "BinOp",
+              "left": {
+                "_ast": "Name",
+                "id": "bins",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "op": {
+                "_ast": "Sub"
+              },
+              "right": {
+                "_ast": "Name",
+                "id": "item",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Constant",
+              "value": 12.0,
+              "kind": null
+            }
+          }
+        ],
+        "keywords": []
+      }
+    ],
+    "keywords": []
+  },
+  "expression": "np.square(np.abs(bins - item - 12.0))",
+  "execution_key": "9e06fdb3547d5ec22ce12a5f6d249029f2178e9b74312a8271f8921cba606da8",
+  "internal_key": "9e06fdb3547d5ec22ce12a5f6d249029f2178e9b74312a8271f8921cba606da8",
+  "nodes": 7,
+  "depth": 5,
+  "type": "V",
+  "valid": true,
+  "mean_bins": 2057.8,
+  "instances": [
+    {
+      "instance_id": "pilot_dev_6001",
+      "bins_used": 2048,
+      "runtime": 0.04918259999976726,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "657435ea8d4c04bc701658bdbcf3aeb4cf6b03604de3cd171ffc713e2d50a857",
+      "chosen_capacity_hash": "394571f0a6056543efef5bb6768c59e8bec4398e78488bad5765ef0193e73946",
+      "new_bins": 2048
+    },
+    {
+      "instance_id": "pilot_dev_6002",
+      "bins_used": 2037,
+      "runtime": 0.04862000000139233,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "32f825671a816b931059af946b6b7ac80eeea9e51f61794e09e7149d8c8f6c44",
+      "chosen_capacity_hash": "4407cd8015c1e46d520f4dfdb4a1756343b6e66122613a50724a27fd0860fb5b",
+      "new_bins": 2037
+    },
+    {
+      "instance_id": "pilot_dev_6003",
+      "bins_used": 2088,
+      "runtime": 0.052549799998814706,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "7c1cfa0f1421fce9f2dcb181a714293d99db847d03674227f0cf9103f3874b11",
+      "chosen_capacity_hash": "7e43f70103c901262ee570e2fcd65f7d5c7f788e66eb31deb54e0a9036393db6",
+      "new_bins": 2088
+    },
+    {
+      "instance_id": "pilot_dev_6004",
+      "bins_used": 2058,
+      "runtime": 0.04876449999574106,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "535f87cfb7c359dfe5e404813c9bdad3ccf9e65442157719156d6f21a85574a6",
+      "chosen_capacity_hash": "b88c13b9d067263428fd03bf0f25ab31509be5775ae55ccf3ba4013e1a147d1c",
+      "new_bins": 2058
+    },
+    {
+      "instance_id": "pilot_dev_6005",
+      "bins_used": 2058,
+      "runtime": 0.04893680000532186,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "b5e20ad2fab43e24c55a707befd8b819b41d00bd74e46f8b342fb6ee99a690df",
+      "chosen_capacity_hash": "1de423001555a58723ec79de7cd89b680279dc64503e58cce5ff6811d8f449a5",
+      "new_bins": 2058
+    }
+  ],
+  "error": "",
+  "resource_limit": {
+    "enforced": true,
+    "bytes": 536870912,
+    "job_handle": 380
+  },
+  "worker_started_perf": 61673.5579165,
+  "warnings": [],
+  "partial": false,
+  "worker_finished_perf": 61674.104703,
+  "worker_wall_seconds": 0.5467866999970283,
+  "evaluation_wall_seconds": 0.7429752000025474
+}

@@ -2,7 +2,7 @@
 
 DSAI6707 Advanced Computational Intelligence, Project 1: Evolutionary Computation for Emerging AI.
 
-This project studies whether reusable expressions from earlier small language model outputs help a bounded CPU genetic programming search find better online bin packing rules. The main comparison contains **four methods and 30 paired search seeds**, with Best-fit and public EoH rules as fixed quality references. The GP stage makes **zero new LLM calls**; its historical corpus was produced by earlier model requests.
+This project studies whether reusable expressions from earlier small language model outputs help a bounded CPU genetic programming search find better online bin packing rules. The main comparison contains **four methods and 30 paired search seeds**, with Best-fit and public EoH rules as fixed quality references. The repository also includes an insertion-position study with three methods and 30 paired seeds. The GP stage makes **zero new LLM calls**; its historical corpus was produced by earlier model requests.
 
 ## Main findings
 
@@ -13,9 +13,9 @@ This project studies whether reusable expressions from earlier small language mo
 | Fixed parent fragment sampling | 2090.507 | 3.829 | 10/30 |
 | Matched random fragment GP | 2092.453 | 0.310 | 2/30 |
 
-Historical fragment GP uses 2.939 fewer B bins than the matched random fragment control on average, with a descriptive crossed-bootstrap 95% interval of [1.242, 4.846]. Its advantage over fixed parent sampling is unresolved: 0.992 bins, interval [-1.021, 3.172]. Historical GP does not exceed the fixed historical best reference.
+Historical fragment GP uses 2.939 fewer B bins than the matched random fragment control on average, with a descriptive crossed-bootstrap 95% interval of [1.242, 4.846]. The mean difference relative to fixed parent sampling is 0.992 bins, interval [-1.021, 3.172].
 
-**Interpretation:** the random control was introduced after prior results had been examined, B was reused, and only one matched random bank was constructed. These are exploratory comparisons, not an untouched confirmatory test or proof that multiple intact fragments cause the gain.
+
 
 ## Setup
 
@@ -91,6 +91,8 @@ python -m dsai evaluate --programs runs/search_all/final_candidates --out runs/s
 Initialization programs, scores and schedules are reused from the frozen common initialization. Each search still charges 16 initial slots plus 112 new candidate slots. New initial LLM calls or new random initialization draws are not made. For interrupted runs use the exact same options and add `--resume`; the configuration and package manifest must match. At most four workers are allowed. B never selects the final candidate; pilot_val is diagnostic only.
 
 ## Repository layout
+
+The insertion-position study uses the initial 10 seeds and the first 20-seed extension. Its combined results are in [`fragment_position_gp_equal_time_20seed_extension_01/aggregate/`](fragment_position_gp_equal_time_20seed_extension_01/aggregate/). The source cohorts are [`fragment_position_gp_equal_time_01/`](fragment_position_gp_equal_time_01/) and [`fragment_position_gp_equal_time_20seed_extension_01/`](fragment_position_gp_equal_time_20seed_extension_01/). The shared core is [`fragment_gp_limited_01/`](fragment_gp_limited_01/). See [position GP data and reproduction](docs/POSITION_GP.md) for verification, trace restoration, output evaluation, and search commands.
 
 | Location | Contents |
 | --- | --- |

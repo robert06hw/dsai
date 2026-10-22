@@ -1,0 +1,36 @@
+{
+  "baseline": "fragment_gp_search_01",
+  "unchanged_settings_verified": [
+    "population_max",
+    "initial_attempts_per_seed",
+    "new_attempts_per_run",
+    "nominal_per_run",
+    "operator_probabilities",
+    "operator_quota_per_run",
+    "fragment_replacement_probability",
+    "max_nodes_emitted",
+    "max_depth_emitted",
+    "parent_sampling",
+    "constant_mutation",
+    "basic_generator",
+    "source_dedup",
+    "selection",
+    "fitness",
+    "validation",
+    "duplicate_budget",
+    "workers",
+    "memory_bytes_each",
+    "timeout_seconds_each",
+    "blas_threads"
+  ],
+  "byte_identical_helpers": [
+    "cpu.py",
+    "historical_validator.py",
+    "historical_purity.py",
+    "scoring.py",
+    "typed_tree.py",
+    "timed_run.py"
+  ],
+  "baseline_manifest_sha256": "225ba14b672364d6650531d7717d8f6ff33f9ff0cadb9142cb3564720b2b509e",
+  "changed": "three new seeds, Best-fit+15random initial, three methods, full historical root insertion exclusion, rediscovery diagnostic; no new model or grouping"
+}

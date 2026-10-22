@@ -1,0 +1,67 @@
+{
+  "search": {
+    "nominal_run_seconds": 3600,
+    "measured_scheduler_stop_seconds": 3600.09938539999,
+    "scheduler_full_batch_wall_seconds": 3688.8601017000037,
+    "cleanup_seconds": 0.5213011999803712,
+    "budget_includes": "startup/imports/assets/initialization/proposals/probes/inference/full fitness/selection/logs; cold per run"
+  },
+  "failed_startups": [
+    {
+      "archive": "startup_failure_01",
+      "manifest_sha256": "9c6714b185ec75a4ad8a85686f6b398a33e48bfab35b18bdf67f9d564b86d0e8",
+      "runs": [
+        {
+          "run": "behavior_A_position_gp_97688696",
+          "last_commit_elapsed_seconds": 37.28314460000547,
+          "completed_before_stop": false,
+          "scheduler_stop_elapsed_seconds": null,
+          "IO_worker_failures": 0,
+          "quality_inspected_for_restart": false
+        }
+      ]
+    },
+    {
+      "archive": "startup_failure_02",
+      "manifest_sha256": "f8e7986837e65fe6bd88da651066a077cd76324103fa3ab954f1d439141fc4d8",
+      "runs": [
+        {
+          "run": "behavior_A_position_gp_97688696",
+          "last_commit_elapsed_seconds": 119.85416989999794,
+          "completed_before_stop": true,
+          "scheduler_stop_elapsed_seconds": 120.00422889999754,
+          "IO_worker_failures": 2,
+          "quality_inspected_for_restart": false
+        },
+        {
+          "run": "structure_position_gp_97688696",
+          "last_commit_elapsed_seconds": 112.23931670000457,
+          "completed_before_stop": false,
+          "scheduler_stop_elapsed_seconds": null,
+          "IO_worker_failures": 4,
+          "quality_inspected_for_restart": false
+        }
+      ]
+    }
+  ],
+  "failed_startup_cost_note": "Archive timestamps and last commits retained; no exact complete end-to-end total for failed startup intervals; not hidden in valid run budgets",
+  "test_data_preparation": {
+    "wall_seconds": 6.108853600002476,
+    "instances_generated": 30,
+    "full_evaluations": 0
+  },
+  "fixed_output_testing": {
+    "at": "2026-10-18T11:34:11.378479+08:00",
+    "wall_seconds": 69.28354119999858,
+    "nominal_programs": 33,
+    "physical_unique_programs": 15,
+    "nominal_instance_results": 990,
+    "physical_instance_evaluations": 450,
+    "results_sha256": "c68d8920211a554d8349dc900aa0cd257d183d7115a886de7221641c19455159",
+    "new_searches": 0,
+    "new_LLM_calls": 0
+  },
+  "upstream_cost_note": "Historical LLM, extraction and ranker training are pre-existing costs, not zero. Their prior archives remain references; no new model requests or training in this experiment.",
+  "new_LLM_calls": 0,
+  "audit_wall_seconds": 120.7567388000025
+}

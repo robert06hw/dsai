@@ -1,0 +1,229 @@
+{
+  "id": "behavior_A_position_gp_21608121_000106",
+  "tree": {
+    "_ast": "UnaryOp",
+    "op": {
+      "_ast": "USub"
+    },
+    "operand": {
+      "_ast": "BinOp",
+      "left": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "clip",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          {
+            "_ast": "Constant",
+            "value": 0,
+            "kind": null
+          },
+          {
+            "_ast": "Constant",
+            "value": 5,
+            "kind": null
+          }
+        ],
+        "keywords": []
+      },
+      "op": {
+        "_ast": "Mult"
+      },
+      "right": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "clip",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "Call",
+            "func": {
+              "_ast": "Attribute",
+              "value": {
+                "_ast": "Name",
+                "id": "np",
+                "ctx": {
+                  "_ast": "Load"
+                }
+              },
+              "attr": "clip",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "args": [
+              {
+                "_ast": "UnaryOp",
+                "op": {
+                  "_ast": "USub"
+                },
+                "operand": {
+                  "_ast": "BinOp",
+                  "left": {
+                    "_ast": "BinOp",
+                    "left": {
+                      "_ast": "Name",
+                      "id": "bins",
+                      "ctx": {
+                        "_ast": "Load"
+                      }
+                    },
+                    "op": {
+                      "_ast": "Sub"
+                    },
+                    "right": {
+                      "_ast": "Constant",
+                      "value": 24,
+                      "kind": null
+                    }
+                  },
+                  "op": {
+                    "_ast": "Sub"
+                  },
+                  "right": {
+                    "_ast": "Name",
+                    "id": "item",
+                    "ctx": {
+                      "_ast": "Load"
+                    }
+                  }
+                }
+              },
+              {
+                "_ast": "Constant",
+                "value": 0,
+                "kind": null
+              },
+              {
+                "_ast": "Constant",
+                "value": 5,
+                "kind": null
+              }
+            ],
+            "keywords": []
+          },
+          {
+            "_ast": "Constant",
+            "value": 0,
+            "kind": null
+          },
+          {
+            "_ast": "Constant",
+            "value": 10.0,
+            "kind": null
+          }
+        ],
+        "keywords": []
+      }
+    }
+  },
+  "expression": "-(np.clip(bins - item, 0, 5) * np.clip(np.clip(-(bins - 24 - item), 0, 5), 0, 10.0))",
+  "execution_key": "8ef30f5aee92bc6400c50a17b041b168ef6f857a54b1a82eb46d422fe2e53d0b",
+  "internal_key": "8ef30f5aee92bc6400c50a17b041b168ef6f857a54b1a82eb46d422fe2e53d0b",
+  "nodes": 20,
+  "depth": 8,
+  "type": "V",
+  "valid": true,
+  "mean_bins": 2046.2,
+  "instances": [
+    {
+      "instance_id": "pilot_dev_6001",
+      "bins_used": 2045,
+      "runtime": 0.0845816000000923,
+      "cpu_seconds": 0.09375,
+      "trace_hash": "a5d93a1109e84cb34ed1df0a559b646f0ed36f4968a487f00d34c3df16acf614",
+      "chosen_capacity_hash": "44b0cb6191da29e2e158e63244f356bde3159696a83a9b2dd07460ba827dfd0d",
+      "new_bins": 2045
+    },
+    {
+      "instance_id": "pilot_dev_6002",
+      "bins_used": 2024,
+      "runtime": 0.07956819999526488,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "a7a12f4e6893cde05f6237690ba44ec0c9e993ad9e7635fc63667fe9bb284197",
+      "chosen_capacity_hash": "d9bb5c1d17f7efc91d76bcf40c9a83fd566320b7199548312419baf552b950e9",
+      "new_bins": 2024
+    },
+    {
+      "instance_id": "pilot_dev_6003",
+      "bins_used": 2069,
+      "runtime": 0.0785290999992867,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "997f7299bbf369f5044acf150b13e6f8be188cb1d087ea368c7d1d94d3e2043b",
+      "chosen_capacity_hash": "b4a2446d10bee8bb99607d20426c957f7192b1282ef1a7c17bed2c17d6c699bd",
+      "new_bins": 2069
+    },
+    {
+      "instance_id": "pilot_dev_6004",
+      "bins_used": 2049,
+      "runtime": 0.07866369999828748,
+      "cpu_seconds": 0.078125,
+      "trace_hash": "0fad3cfec057e342e788a45d920892beddc21113d8f8cef47696ef257bfb1e19",
+      "chosen_capacity_hash": "27eba445eb731ca6aaf33106927fd30b0bf1f2247ae6b6a15081783828169a7c",
+      "new_bins": 2049
+    },
+    {
+      "instance_id": "pilot_dev_6005",
+      "bins_used": 2044,
+      "runtime": 0.07906530000036582,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "b05392eb12dda91f5170be573a1fe971f50a745a3d9b8e22f27cc4529ac4d369",
+      "chosen_capacity_hash": "49635f2436aafe7e6662527558d435c1855a66ed0c8f257ad21592c58c666458",
+      "new_bins": 2044
+    }
+  ],
+  "error": "",
+  "resource_limit": {
+    "enforced": true,
+    "bytes": 536870912,
+    "job_handle": 96
+  },
+  "worker_started_perf": 53469.4365803,
+  "warnings": [],
+  "partial": false,
+  "worker_finished_perf": 53470.1349963,
+  "worker_wall_seconds": 0.6984161000000313,
+  "evaluation_wall_seconds": 0.8856048999950872
+}

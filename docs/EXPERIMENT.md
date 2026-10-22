@@ -30,7 +30,7 @@ Of 1,242 programs, 1,166 convert and pass archived full-pilot equivalence checks
 
 The random bank independently generates one unique legal expression for each eligible slot, exactly matching type, emitted node count and depth. Bank seed 918273645 is split by slot with SeedSequence channel 901. Construction uses no packing-quality selection. It takes 1,283 attempts with 43 structural duplicate rejections to make 1,240 entries, with two recorded natural AST overlaps. Thirty oversized/overdeep bank slots are retained in both views and may consume rejected candidate attempts. Complete historical scoring roots are excluded from random insertion too.
 
-Operators, constants, terminal dependencies and semantic difficulty are not matched. Only one random bank realization is used across the search seeds. A historical AST nonmatch or a finite trajectory difference does not prove a novel strategy.
+
 
 ## Data and evaluator
 
@@ -52,6 +52,6 @@ Fixed reference means on pilot_dev / pilot_val / B are:
 
 The primary reported quality is mean bins over B for each development-selected output. Methods weight all 30 search seeds equally; SD is across 30 run means. Paired differences are control bins minus historical fragment GP bins, with positive values favoring history. Win/tie/loss counts compare seed means on the same instances.
 
-Intervals use 10,000 crossed bootstrap draws with PCG64(900002), independently resampling 30 seeds and 30 instances and averaging the crossed matrix. All methods use identical draws. The random control was added after earlier results were examined and B was already viewed. Therefore the intervals are descriptive, not a fresh confirmatory test. No finite-probe equivalence is treated as a proof of universal equivalence.
+Intervals use 10,000 crossed bootstrap draws with PCG64(900002), independently resampling 30 seeds and 30 instances and averaging the crossed matrix. All methods use identical draws. The random control was added after earlier results were examined and B was already viewed.
 
 The archived environment is Python3.12.14, NumPy2.3.5 and Windows11 build26200, four workers, 120 seconds per worker and 512 MiB per Windows Job Object, with one BLAS thread per worker. Batch wall times, summed evaluation times, shared initialization accounting, historical preparation and B evaluation are separate quantities. Different batches/background loads prevent reading timing differences as controlled hardware speedups. See the original cost records and `results/aggregate/additional_cost_accounting.json` for scope and exclusions.

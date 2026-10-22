@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "reason": "Windows diagnostic stream may contain non-UTF8 bytes; text reader raised UnicodeDecodeError and stderr=None caused orchestrator crash",
+  "changes": [
+    "binary capture and preserve worker stderr bytes",
+    "replacement decoding for diagnostics only",
+    "explicit child UTF8 environment",
+    "record CPU using registry when CIM query unavailable"
+  ],
+  "method_budget_models_data_unchanged": true,
+  "prior_attempt_archive": "startup_failure_01",
+  "prior_attempt_manifest_sha256": "9c6714b185ec75a4ad8a85686f6b398a33e48bfab35b18bdf67f9d564b86d0e8",
+  "failed_attempt_last_commit_elapsed_seconds": 37.28314460000547,
+  "failed_attempt_total_wall_seconds": "not exactly measured; retained launch perf timestamps and file times",
+  "seed_block": 97688696,
+  "allowed_infrastructure_retry_used": 1,
+  "comparative_quality_inspected_before_retry": false,
+  "no_completed_formal_runs_reused": true,
+  "synthetic_retest_note": "Repeated prelaunch check initially reused stale synthetic helper files; fixtures now have fresh directories. No research outcome used."
+}

@@ -1,0 +1,152 @@
+{
+  "id": "uniform_position_gp_1788852560_000052",
+  "tree": {
+    "_ast": "BinOp",
+    "left": {
+      "_ast": "BinOp",
+      "left": {
+        "_ast": "Name",
+        "id": "bins",
+        "ctx": {
+          "_ast": "Load"
+        }
+      },
+      "op": {
+        "_ast": "Sub"
+      },
+      "right": {
+        "_ast": "Name",
+        "id": "item",
+        "ctx": {
+          "_ast": "Load"
+        }
+      }
+    },
+    "op": {
+      "_ast": "Mult"
+    },
+    "right": {
+      "_ast": "BinOp",
+      "left": {
+        "_ast": "Call",
+        "func": {
+          "_ast": "Attribute",
+          "value": {
+            "_ast": "Name",
+            "id": "np",
+            "ctx": {
+              "_ast": "Load"
+            }
+          },
+          "attr": "maximum",
+          "ctx": {
+            "_ast": "Load"
+          }
+        },
+        "args": [
+          {
+            "_ast": "BinOp",
+            "left": {
+              "_ast": "Name",
+              "id": "bins",
+              "ctx": {
+                "_ast": "Load"
+              }
+            },
+            "op": {
+              "_ast": "Sub"
+            },
+            "right": {
+              "_ast": "Name",
+              "id": "item",
+              "ctx": {
+                "_ast": "Load"
+              }
+            }
+          },
+          {
+            "_ast": "Constant",
+            "value": 0,
+            "kind": null
+          }
+        ],
+        "keywords": []
+      },
+      "op": {
+        "_ast": "Sub"
+      },
+      "right": {
+        "_ast": "Constant",
+        "value": 25.0,
+        "kind": null
+      }
+    }
+  },
+  "expression": "(bins - item) * (np.maximum(bins - item, 0) - 25.0)",
+  "execution_key": "c2106c590c05ad1a4eb357f4af97dfea849c94919bf4893fee09c0b282270953",
+  "internal_key": "c2106c590c05ad1a4eb357f4af97dfea849c94919bf4893fee09c0b282270953",
+  "nodes": 11,
+  "depth": 5,
+  "type": "V",
+  "valid": true,
+  "mean_bins": 2059.2,
+  "instances": [
+    {
+      "instance_id": "pilot_dev_6001",
+      "bins_used": 2049,
+      "runtime": 0.05474829999729991,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "cd4a9fce55d1dd7add1071257a4e1d7429f1487d321722a9c0696832f3b03874",
+      "chosen_capacity_hash": "7c1134c667ca79422aa924851b62e66326b7e0f4cf178e0864cc04bdd3574af9",
+      "new_bins": 2049
+    },
+    {
+      "instance_id": "pilot_dev_6002",
+      "bins_used": 2040,
+      "runtime": 0.053210199999739416,
+      "cpu_seconds": 0.0625,
+      "trace_hash": "c0d517477a6c771dc5b1cbc77bb29b80f8766d93fbf2cc4b135c3b87fe829f06",
+      "chosen_capacity_hash": "e7627ea4772410dbff6a2e8957b23f5592db0c303398c9f19ce27515d0ff2f79",
+      "new_bins": 2040
+    },
+    {
+      "instance_id": "pilot_dev_6003",
+      "bins_used": 2087,
+      "runtime": 0.05274430000281427,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "7f3c1abbfc3897aaad11cfe53dce1929ad5b1e29f1a647bc78f752b272d6db57",
+      "chosen_capacity_hash": "0eb5e0da559ee010b6f2eab9d541bf548f18b96bdf508f8c214232aa82a75a5f",
+      "new_bins": 2087
+    },
+    {
+      "instance_id": "pilot_dev_6004",
+      "bins_used": 2063,
+      "runtime": 0.05273049999959767,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "faba7be100f56156916b99e49c369c58bee832926b27d229d690fafa1165f656",
+      "chosen_capacity_hash": "ae1fecd21cbabbec4c743539841b0ac914e9597c341e8ccf0cf823f1e769d0bc",
+      "new_bins": 2063
+    },
+    {
+      "instance_id": "pilot_dev_6005",
+      "bins_used": 2057,
+      "runtime": 0.05316600000514882,
+      "cpu_seconds": 0.046875,
+      "trace_hash": "0c5b91ec0157a8a4d47c98474ddb0962d7e625e07d15e9e6b32cbf93d15f8442",
+      "chosen_capacity_hash": "97e6e6ec689f1c11354b2865b4e9cc018d59211c0ee385697807fde3979147d4",
+      "new_bins": 2057
+    }
+  ],
+  "error": "",
+  "resource_limit": {
+    "enforced": true,
+    "bytes": 536870912,
+    "job_handle": 372
+  },
+  "worker_started_perf": 61398.8726034,
+  "warnings": [],
+  "partial": false,
+  "worker_finished_perf": 61399.4830039,
+  "worker_wall_seconds": 0.6104006000023219,
+  "evaluation_wall_seconds": 0.8912538000004133
+}

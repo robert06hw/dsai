@@ -12,7 +12,7 @@ The included assignment PDF is the source of these requirements. It is a course 
 | Supplementary configurations and prompts | Configurations, library matching, original historical model metadata and actual request records in `provenance/` |
 | Comparative experiments and multiple runs | Four methods with a common initialization, operator schedules and nominal budget across 30 paired seeds |
 | Innovation and critical interpretation | Historical fragment content prior, matched random control, fixed-parent control and documented negative/uncertain findings; no claim that standard GP alone is novel |
-| Full research report PDF | Separate submission item; a complete project report is not supplied by this code repository |
-| At least 20 relevant papers from 2024–2026 and thematic synthesis | Separate report requirement; not claimed complete here |
+| Full research report PDF | [Full research report](../reports/LI_HUNG-WEI_Historical%20Fragment%20Reuse%20and%20Behavior-Aware%20Position%20Ranking%20for%20Online%20Bin%20Packing.pdf) in `reports/` |
+| At least 20 relevant papers from 2024–2026 and thematic synthesis | Literature review and references in the uploaded PDF report |
 
 The assignment also asks for motivation, literature synthesis, discussion, conclusion and references in a self-contained report. The code/evidence package should support that report without replacing it or overstating what the exploratory comparisons establish.

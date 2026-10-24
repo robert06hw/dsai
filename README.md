@@ -2,6 +2,8 @@
 
 DSAI6707 Advanced Computational Intelligence, Project 1: Evolutionary Computation for Emerging AI.
 
+Read the [full research report (PDF)](reports/LI_HUNG-WEI_Historical%20Fragment%20Reuse%20and%20Behavior-Aware%20Position%20Ranking%20for%20Online%20Bin%20Packing.pdf).
+
 This project combines reusable expressions from earlier small language model outputs with CPU genetic programming for online bin packing. It evaluates historical fragment reuse in a **four-method, 30-seed study** and behavior-guided insertion-position selection in a **three-method, 30-seed study**. Historical fragment GP and behavior-guided position GP achieved the lowest observed mean test bin counts in their respective comparisons. Lower bin counts mean better packing.
 
 ## Project advantages
@@ -136,9 +138,10 @@ The insertion-position study uses the initial 10 seeds and the first 20-seed ext
 | `archives/` | Selected original implementation and lock records; not the portable execution entry points |
 | `third_party/eoh/` | Pinned official instance generator, source revision and retained MIT license |
 | `docs/` | Reproduction details, experimental protocol and coursework mapping |
+| `reports/` | Full research report in PDF format |
 
 ## Coursework deliverables
 
-The source code, setup instructions, data preparation, execution, evaluation and supporting raw/processed evidence are supplied here. `docs/DELIVERABLES.md` maps them to the assignment. The research report and recent-literature review are submitted separately. Word documents are not included.
+The source code, setup instructions, data preparation, execution, evaluation and supporting raw/processed evidence are supplied here. `docs/DELIVERABLES.md` maps them to the assignment. The full research report is included in [`reports/`](reports/). Word documents are not included.
 
 See [the experimental protocol](docs/EXPERIMENT.md), [reproduction details](docs/REPRODUCIBILITY.md) and [third-party attribution](THIRD_PARTY_NOTICES.md). Project-specific code is supplied for course assessment; no blanket open-source license is asserted for all contents. The included EoH-derived material retains its own license and attribution.
